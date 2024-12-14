@@ -5,7 +5,7 @@ import {
   DataTextContainer,
   PreviewSectionCardContainer,
 } from "./PreviewSection.styles";
-import ProjectCard from "../../Cards/ProjectCard/ProjectCard";
+import { ProjectCard, WorkCard } from "../../index";
 import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 import WorksIcon from "../../../assets/icons/Ruler.svg";
 import ProjectsIcon from "../../../assets/icons/Flash.svg";
@@ -15,27 +15,49 @@ const iconsMap = {
   projects: ProjectsIcon,
 };
 
-function PreviewSection({ iconKey }) {
-  const SelectedIcon = iconsMap[iconKey];
+function PreviewSection({ sectionType }) {
+  const renderCards = () => {
+    if (sectionType === "works") {
+      return (
+        <>
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </>
+      );
+    }
+  };
+
+  const SelectedIcon = iconsMap[sectionType];
 
   return (
     <PreviewSectionWrapper>
       <PreviewSectionData>
         <DataContainer>
-          <img src={SelectedIcon} alt={iconKey} />
+          <img src={SelectedIcon} alt={sectionType} />
           <DataTextContainer>
-            <h5>Proyectos</h5>
-            <h6>Aquí encontrarás algunos de mis proyectos destacados.</h6>
+            <h5>{sectionType === "works" ? "Works" : "Projects"}</h5>
+            <h6>
+              {sectionType === "works"
+                ? "Aquí encontrarás algunos de mis trabajos destacados."
+                : "Aquí encontrarás algunos de mis proyectos destacados."}
+            </h6>
           </DataTextContainer>
         </DataContainer>
-        <SecondaryButton>lol</SecondaryButton>
+        <SecondaryButton>
+          {sectionType === "works" ? "View all works" : "View all projects"}
+        </SecondaryButton>
       </PreviewSectionData>
 
-      <PreviewSectionCardContainer>
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-      </PreviewSectionCardContainer>
+      <PreviewSectionCardContainer>{renderCards()}</PreviewSectionCardContainer>
     </PreviewSectionWrapper>
   );
 }

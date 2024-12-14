@@ -25,9 +25,9 @@ export const BackgroundLightContainer = styled.div`
     position: absolute;
     height: 1000px;
     width: auto;
-    left: -100px;
-    top: -240px;
-    filter: blur(100px);
+    left: 80px;
+    top: -320px;
+    filter: blur(40px);
   }
 `;
 

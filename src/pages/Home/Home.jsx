@@ -1,5 +1,11 @@
 import { TextContainer, ButtonsContainer } from "./Home.styles";
-import { PageWrapper, PrimaryButton, SecondaryButton, PreviewSection } from "../../components/index";
+import {
+  PageWrapper,
+  PrimaryButton,
+  SecondaryButton,
+  PreviewSection,
+} from "../../components/index";
+import { FiArrowRightCircle } from "react-icons/fi";
 
 function Home() {
   return (
@@ -13,10 +19,14 @@ function Home() {
 
         <ButtonsContainer>
           <PrimaryButton>View all projects</PrimaryButton>
-          <SecondaryButton>Contact me</SecondaryButton>
+          <SecondaryButton>
+            Contact me
+            <FiArrowRightCircle />
+          </SecondaryButton>
         </ButtonsContainer>
       </TextContainer>
-      <PreviewSection iconKey="works"/>
+      <PreviewSection  sectionType="works"/>
+      <PreviewSection  sectionType="projects"/>
     </PageWrapper>
   );
 }

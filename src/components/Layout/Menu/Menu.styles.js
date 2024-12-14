@@ -71,13 +71,13 @@ export const NavLinksContainer = styled.ul`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 12px;
+    padding: 16px; 
     gap: 16px;
     border-radius: 8px;
     
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: var(--font-size-auxiliar);
+    font-size: var(--font-size-button);
     color: var(--color-text-paragraph);
     
     transition: all 0.2s ease;

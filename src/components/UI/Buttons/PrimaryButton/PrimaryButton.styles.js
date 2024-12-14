@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const PrimaryButtonStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
   cursor: pointer;
   outline: none;
   padding: 16px 20px;
