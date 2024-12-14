@@ -1,13 +1,9 @@
 import { TextContainer, ButtonsContainer } from "./Home.styles";
-import PageWrapper from "../../components/Layout/PageLayout/PageWrapper";
-import BackgroundHome from "../../assets/backgrounds/home-background-pattern.svg";
-import PrimaryButton from "../../components/UI/Buttons/PrimaryButton/PrimaryButton";
-import SecondaryButton from "../../components/UI/Buttons/SecondaryButton/SecondaryButton";
+import { PageWrapper, PrimaryButton, SecondaryButton, PreviewSection } from "../../components/index";
 
 function Home() {
   return (
     <PageWrapper>
-      
       <TextContainer>
         <h1>Hello Im Gabriel Martinez, Frontend Developer</h1>
         <p>
@@ -20,6 +16,7 @@ function Home() {
           <SecondaryButton>Contact me</SecondaryButton>
         </ButtonsContainer>
       </TextContainer>
+      <PreviewSection iconKey="works"/>
     </PageWrapper>
   );
 }

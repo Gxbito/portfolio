@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PrimaryButtonStyled = styled.div`
+export const CardButtonStyled = styled.div`
   cursor: pointer;
   outline: none;
   padding: 16px 20px;

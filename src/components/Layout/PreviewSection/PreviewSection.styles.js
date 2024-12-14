@@ -25,6 +25,8 @@ export const DataContainer = styled.div`
   img {
     width: 64px;
     height: auto;
+    border: 4px solid var(--color-border);
+    border-radius: 20px;
   }
 `;
 
@@ -51,10 +53,8 @@ export const DataTextContainer = styled.div`
 `;
 
 export const PreviewSectionCardContainer = styled.div`
+  width: 100%;
   display: grid;
-  grid-auto-rows: minmax(0, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 28px;
 `;
-
-

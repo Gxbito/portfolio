@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MenuContainer = styled.nav`
   width: 100%;
-  max-width: 320px;
+  max-width: 280px;
   height: 100%;
   display: flex;
   flex-direction: column;

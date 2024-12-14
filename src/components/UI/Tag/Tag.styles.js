@@ -7,6 +7,7 @@ export const TagStyled = styled.div`
   align-items: center;
   padding: 4px 12px;
   background-color: var(--color-card-button);
+  border-radius: 100px;
 
   font-family: var(--font-primary);
   font-weight: 500;

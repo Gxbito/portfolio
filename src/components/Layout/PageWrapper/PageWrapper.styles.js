@@ -6,7 +6,7 @@ export const PageWrapperStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 145px 0px;
+  padding: 145px 40px;
   background-color: var(--color-bg-page);
   box-shadow: var(--shadow-page);
   border-radius: 24px;
@@ -48,10 +48,4 @@ export const PageContent = styled.div`
   align-items: center;
   gap: 145px;
   z-index: 2;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 `;
