@@ -1,4 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import "@fontsource/albert-sans";
+import "@fontsource/barlow";
+import "@fontsource/anton";
 
 const GlobalStyles = createGlobalStyle`
   * {

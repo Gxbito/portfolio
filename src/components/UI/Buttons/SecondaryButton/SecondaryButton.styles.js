@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SecondaryButtonStyled = styled.div`
+export const SecondaryButtonStyled = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@ export const SecondaryButtonStyled = styled.div`
   outline: none;
   padding: 16px 20px;
 
-  background-color: var(--color-secondary-button-gradient);
+  background: var(--color-secondary-button-gradient);
   border: 1px solid var(--color-border);
   border-radius: 8px;
 

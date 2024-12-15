@@ -1,11 +1,34 @@
-import React from 'react'
+import { ShortcutCardStyled, TextContainer } from "./ShortcutCard.styles";
+import { CardButton } from "../../index";
+import { FiArrowRightCircle } from "react-icons/fi";
+import ServicesIcon from "../../../assets/icons/web/File.svg";
+import AboutIcon from "../../../assets/icons/web/Crown.svg";
 
-function ShortcutCard() {
+const iconsMap = {
+  services: ServicesIcon,
+  about: AboutIcon,
+};
+
+function ShortcutCard({ cardType }) {
+  const SelectedIcon = iconsMap[cardType];
+
   return (
-    <div>
-      
-    </div>
-  )
+    <ShortcutCardStyled>
+      <img src={SelectedIcon} alt="bg-icon" />
+      <TextContainer>
+        <h4>{cardType === "services" ? "Services" : "About me"}</h4>
+        <p>
+          {cardType === "services"
+            ? "Aquí encontrarás algunos de mis trabajos destacados."
+            : "Aquí encontrarás algunos de mis trabajos destacados."}
+        </p>
+      </TextContainer>
+      <CardButton>
+        View more
+        <FiArrowRightCircle />
+      </CardButton>
+    </ShortcutCardStyled>
+  );
 }
 
-export default ShortcutCard
+export default ShortcutCard;

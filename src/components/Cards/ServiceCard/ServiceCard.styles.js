@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const ShortcutCardStyled = styled.div`
+export const ServiceCardStyled = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  padding: 24px;
+  padding: 32px;
   background: var(--color-bg-card);
   box-shadow: var(--shadow-card);
   border: 1px solid var(--color-border);
@@ -27,7 +27,6 @@ export const TextContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
-  padding: 0px 8px;
 
   h4 {
     font-family: var(--font-primary);
@@ -42,4 +41,27 @@ export const TextContainer = styled.div`
     font-size: var(--font-size-large-paragraph);
     color: var(--color-text-paragraph);
   }
+`;
+
+export const ListContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 16px;
+  gap: 16px;
+
+  li {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: var(--font-size-medium-paragraph);
+    color: var(--color-text-title);
+  }
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 `;

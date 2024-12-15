@@ -1,9 +1,16 @@
-import { TextContainer, ButtonsContainer } from "./Home.styles";
+import {
+  TextContainer,
+  ButtonsContainer,
+  ShorcutCardsContainer,
+} from "./Home.styles";
 import {
   PageWrapper,
   PrimaryButton,
   SecondaryButton,
   PreviewSection,
+  ShortcutCard,
+  StackCard,
+  TechGroupCard
 } from "../../components/index";
 import { FiArrowRightCircle } from "react-icons/fi";
 
@@ -25,8 +32,14 @@ function Home() {
           </SecondaryButton>
         </ButtonsContainer>
       </TextContainer>
-      <PreviewSection  sectionType="works"/>
-      <PreviewSection  sectionType="projects"/>
+      <PreviewSection sectionType="works" />
+      <PreviewSection sectionType="projects" />
+      <ShorcutCardsContainer>
+        <ShortcutCard cardType="services" />
+        <ShortcutCard cardType="about" />
+      </ShorcutCardsContainer>
+      <StackCard />
+      <TechGroupCard/>
     </PageWrapper>
   );
 }

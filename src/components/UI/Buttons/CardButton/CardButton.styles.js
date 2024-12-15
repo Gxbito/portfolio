@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardButtonStyled = styled.div`
+export const CardButtonStyled = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;

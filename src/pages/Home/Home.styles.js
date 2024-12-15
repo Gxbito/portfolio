@@ -35,3 +35,11 @@ export const ButtonsContainer = styled.div`
   align-items: center;
   gap: 16px;
 `;
+
+export const ShorcutCardsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+`;

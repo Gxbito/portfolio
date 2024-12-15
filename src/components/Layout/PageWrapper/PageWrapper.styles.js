@@ -16,26 +16,33 @@ export const PageWrapperStyled = styled.div`
 `;
 
 export const BackgroundLightContainer = styled.div`
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  left: 0;
+  top: -320px;
+  filter: blur(40px);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const BackgroundHomeContainer = styled.div`
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 
   img {
-    position: absolute;
-    height: 1000px;
-    width: auto;
-    left: 80px;
-    top: -320px;
-    filter: blur(40px);
+    width: 100%;
+    height: 100%;
   }
-`;
-
-export const BackgroundHomeContainer = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 `;
 
 export const PageContent = styled.div`

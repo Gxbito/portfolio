@@ -4,7 +4,6 @@ import {
   OwnerDataTextContainer,
   NavLinksContainer,
 } from "./Menu.styles";
-import BadgeIcon from "../../../assets/icons/Badge.svg";
 import {
   FiHome,
   FiFolder,
@@ -14,6 +13,7 @@ import {
   FiBriefcase,
   FiPenTool,
 } from "react-icons/fi";
+import BadgeIcon from "../../../assets/icons/web/Badge.svg";
 import { Link } from "react-router-dom";
 
 function Menu() {

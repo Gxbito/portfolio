@@ -5,10 +5,10 @@ import {
   DataTextContainer,
   PreviewSectionCardContainer,
 } from "./PreviewSection.styles";
-import { ProjectCard, WorkCard } from "../../index";
-import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
-import WorksIcon from "../../../assets/icons/Ruler.svg";
-import ProjectsIcon from "../../../assets/icons/Flash.svg";
+import { ProjectCard, WorkCard, SecondaryButton } from "../../index";
+import { FiArrowRightCircle } from "react-icons/fi";
+import WorksIcon from "../../../assets/icons/web/Ruler.svg";
+import ProjectsIcon from "../../../assets/icons/web/Flash.svg";
 
 const iconsMap = {
   works: WorksIcon,
@@ -54,6 +54,7 @@ function PreviewSection({ sectionType }) {
         </DataContainer>
         <SecondaryButton>
           {sectionType === "works" ? "View all works" : "View all projects"}
+          <FiArrowRightCircle />
         </SecondaryButton>
       </PreviewSectionData>
 
