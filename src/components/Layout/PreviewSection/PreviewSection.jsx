@@ -5,16 +5,19 @@ import {
   DataTextContainer,
   PreviewSectionCardContainer,
 } from "./PreviewSection.styles";
-import ProjectCard from "../../Cards/ProjectCard/ProjectCard"
-import WorkCard from "../../Cards/WorkCard/WorkCard"
+import ProjectCard from "../../Cards/ProjectCard/ProjectCard";
+import WorkCard from "../../Cards/WorkCard/WorkCard";
+import CertificateCard from "../../Cards/CertificateCard/CertificateCard"
 import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 import { FiArrowRightCircle } from "react-icons/fi";
 import WorksIcon from "../../../assets/icons/web/Ruler.svg";
 import ProjectsIcon from "../../../assets/icons/web/Flash.svg";
+import CertificatesIcon from "../../../assets/icons/web/Badge.svg";
 
 const iconsMap = {
   works: WorksIcon,
   projects: ProjectsIcon,
+  certificates: CertificatesIcon,
 };
 
 function PreviewSection({ sectionType }) {
@@ -27,12 +30,20 @@ function PreviewSection({ sectionType }) {
           <WorkCard />
         </>
       );
-    } else {
+    } else if (sectionType === "projects") {
       return (
         <>
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <CertificateCard />
+          <CertificateCard />
+          <CertificateCard />
         </>
       );
     }

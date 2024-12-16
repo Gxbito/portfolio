@@ -8,20 +8,30 @@ export const TextWrapperStyled = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
+  margin: 0 auto 0 0;
 
   h2 {
     font-family: var(--font-primary);
-    font-weight: 500;
+    font-weight: 900;
     font-size: var(--font-size-header-2);
-    text-align: center;
-    color: var(--color-text-main-title);
+    background: var(--color-text-main-title);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h3 {
+    font-family: var(--font-primary);
+    font-weight: 900;
+    font-size: var(--font-size-header-2);
+    color: var(--color-text-title);
   }
 
   p {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-size: var(--font-size-large-paragraph);
-    text-align: center;
     color: var(--color-text-paragraph);
+    line-height: 140%;
   }
 `;

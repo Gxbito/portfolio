@@ -43,7 +43,7 @@ function Menu() {
         </li>
 
         <li>
-          <Link>
+          <Link to="/works">
             <FiBriefcase />
             Work
           </Link>

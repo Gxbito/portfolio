@@ -14,7 +14,7 @@ export const ShowcaseCardStyled = styled.div`
 
   img {
     width: 100%;
-    height: 450px;
+    height: 400px;
     border-radius: 16px 16px 0px 0px;
   }
 `;

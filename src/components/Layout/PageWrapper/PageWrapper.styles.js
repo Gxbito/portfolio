@@ -5,7 +5,7 @@ export const PageWrapperStyled = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 145px 40px;
   background-color: var(--color-bg-page);
   box-shadow: var(--shadow-page);

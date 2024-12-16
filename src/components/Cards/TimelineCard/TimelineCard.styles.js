@@ -32,9 +32,9 @@ export const TextContainer = styled.div`
 
   span {
     font-family: var(--font-secondary);
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--font-size-auxiliar);
-    color: var(--color-text-title);
+    color: var(--color-text-paragraph);
   }
 
   h4 {

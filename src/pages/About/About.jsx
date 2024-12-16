@@ -1,39 +1,67 @@
 import {
   AboutHeroContainer,
   TimelineContainer,
-  TimelineStrokeContainer,
-  TimelineVerticalStroke,
-  TimelinePoint,
   TimelineCardContainer,
 } from "./About.styles";
 
-import PageWrapper from "../../components/Layout/PageWrapper/PageWrapper"
-import PreviewSection from "../../components/Layout/PreviewSection/PreviewSection"
-import TextWrapper from "../../components/Layout/TextWrapper/TextWrapper"
-import ShortcutCard from "../../components/Cards/ShortcutCard/ShortcutCard"
-import StackCard from "../../components/Cards/StackCard/StackCard"
-import PrimaryButton from "../../components/UI/Buttons/PrimaryButton/PrimaryButton"
-import SecondaryButton from "../../components/UI/Buttons/SecondaryButton/SecondaryButton"
+import PageWrapper from "../../components/Layout/PageWrapper/PageWrapper";
+import PreviewSection from "../../components/Layout/PreviewSection/PreviewSection";
+import TextWrapper from "../../components/Layout/TextWrapper/TextWrapper";
+import TimelineCard from "../../components/Cards/TimelineCard/TimelineCard";
+import StackCard from "../../components/Cards/StackCard/StackCard";
+import Timeline from "../../components/UI/Timeline/Timeline";
+import HeroImage from "../../assets/images/Argentina-flag.jpg";
 
 function About() {
   return (
     <PageWrapper>
       <AboutHeroContainer>
-        <img src="./assets/images/Argentina-flag.jpg" alt="#" />
+        <img src={HeroImage} alt="argentina" />
         <TextWrapper>
-          <h1>Meeting the creator</h1>
+          <h2>Meeting the creator</h2>
           <p>
             Soy Gabriel Martínez, desarrollador frontend con más de 2 años de
             experiencia creando interfaces intuitivas, atractivas y optimizadas.
             Mi pasión por el diseño y la tecnología me ha llevado a dominar
-            herramientas modernas como React, Material UI y Figma. Me
-            especializo en transformar ideas en productos digitales claros y
+            herramientas modernas como React, Material UI y Figma.
+          </p>
+          <p>
+            Me especializo en transformar ideas en productos digitales claros y
             accesibles, siempre con un enfoque en la experiencia del usuario. Mi
             objetivo es crear aplicaciones que no solo sean eficientes, sino que
             también generen un impacto positivo en quienes las utilizan
           </p>
         </TextWrapper>
       </AboutHeroContainer>
+      <TimelineContainer>
+        <TextWrapper>
+          <h3>Mi Trayectoria Profesional</h3>
+          <p>
+            Cada paso en mi carrera ha sido una oportunidad para aprender y
+            crecer. Desde proyectos iniciales que me enseñaron las bases del
+            desarrollo web, hasta colaboraciones más desafiantes en las que
+            perfeccioné mis habilidades, cada experiencia ha moldeado mi enfoque
+            profesional
+          </p>
+        </TextWrapper>
+
+        {/* <TimelineStrokeContainer>
+          <TimelineVerticalStroke />
+          <TimelinePoint />
+          <TimelinePoint />
+        </TimelineStrokeContainer> */}
+        <Timeline />
+        <TimelineCardContainer>
+          <TimelineCard type="start" />
+          <TimelineCard type="job" />
+          <TimelineCard type="course" />
+          <TimelineCard type="freelance" />
+        </TimelineCardContainer>
+      </TimelineContainer>
+      <PreviewSection sectionType="works"/>
+      <PreviewSection sectionType="projects"/>
+      <PreviewSection sectionType="certificates"/>
+      <StackCard />
     </PageWrapper>
   );
 }

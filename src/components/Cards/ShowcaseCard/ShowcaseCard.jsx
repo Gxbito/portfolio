@@ -4,7 +4,7 @@ import {
   DataTextContainer,
 } from "./ShowcaseCard.styles";
 import { FiArrowRightCircle } from "react-icons/fi";
-import { SecondaryButton } from "../../index";
+import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 
 function ShowcaseCard({ type }) {
   return (
