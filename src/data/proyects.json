@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Trabajo Freelance",
+    "description": "Diseño de un sistema de gestión para clientes usando React y Node.js.",
+    "date": "Enero 2024",
+    "image": "/path-to-work-image-1.svg"
+  },
+  {
+    "id": 2,
+    "title": "Internship",
+    "description": "Optimización de flujo de datos para una plataforma educativa.",
+    "date": "Julio 2023",
+    "image": "/path-to-work-image-2.svg"
+  },
+  {
+    "id": 3,
+    "title": "Internship",
+    "description": "Optimización de flujo de datos para una plataforma educativa.",
+    "date": "Julio 2023",
+    "image": "/path-to-work-image-2.svg"
+  },
+  {
+    "id": 2,
+    "title": "Internship",
+    "description": "Optimización de flujo de datos para una plataforma educativa.",
+    "date": "Julio 2023",
+    "image": "/path-to-work-image-2.svg"
+  }
+]

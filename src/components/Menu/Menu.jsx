@@ -13,7 +13,7 @@ import {
   FiBriefcase,
   FiPenTool,
 } from "react-icons/fi";
-import BadgeIcon from "../../../assets/icons/web/Badge.svg";
+import BadgeIcon from "../../assets/icons/web/Badge.svg";
 import { Link } from "react-router-dom";
 
 function Menu() {
@@ -29,14 +29,14 @@ function Menu() {
 
       <NavLinksContainer>
         <li>
-          <Link>
+          <Link to="/">
             <FiHome />
             Home
           </Link>
         </li>
 
         <li>
-          <Link>
+          <Link to="/about">
             <FiUser />
             About
           </Link>

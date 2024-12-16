@@ -5,7 +5,9 @@ import {
   DataTextContainer,
   PreviewSectionCardContainer,
 } from "./PreviewSection.styles";
-import { ProjectCard, WorkCard, SecondaryButton } from "../../index";
+import ProjectCard from "../../Cards/ProjectCard/ProjectCard"
+import WorkCard from "../../Cards/WorkCard/WorkCard"
+import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 import { FiArrowRightCircle } from "react-icons/fi";
 import WorksIcon from "../../../assets/icons/web/Ruler.svg";
 import ProjectsIcon from "../../../assets/icons/web/Flash.svg";

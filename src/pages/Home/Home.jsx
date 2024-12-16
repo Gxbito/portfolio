@@ -3,15 +3,12 @@ import {
   ButtonsContainer,
   ShorcutCardsContainer,
 } from "./Home.styles";
-import {
-  PageWrapper,
-  PrimaryButton,
-  SecondaryButton,
-  PreviewSection,
-  ShortcutCard,
-  StackCard,
-  TechGroupCard
-} from "../../components/index";
+import PageWrapper from "../../components/Layout/PageWrapper/PageWrapper"
+import PreviewSection from "../../components/Layout/PreviewSection/PreviewSection"
+import ShortcutCard from "../../components/Cards/ShortcutCard/ShortcutCard"
+import StackCard from "../../components/Cards/StackCard/StackCard"
+import PrimaryButton from "../../components/UI/Buttons/PrimaryButton/PrimaryButton"
+import SecondaryButton from "../../components/UI/Buttons/SecondaryButton/SecondaryButton"
 import { FiArrowRightCircle } from "react-icons/fi";
 
 function Home() {
@@ -39,7 +36,6 @@ function Home() {
         <ShortcutCard cardType="about" />
       </ShorcutCardsContainer>
       <StackCard />
-      <TechGroupCard/>
     </PageWrapper>
   );
 }

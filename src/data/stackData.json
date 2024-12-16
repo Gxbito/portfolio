@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "HTML",
+    "desc": "Lenguaje base para la construcción de páginas web.",
+    "category": "web development"
+  },
+  {
+    "id": 2,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "CSS",
+    "desc": "Estilos para dar diseño y estructura visual a las páginas.",
+    "category": "web development"
+  },
+  {
+    "id": 3,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "JavaScript",
+    "desc": "Lenguaje de programación para añadir interactividad.",
+    "category": "web development"
+  },
+  {
+    "id": 4,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "React",
+    "desc": "Biblioteca para construir interfaces de usuario dinámicas.",
+    "category": "framework"
+  },
+  {
+    "id": 5,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "Material UI",
+    "desc": "Framework para estilos basado en Material Design.",
+    "category": "framework"
+  },
+  {
+    "id": 6,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "SASS",
+    "desc": "Preprocesador CSS que facilita estilos más avanzados.",
+    "category": "framework"
+  },
+  {
+    "id": 7,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "Tailwind CSS",
+    "desc": "Framework de utilidades para estilos rápidos y modulares.",
+    "category": "framework"
+  },
+  {
+    "id": 8,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "Figma",
+    "desc": "Herramienta para diseño y prototipado UI/UX.",
+    "category": "design tool"
+  },
+  {
+    "id": 9,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "Photoshop",
+    "desc": "Software de edición de imágenes y diseño gráfico.",
+    "category": "design tool"
+  },
+  {
+    "id": 10,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "NPM",
+    "desc": "Gestor de paquetes para proyectos JavaScript.",
+    "category": "package management"
+  },
+  {
+    "id": 11,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "GitHub",
+    "desc": "Plataforma para control de versiones y colaboración.",
+    "category": "package management"
+  },
+  {
+    "id": 12,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "Git",
+    "desc": "Sistema de control de versiones distribuido.",
+    "category": "package management"
+  },
+  {
+    "id": 13,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "Webpack",
+    "desc": "Empaquetador de módulos para proyectos JavaScript.",
+    "category": "building"
+  },
+  {
+    "id": 14,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "Vite",
+    "desc": "Herramienta de desarrollo rápido para aplicaciones modernas.",
+    "category": "building"
+  },
+  {
+    "id": 15,
+    "icon": "/assets/icons/web/Bulb.svg",
+    "title": "WordPress",
+    "desc": "CMS popular para creación de sitios web.",
+    "category": "cms"
+  }
+]

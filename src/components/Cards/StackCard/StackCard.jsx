@@ -3,7 +3,7 @@ import {
   StackTextContainer,
   StackContainer,
 } from "./StackCard.styles";
-import { CardButton } from "../../index";
+import CardButton from "../../UI/Buttons/CardButton/CardButton"
 import Technology from "../../UI/Technology/Technology";
 
 function StackCard() {

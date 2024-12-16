@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import GlobalStyles from "./styles/GlobalStyles";
 import MainWrapper from "../src/components/Layout/MainWrapper/MainWrapper";
-import Menu from "./components/Layout/Menu/Menu";
+import Menu from "./components/Menu/Menu";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About"
 // import Work from "./pages/Home/Home";
