@@ -1,16 +1,21 @@
-import { TechGroupCardStyled } from "./TechGroupCard.styles"
-import Technology from "../../UI/Technology/Technology"
+import { TechGroupCardStyled } from "./TechGroupCard.styles";
+import Technology from "../../UI/Technology/Technology";
+import stackData from "../../../data/stackData.json";
 
-function TechGroupCard() {
+function TechGroupCard({ cat }) {
+  
   return (
-    <TechGroupCardStyled>
-      <h4>Tecnologia</h4>
-      <Technology type="html"/>
-      <Technology type="css"/>
-      <Technology type="html"/>
-      <Technology type="css"/>
-    </TechGroupCardStyled>
-  )
+    <>
+      <TechGroupCardStyled>
+        <h4>{cat}</h4>
+        {stackData
+          .filter((tech) => tech.category === cat)
+          .map((tech) => (
+            <Technology key={tech.id} {...tech} />
+          ))}
+      </TechGroupCardStyled>
+    </>
+  );
 }
 
-export default TechGroupCard
+export default TechGroupCard;

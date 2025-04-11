@@ -50,28 +50,28 @@ function Menu() {
         </li>
 
         <li>
-          <Link>
+          <Link to="/projects">
             <FiFolder />
             Personal Projects
           </Link>
         </li>
 
         <li>
-          <Link>
+          <Link to="/contact">
             <FiMail />
             Contact
           </Link>
         </li>
 
         <li>
-          <Link>
+          <Link to="/services">
             <FiPenTool />
             Services
           </Link>
         </li>
 
         <li>
-          <Link>
+          <Link to="/stack">
             <FiLayers />
             Stack
           </Link>

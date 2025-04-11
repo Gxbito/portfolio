@@ -7,7 +7,7 @@ export const useScrollProgress = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY; // Scroll actual
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollProgress = (scrollTop / docHeight) * 200;
+      const scrollProgress = (scrollTop / docHeight) * 240;
       setProgress(scrollProgress);
     };
 

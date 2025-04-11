@@ -19,10 +19,16 @@ export const AboutHeroContainer = styled.div`
 
 export const TimelineContainer = styled.div`
   width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 44% 3% 44%;
   justify-content: space-between;
   align-items: flex-start;
+
+  & > :first-child {
+    top: 0;
+    z-index: 1;
+  }
 `;
 
 export const TimelineCardContainer = styled.div`

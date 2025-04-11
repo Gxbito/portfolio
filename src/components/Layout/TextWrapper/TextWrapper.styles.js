@@ -23,7 +23,7 @@ export const TextWrapperStyled = styled.div`
   h3 {
     font-family: var(--font-primary);
     font-weight: 900;
-    font-size: var(--font-size-header-2);
+    font-size: var(--font-size-header-3);
     color: var(--color-text-title);
   }
 

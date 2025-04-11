@@ -3,10 +3,15 @@ import {
   StackTextContainer,
   StackContainer,
 } from "./StackCard.styles";
-import CardButton from "../../UI/Buttons/CardButton/CardButton"
+import CardButton from "../../UI/Buttons/CardButton/CardButton";
 import Technology from "../../UI/Technology/Technology";
+import stackData from "../../../data/stackData.json";
 
 function StackCard() {
+  const selectedTechnologies = stackData.filter((tech) =>
+    ["Material UI", "JavaScript", "React", "WordPress"].includes(tech.title)
+  );
+
   return (
     <StackCardStyled>
       <StackTextContainer>
@@ -18,18 +23,9 @@ function StackCard() {
       </StackTextContainer>
 
       <StackContainer>
-        <Technology
-          type="react"
-        />
-        <Technology
-          type="wordpress"
-        />
-        <Technology
-          type="javascript"
-        />
-        <Technology
-          type="materialui"
-        />
+        {selectedTechnologies.map((tech) => (
+          <Technology key={tech.id} {...tech} />
+        ))}
 
         <CardButton>View all tecnologies</CardButton>
       </StackContainer>

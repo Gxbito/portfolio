@@ -9,7 +9,7 @@
       "Experiencia en React",
       "Integración con APIs"
     ],
-    "image": "/assets/icons/web/Bulb.svg"
+    "image": "/src/assets/icons/web/Bulb.svg"
   },
   {
     "id": 2,
@@ -21,10 +21,10 @@
       "Integración con bases de datos",
       "Despliegue en servidores"
     ],
-    "image": "/assets/icons/web/User.svg"
+    "image": "/src/assets/icons/web/User.svg"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Backend Developer",
     "description": "Construcción de APIs escalables y seguras con Node.js y Express.",
     "features": [
@@ -33,10 +33,10 @@
       "Integración con bases de datos",
       "Despliegue en servidores"
     ],
-    "image": "/assets/icons/web/Flash.svg"
+    "image": "/src/assets/icons/web/Flash.svg"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Backend Developer",
     "description": "Construcción de APIs escalables y seguras con Node.js y Express.",
     "features": [
@@ -45,6 +45,6 @@
       "Integración con bases de datos",
       "Despliegue en servidores"
     ],
-    "image": "/assets/icons/web/Crown.svg"
+    "image": "/src/assets/icons/web/Crown.svg"
   }
 ]

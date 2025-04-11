@@ -1,7 +1,7 @@
 import { FormStyled } from "./Form.styles";
 import TextArea from "./TextArea/TextArea";
 import Input from "./Input/Input";
-import { CardButton } from "../index";
+import CardButton from "../UI/Buttons/CardButton/CardButton";
 
 function Form() {
   return (

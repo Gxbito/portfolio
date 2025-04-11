@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "/src/assets/icons/web/Bulb.svg",
+    "category": "APRENDIZAJE INICIAL",
+    "title": "Inicio en Desarrollo Web",
+    "text": "Comencé mi aprendizaje en el desarrollo web, creando proyectos personales como blogs y portafolios básicos utilizando HTML, CSS y JavaScript. A través de estas experiencias, descubrí mi pasión por el frontend y senté las bases para mi carrera como desarrollador.",
+    "year": "'22"
+  },
+  {
+    "icon": "/src/assets/icons/web/User.svg",
+    "category": "TRABAJO COLABORATIVO",
+    "title": "Trabajo en una Empresa",
+    "text": "Formé parte de un equipo multidisciplinario para desarrollar una aplicación web destinada a mejorar la comunicación interna en una empresa. Mi responsabilidad fue diseñar y codificar el frontend, asegurándome de que la interfaz fuera intuitiva y responsiva.",
+    "year": "'22"
+  },
+  {
+    "icon": "/src/assets/icons/web/Flash.svg",
+    "category": "EDUCACIÓN COMPLEMENTARIA",
+    "title": "Curso Avanzado de React",
+    "text": "Me especialicé tomando cursos en plataformas reconocidas, lo que me permitió aprender nuevas tecnologías y profundizar en mi conocimiento de frameworks y herramientas.",
+    "year": "'23"
+  },
+  {
+    "icon": "/src/assets/icons/web/Crown.svg",
+    "category": "TRABAJOS INDEPENDIENTES",
+    "title": "Freelance y Proyectos Propios",
+    "text": "He trabajado como freelancer en proyectos independientes, colaborando con clientes para crear soluciones personalizadas y optimizadas. Esto me ayudó a desarrollar habilidades como la comunicación y la gestión de proyectos.",
+    "year": "'24"
+  }
+]

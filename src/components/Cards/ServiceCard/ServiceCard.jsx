@@ -5,24 +5,21 @@ import {
   ButtonsContainer,
 } from "./ServiceCard.styles";
 import { FiArrowRightCircle } from "react-icons/fi";
-import { PrimaryButton, SecondaryButton } from "../../index";
+import PrimaryButton from "../../UI/Buttons/PrimaryButton/PrimaryButton";
+import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 
-function ServiceCard() {
+function ServiceCard({ title, description, image, features }) {
   return (
     <ServiceCardStyled>
-      <img src="#" alt="#" />
+      <img src={image} alt={title} />
       <TextContainer>
-        <h4>Frontend Developer</h4>
-        <p>
-          Desarrollo aplicaciones web rápidas y responsivas con React y Material
-          UI
-        </p>
+        <h4>{title}</h4>
+        <p>{description}</p>
       </TextContainer>
       <ListContainer>
-        <li>Diseño Responsivo</li>
-        <li>Optimización de Rendimiento</li>
-        <li>Experiencia en React</li>
-        <li>Integración con APIs</li>
+        {features.map((feature) => (
+          <li>{feature}</li>
+        ))}
       </ListContainer>
       <ButtonsContainer>
         <PrimaryButton>Get started now</PrimaryButton>
