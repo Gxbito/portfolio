@@ -5,7 +5,7 @@ export const PrimaryButtonStyled = styled.button`
   justify-content: center;
   align-items: center;
   gap: 8px;
-  
+
   cursor: pointer;
   outline: none;
   padding: 16px 20px;
@@ -20,5 +20,5 @@ export const PrimaryButtonStyled = styled.button`
   font-weight: 700;
   font-size: var(--font-size-button);
   color: var(--color-text-title);
+  text-decoration: none;
 `;
-

@@ -44,20 +44,20 @@ const GlobalStyles = createGlobalStyle`
     --font-bg-card: "Anton", sans-serif;
 
     /* Font Sizes */
-    --font-size-header-1: 3rem;
-    --font-size-header-2: 2.5rem;
-    --font-size-header-3: 2rem;
-    --font-size-header-4: 1.5rem;
-    --font-size-header-5: 1.25rem;
-    --font-size-header-6: 1rem;
+    --font-size-header-1: 3rem;           /* 48px */
+    --font-size-header-2: 2.5rem;         /* 40px */
+    --font-size-header-3: 2rem;           /* 32px */
+    --font-size-header-4: 1.5rem;         /* 24px */
+    --font-size-header-5: 1.25rem;        /* 20px */
+    --font-size-header-6: 1rem;           /* 16px */
 
-    --font-size-button: 1rem;
-    --font-size-auxiliar: 0.875rem;
-    --font-size-tags: 0.75rem;
-    
-    --font-size-large-paragraph: 1.125rem;
-    --font-size-medium-paragraph: 1rem;
-    --font-size-small-paragraph: 0.875rem;
+    --font-size-button: 1rem;             /* 16px */
+    --font-size-auxiliar: 0.875rem;       /* 14px */
+    --font-size-tags: 0.75rem;            /* 12px */
+
+    --font-size-large-paragraph: 1.125rem;   /* 18px */
+    --font-size-medium-paragraph: 1rem;      /* 16px */
+    --font-size-small-paragraph: 0.875rem;   /* 14px */
   }
 
 `;

@@ -18,4 +18,5 @@ export const SecondaryButtonStyled = styled.button`
   font-weight: 700;
   font-size: var(--font-size-button);
   color: var(--color-text-title);
+  text-decoration: none;
 `;

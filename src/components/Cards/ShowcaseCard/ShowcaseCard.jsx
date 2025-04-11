@@ -5,6 +5,7 @@ import {
 } from "./ShowcaseCard.styles";
 import { FiArrowRightCircle } from "react-icons/fi";
 import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
+import { Link } from "react-router-dom";
 
 function ShowcaseCard({ type }) {
   return (
@@ -14,7 +15,7 @@ function ShowcaseCard({ type }) {
           <h3>E-commerce Pro</h3>
           <p>Aquí encontrarás algunos de mis proyectos destacados.</p>
         </DataTextContainer>
-        <SecondaryButton>
+        <SecondaryButton to="/documentation">
           {type === "project" ? "View Project" : "View Work"}
           <FiArrowRightCircle />
         </SecondaryButton>
