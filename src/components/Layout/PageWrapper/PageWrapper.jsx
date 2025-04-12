@@ -8,22 +8,39 @@ import Header from "@/components/Header/Header";
 function PageWrapper({ children, page }) {
   return (
     <PageWrapperStyled page={page}>
-      {page === "documentation" ? (
-        <>
-          <img src={BackgroundHeaderLight} alt="bg-light" id="bg-light-header" />
-          <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern-2" />
-        </>
-      ) : page === "about" ? (
-        <>
-          <img src={BackgroundVerticalLight} alt="bg-light" id="bg-light-2" />
-          <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern" />
-        </>
-      ) : (
-        <>
-          <img src={BackgroundVerticalLight} alt="bg-light" id="bg-light" />
-          <img src={BackgroundHomePattern} alt="bg-home" id="bg-home" />
-        </>
-      )}
+      <div>
+        <div>
+          {page === "documentation" ? (
+            <>
+              <img
+                src={BackgroundHeaderLight}
+                alt="bg-light"
+                id="bg-light-header"
+              />
+              <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern-2" />
+            </>
+          ) : page === "about" ? (
+            <>
+              <img
+                src={BackgroundVerticalLight}
+                alt="bg-light"
+                id="bg-light-2"
+              />
+              <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern" />
+            </>
+          ) : page === "home" ? (
+            <>
+              <img src={BackgroundVerticalLight} alt="bg-light" id="bg-light" />
+              <img src={BackgroundHomePattern} alt="bg-home" id="bg-home" />
+            </>
+          ) : (
+            <>
+              <img src={BackgroundVerticalLight} alt="bg-light-2" id="bg-light-2-filter" />
+              <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern" />
+            </>
+          )}
+        </div>
+      </div>
 
       {page === "documentation" ? <Header /> : null}
 

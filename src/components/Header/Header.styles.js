@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   padding: 28px 60px;
   gap: 60px;
+  border-radius: 16px 16px 0px 0px;
   background-color: var(--color-bg-card);
   position: relative;
   z-index: 2;

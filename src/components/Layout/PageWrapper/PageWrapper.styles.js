@@ -12,7 +12,18 @@ export const PageWrapperStyled = styled.div`
   border-radius: 24px;
   margin: 40px 40px 40px 0px;
   position: relative;
-  overflow: hidden;
+
+  & > div:first-child {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 16px 16px 0px 0px;
+
+    & > div {
+      position: relative;
+    }
+  }
 
   #bg-home {
     width: 100%;
@@ -29,7 +40,7 @@ export const PageWrapperStyled = styled.div`
     right: -20%;
     z-index: 1;
   }
-  
+
   #bg-pattern-2 {
     width: 100%;
     position: absolute;
@@ -41,15 +52,19 @@ export const PageWrapperStyled = styled.div`
   #bg-light {
     position: absolute;
     left: -10%;
-    top: -18%;
+    top: -550px;
     z-index: 1;
   }
 
-  #bg-light-2 {
+  #bg-light-2, #bg-light-2-filter {
     position: absolute;
     left: -25%;
     top: -620px;
     z-index: 1;
+  }
+
+  #bg-light-2-filter {
+    filter: brightness(70%);
   }
 
   #bg-light-header {
@@ -63,13 +78,14 @@ export const PageWrapperStyled = styled.div`
 
 export const PageContent = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: ${({ page }) => (page === "documentation" ? "1452px" : "1200px")};
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 145px 0px;
+  padding: ${({ page }) =>
+    page === "documentation" ? "60px 0px" : "145px 0px"};
   gap: ${({ page }) => (page === "documentation" ? "60px" : "145px")};
   z-index: 2;
 `;
