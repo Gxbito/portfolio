@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardButtonStyled = styled.button`
+  max-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

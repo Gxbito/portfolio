@@ -6,13 +6,17 @@ export const HeaderContainer = styled.div`
   grid-template-columns: auto auto 1fr auto auto;
   align-items: center;
   padding: 28px 60px;
+  gap: 60px;
   background-color: var(--color-bg-card);
+  position: relative;
+  z-index: 2;
 
   h5 {
     font-weight: 500;
     font-size: var(--font-size-header-5);
     color: var(--color-text-paragraph);
     font-family: var(--font-primary);
+    text-align: center;
   }
 `;
 

@@ -1,11 +1,11 @@
-import React from 'react'
+import PageWrapper from "@/components/Layout/PageWrapper/PageWrapper";
 
 function Documentation() {
   return (
-    <div>
-      
-    </div>
-  )
+    <PageWrapper page="documentation">
+
+    </PageWrapper>
+  );
 }
 
-export default Documentation
+export default Documentation;

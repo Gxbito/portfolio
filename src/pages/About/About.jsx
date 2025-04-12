@@ -14,11 +14,11 @@ import timelineData from "../../data/timelineData.json";
 
 function About() {
   return (
-    <PageWrapper>
+    <PageWrapper page="about">
       <AboutHeroContainer>
         <img src={HeroImage} alt="argentina" />
         <TextWrapper>
-          <h2>Meeting The Creator</h2>
+          <h2>Meeting the creator</h2>
           <p>
             Soy Gabriel Martínez, desarrollador frontend con más de 2 años de
             experiencia creando interfaces intuitivas, atractivas y optimizadas.

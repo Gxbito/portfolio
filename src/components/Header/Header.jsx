@@ -1,7 +1,7 @@
 import React from "react";
 import { HeaderContainer, VerticalLine } from "./Header.styles";
 import SecondaryButton from "../UI/Buttons/SecondaryButton/SecondaryButton";
-import { Link } from "react-router-dom";
+import githubIcon from "@/assets/icons/web/GitHub.svg";
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
       <VerticalLine />
       <h5>E-Commerce de Moda Optimizado</h5>
       <VerticalLine />
-      <SecondaryButton>Contáctame</SecondaryButton>
+      <img src={githubIcon} alt="github" />
     </HeaderContainer>
   );
 }

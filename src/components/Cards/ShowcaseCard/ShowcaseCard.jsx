@@ -5,7 +5,6 @@ import {
 } from "./ShowcaseCard.styles";
 import { FiArrowRightCircle } from "react-icons/fi";
 import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
-import { Link } from "react-router-dom";
 
 function ShowcaseCard({ type }) {
   return (
