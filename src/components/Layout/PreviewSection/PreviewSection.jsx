@@ -7,12 +7,13 @@ import {
 } from "./PreviewSection.styles";
 import ProjectCard from "../../Cards/ProjectCard/ProjectCard";
 import WorkCard from "../../Cards/WorkCard/WorkCard";
-import CertificateCard from "../../Cards/CertificateCard/CertificateCard"
+import CertificateCard from "../../Cards/CertificateCard/CertificateCard";
 import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 import { FiArrowRightCircle } from "react-icons/fi";
 import WorksIcon from "../../../assets/icons/web/Ruler.svg";
 import ProjectsIcon from "../../../assets/icons/web/Flash.svg";
 import CertificatesIcon from "../../../assets/icons/web/Badge.svg";
+import AnimatedWrapper from "../AnimatedWrapper/AnimatedWrapper";
 
 const iconsMap = {
   works: WorksIcon,
@@ -25,17 +26,29 @@ function PreviewSection({ sectionType }) {
     if (sectionType === "works") {
       return (
         <>
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
+          <AnimatedWrapper>
+            <WorkCard />
+          </AnimatedWrapper>
+          <AnimatedWrapper delay="0.1">
+            <WorkCard />
+          </AnimatedWrapper>
+          <AnimatedWrapper delay="0.2">
+            <WorkCard />
+          </AnimatedWrapper>
         </>
       );
     } else if (sectionType === "projects") {
       return (
         <>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <AnimatedWrapper>
+            <ProjectCard />
+          </AnimatedWrapper>
+          <AnimatedWrapper delay="0.1">
+            <ProjectCard />
+          </AnimatedWrapper>
+          <AnimatedWrapper delay="0.2">
+            <ProjectCard />
+          </AnimatedWrapper>
         </>
       );
     } else {

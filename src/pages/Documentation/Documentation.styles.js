@@ -123,7 +123,7 @@ export const TextContainer = styled.div`
 
   h4 {
     font-family: var(--font-primary);
-    font-weight: 500;
+    font-weight: 700;
     font-size: var(--font-size-header-4);
     color: var(--color-text-title);
   }

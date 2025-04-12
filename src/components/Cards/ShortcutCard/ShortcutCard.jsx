@@ -1,5 +1,5 @@
 import { ShortcutCardStyled, TextContainer } from "./ShortcutCard.styles";
-import CardButton from "../../UI/Buttons/CardButton/CardButton"
+import CardButton from "../../UI/Buttons/CardButton/CardButton";
 import { FiArrowRightCircle } from "react-icons/fi";
 import ServicesIcon from "../../../assets/icons/web/File.svg";
 import AboutIcon from "../../../assets/icons/web/Crown.svg";

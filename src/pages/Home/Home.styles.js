@@ -42,4 +42,8 @@ export const ShorcutCardsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 48px;
+
+  & > div {
+    width: 100%;
+  }
 `;

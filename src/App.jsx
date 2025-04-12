@@ -10,6 +10,7 @@ import Contact from "./pages/Contact/Contact";
 import Services from "./pages/Services/Services";
 import Stack from "./pages/Stack/Stack";
 import Documentation from "./pages/Documentation/Documentation";
+import AnimatedWrapper from "./components/Layout/AnimatedWrapper/AnimatedWrapper";
 
 function App() {
   return (

@@ -4,6 +4,7 @@ import BackgroundHeaderLight from "@/assets/vectors/header-light.svg";
 import BackgroundHomePattern from "@/assets/vectors/home-background-pattern.svg";
 import BackgroundPattern from "@/assets/vectors/background-pattern.svg";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 function PageWrapper({ children, page }) {
   return (
@@ -45,6 +46,7 @@ function PageWrapper({ children, page }) {
       {page === "documentation" ? <Header /> : null}
 
       <PageContent page={page}>{children}</PageContent>
+      <Footer/>
     </PageWrapperStyled>
   );
 }

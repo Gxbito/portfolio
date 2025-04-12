@@ -9,6 +9,7 @@ export const HeaderContainer = styled.div`
   gap: 60px;
   border-radius: 16px 16px 0px 0px;
   background-color: var(--color-bg-card);
+  border-bottom: 1px solid var(--color-border);
   position: relative;
   z-index: 2;
 
