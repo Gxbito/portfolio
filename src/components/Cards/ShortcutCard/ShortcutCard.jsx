@@ -23,7 +23,7 @@ function ShortcutCard({ cardType }) {
             : "Aquí encontrarás algunos de mis trabajos destacados."}
         </p>
       </TextContainer>
-      <CardButton>
+      <CardButton to={cardType === "services" ? "/services" : "/about"}>
         View more
         <FiArrowRightCircle />
       </CardButton>

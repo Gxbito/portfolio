@@ -15,67 +15,53 @@ import {
 } from "react-icons/fi";
 import BadgeIcon from "../../assets/icons/web/Badge.svg";
 import { Link } from "react-router-dom";
+import AnimatedWrapper from "../Layout/AnimatedWrapper/AnimatedWrapper";
+
+const navItems = [
+  { to: "/", icon: <FiHome />, label: "Home" },
+  { to: "/about", icon: <FiUser />, label: "About" },
+  { to: "/works", icon: <FiBriefcase />, label: "Work" },
+  { to: "/projects", icon: <FiFolder />, label: "Personal Projects" },
+  { to: "/contact", icon: <FiMail />, label: "Contact" },
+  { to: "/services", icon: <FiPenTool />, label: "Services" },
+  { to: "/stack", icon: <FiLayers />, label: "Stack" },
+];
 
 function Menu() {
   return (
     <MenuContainer>
       <OwnerDataContainer>
-        <img src={BadgeIcon} alt="Badge Icon" />
+        <AnimatedWrapper y={0} x={20}>
+          <img src={BadgeIcon} alt="Badge Icon"/>
+        </AnimatedWrapper>
+
         <OwnerDataTextContainer>
-          <h6>Gabriel Martinez</h6>
-          <span>Frontend Developer</span>
+          <AnimatedWrapper y={0} x={40}>
+            <h6>Gabriel Martinez</h6>
+          </AnimatedWrapper>
+          <AnimatedWrapper y={0} x={40} delay={0.1}>
+            <span>Frontend Developer</span>
+          </AnimatedWrapper>
         </OwnerDataTextContainer>
       </OwnerDataContainer>
 
       <NavLinksContainer>
-        <li>
-          <Link to="/">
-            <FiHome />
-            Home
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/about">
-            <FiUser />
-            About
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/works">
-            <FiBriefcase />
-            Work
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/projects">
-            <FiFolder />
-            Personal Projects
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/contact">
-            <FiMail />
-            Contact
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/services">
-            <FiPenTool />
-            Services
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/stack">
-            <FiLayers />
-            Stack
-          </Link>
-        </li>
+        {navItems.map((item, i) => (
+          <AnimatedWrapper
+            key={item.to}
+            delay={i * 0.1}
+            x={40}
+            y={0}
+            style={{ width: "100%" }}
+          >
+            <li>
+              <Link to={item.to}>
+                {item.icon}
+                {item.label}
+              </Link>
+            </li>
+          </AnimatedWrapper>
+        ))}
       </NavLinksContainer>
     </MenuContainer>
   );

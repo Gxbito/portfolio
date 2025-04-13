@@ -68,20 +68,29 @@ function PreviewSection({ sectionType }) {
     <PreviewSectionWrapper>
       <PreviewSectionData>
         <DataContainer>
-          <img src={SelectedIcon} alt={sectionType} />
+          <AnimatedWrapper y={0} x={20}>
+            <img src={SelectedIcon} alt={sectionType} />
+          </AnimatedWrapper>
+
           <DataTextContainer>
-            <h5>{sectionType === "works" ? "Works" : "Projects"}</h5>
-            <h6>
-              {sectionType === "works"
-                ? "Aquí encontrarás algunos de mis trabajos destacados."
-                : "Aquí encontrarás algunos de mis proyectos destacados."}
-            </h6>
+            <AnimatedWrapper y={0} x={20}>
+              <h5>{sectionType === "works" ? "Works" : "Projects"}</h5>
+            </AnimatedWrapper>
+            <AnimatedWrapper y={0} x={20} delay={0.1}>
+              <h6>
+                {sectionType === "works"
+                  ? "Aquí encontrarás algunos de mis trabajos destacados."
+                  : "Aquí encontrarás algunos de mis proyectos destacados."}
+              </h6>
+            </AnimatedWrapper>
           </DataTextContainer>
         </DataContainer>
-        <SecondaryButton>
-          {sectionType === "works" ? "View all works" : "View all projects"}
-          <FiArrowRightCircle />
-        </SecondaryButton>
+        <AnimatedWrapper y={0} x={-20}>
+          <SecondaryButton to={sectionType === "works" ? "/works" : "/projects"}>
+            {sectionType === "works" ? "View all works" : "View all projects"}
+            <FiArrowRightCircle />
+          </SecondaryButton>
+        </AnimatedWrapper>
       </PreviewSectionData>
 
       <PreviewSectionCardContainer>{renderCards()}</PreviewSectionCardContainer>

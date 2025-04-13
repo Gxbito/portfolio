@@ -15,35 +15,39 @@ import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper
 function Home() {
   return (
     <PageWrapper page="home">
-      <AnimatedWrapper>
-        <TextContainer>
+      <TextContainer>
+        <AnimatedWrapper>
           <h1>Hello Im Gabriel Martinez, Frontend Developer</h1>
+        </AnimatedWrapper>
+
+        <AnimatedWrapper>
           <p>
             Con 2 años de experiencia en React, me apasiona crear interfaces
             optimizadas y atractivas.
           </p>
+        </AnimatedWrapper>
+
+        <ButtonsContainer>
           <AnimatedWrapper>
-            <ButtonsContainer>
-              <PrimaryButton>View all projects</PrimaryButton>
-              <AnimatedWrapper>
-                <SecondaryButton>
-                  Contact me
-                  <FiArrowRightCircle />
-                </SecondaryButton>
-              </AnimatedWrapper>
-            </ButtonsContainer>
+            <PrimaryButton to="/projects">View all projects</PrimaryButton>
           </AnimatedWrapper>
-        </TextContainer>
-      </AnimatedWrapper>
+          <AnimatedWrapper delay={0.1}>
+            <SecondaryButton to="/contact">
+              Contact me
+              <FiArrowRightCircle />
+            </SecondaryButton>
+          </AnimatedWrapper>
+        </ButtonsContainer>
+      </TextContainer>
 
       <PreviewSection sectionType="works" />
       <PreviewSection sectionType="projects" />
       <ShorcutCardsContainer>
-        <AnimatedWrapper>
+        <AnimatedWrapper style={{ width: "100%" }}>
           <ShortcutCard cardType="services" />
         </AnimatedWrapper>
 
-        <AnimatedWrapper delay="0.2">
+        <AnimatedWrapper delay="0.2" style={{ width: "100%" }}>
           <ShortcutCard cardType="about" />
         </AnimatedWrapper>
       </ShorcutCardsContainer>

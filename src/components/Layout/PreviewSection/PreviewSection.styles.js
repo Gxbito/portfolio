@@ -23,6 +23,7 @@ export const DataContainer = styled.div`
   gap: 16px;
 
   img {
+    display: block;
     width: 64px;
     height: auto;
     border: 4px solid var(--color-border);

@@ -6,7 +6,7 @@ import githubIcon from "@/assets/icons/web/GitHub.svg";
 function Header() {
   return (
     <HeaderContainer>
-      <SecondaryButton>Contáctame</SecondaryButton>
+      <SecondaryButton to="/contact">Contáctame</SecondaryButton>
       <VerticalLine />
       <h5>E-Commerce de Moda Optimizado</h5>
       <VerticalLine />

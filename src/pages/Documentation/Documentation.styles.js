@@ -35,7 +35,7 @@ export const DocumentationDataContainer = styled.div`
     height: 416px;
   }
 
-  & > img:nth-child(2) {
+  & > div:nth-child(2) > img {
     height: 588px;
   }
 `;

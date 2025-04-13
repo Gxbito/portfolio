@@ -7,7 +7,7 @@ import Tag from "../../UI/Tag/Tag";
 
 function WorkCard() {
   return (
-    <WorkCardStyled>
+    <WorkCardStyled to="/documentation">
       <ImageCardContainer>
         <Tag>2024</Tag>
         <TextCardContainer>

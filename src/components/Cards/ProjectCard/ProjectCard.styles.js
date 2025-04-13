@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const ProjectCardStyled = styled.div`
+export const ProjectCardStyled = styled(Link)`
   width: auto;
   min-width: 340px;
 
@@ -15,6 +16,8 @@ export const ProjectCardStyled = styled.div`
   box-shadow: var(--shadow-card);
   border: 1px solid var(--color-border);
   border-radius: 16px;
+
+  text-decoration: none;
 `;
 
 export const ImageCardContainer = styled.div`

@@ -5,11 +5,11 @@ import {
   TagCardContainer,
 } from "./ProjectCard.styles";
 
-import Tag from "../../UI/Tag/Tag";
+import Tag from "@/components/UI/Tag/Tag";
 
 function ProjectCard() {
   return (
-    <ProjectCardStyled>
+    <ProjectCardStyled to="/documentation">
       <ImageCardContainer>
         <Tag>2024</Tag>
       </ImageCardContainer>

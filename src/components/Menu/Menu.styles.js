@@ -10,6 +10,8 @@ export const MenuContainer = styled.nav`
   align-items: flex-start;
   padding: 52px 40px;
   gap: 60px;
+  top: 0;
+  position: sticky;
 `;
 
 export const OwnerDataContainer = styled.div`
@@ -19,8 +21,9 @@ export const OwnerDataContainer = styled.div`
   gap: 16px;
 
   img {
-    width: 48px;
+    width: 56px;
     height: auto;
+    display: block;
   }
 `;
 

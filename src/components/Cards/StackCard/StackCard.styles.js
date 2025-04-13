@@ -49,4 +49,8 @@ export const StackContainer = styled.div`
   button {
     grid-column: span 2;
   }
+
+  & > a:last-child {
+    grid-column: span 2;
+  }
 `;

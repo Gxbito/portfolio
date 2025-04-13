@@ -5,6 +5,18 @@ import BackgroundHomePattern from "@/assets/vectors/home-background-pattern.svg"
 import BackgroundPattern from "@/assets/vectors/background-pattern.svg";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { motion } from "framer-motion";
+
+const FloatyLight = ({ src, alt, id }) => (
+  <motion.img
+    src={src}
+    alt={alt}
+    id={id}
+    initial={{ y: 0 }}
+    animate={{ y: [0, -10, 0] }}
+    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+  />
+);
 
 function PageWrapper({ children, page }) {
   return (
@@ -13,7 +25,7 @@ function PageWrapper({ children, page }) {
         <div>
           {page === "documentation" ? (
             <>
-              <img
+              <FloatyLight
                 src={BackgroundHeaderLight}
                 alt="bg-light"
                 id="bg-light-header"
@@ -22,7 +34,7 @@ function PageWrapper({ children, page }) {
             </>
           ) : page === "about" ? (
             <>
-              <img
+              <FloatyLight
                 src={BackgroundVerticalLight}
                 alt="bg-light"
                 id="bg-light-2"
@@ -31,12 +43,20 @@ function PageWrapper({ children, page }) {
             </>
           ) : page === "home" ? (
             <>
-              <img src={BackgroundVerticalLight} alt="bg-light" id="bg-light" />
+              <FloatyLight
+                src={BackgroundVerticalLight}
+                alt="bg-light"
+                id="bg-light"
+              />
               <img src={BackgroundHomePattern} alt="bg-home" id="bg-home" />
             </>
           ) : (
             <>
-              <img src={BackgroundVerticalLight} alt="bg-light-2" id="bg-light-2-filter" />
+              <FloatyLight
+                src={BackgroundVerticalLight}
+                alt="bg-light-2"
+                id="bg-light-2-filter"
+              />
               <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern" />
             </>
           )}
@@ -46,7 +66,7 @@ function PageWrapper({ children, page }) {
       {page === "documentation" ? <Header /> : null}
 
       <PageContent page={page}>{children}</PageContent>
-      <Footer/>
+      <Footer />
     </PageWrapperStyled>
   );
 }
