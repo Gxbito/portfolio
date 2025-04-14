@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { breakpoints } from "@/styles/theme";
 
 export const ProjectCardStyled = styled(Link)`
   width: auto;
@@ -10,7 +11,7 @@ export const ProjectCardStyled = styled(Link)`
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 8px 8px 24px 8px;
+  padding: 8px 8px 16px 8px;
 
   background-color: var(--color-bg-card);
   box-shadow: var(--shadow-card);
@@ -18,6 +19,10 @@ export const ProjectCardStyled = styled(Link)`
   border-radius: 16px;
 
   text-decoration: none;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    min-width: 100%;
+  }
 `;
 
 export const ImageCardContainer = styled.div`
@@ -28,6 +33,10 @@ export const ImageCardContainer = styled.div`
   align-items: flex-start;
   padding: 16px;
   border-radius: 8px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 210px;
+  }
 `;
 
 export const TextCardContainer = styled.div`

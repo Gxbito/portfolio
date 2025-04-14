@@ -9,9 +9,9 @@ function Form() {
     <AnimatedWrapper style={{ width: "100%" }}>
       <FormStyled>
         <h4>Send me a message!</h4>
-        <Input />
-        <Input />
-        <TextArea />
+        <Input placeholder="Name"/>
+        <Input placeholder="Email Address"/>
+        <TextArea placeholder="Message"/>
         <CardButton>Send message</CardButton>
       </FormStyled>
     </AnimatedWrapper>

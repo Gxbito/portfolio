@@ -54,9 +54,12 @@ function PreviewSection({ sectionType }) {
     } else {
       return (
         <>
-          <CertificateCard />
-          <CertificateCard />
-          <CertificateCard />
+          <AnimatedWrapper>
+            <CertificateCard />
+          </AnimatedWrapper>
+          <AnimatedWrapper delay="0.1">
+            <CertificateCard />
+          </AnimatedWrapper>
         </>
       );
     }
@@ -86,14 +89,18 @@ function PreviewSection({ sectionType }) {
           </DataTextContainer>
         </DataContainer>
         <AnimatedWrapper y={0} x={-20}>
-          <SecondaryButton to={sectionType === "works" ? "/works" : "/projects"}>
-            {sectionType === "works" ? "View all works" : "View all projects"}
-            <FiArrowRightCircle />
+          <SecondaryButton
+            to={sectionType === "works" ? "/works" : "/projects"}
+          >
+            View all
+            <span>
+              <FiArrowRightCircle />
+            </span>
           </SecondaryButton>
         </AnimatedWrapper>
       </PreviewSectionData>
 
-      <PreviewSectionCardContainer>{renderCards()}</PreviewSectionCardContainer>
+      <PreviewSectionCardContainer sectionType={sectionType}>{renderCards()}</PreviewSectionCardContainer>
     </PreviewSectionWrapper>
   );
 }

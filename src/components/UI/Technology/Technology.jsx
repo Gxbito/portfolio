@@ -6,7 +6,7 @@ function Technology({ icon, title, description}) {
       <img src={icon} alt={title} />
       <TechnologyDataContainer>
         <h5>{title}</h5>
-        <h6>{description}</h6>
+        <p>{description}</p>
       </TechnologyDataContainer>
     </TechnologyStyled>
   );

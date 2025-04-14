@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const ShowcaseCardStyled = styled.div`
   width: 100%;
@@ -16,6 +17,15 @@ export const ShowcaseCardStyled = styled.div`
     width: 100%;
     height: 400px;
     border-radius: 16px 16px 0px 0px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      height: 210px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 16px 16px 0px 16px;
+    gap: 24px;
   }
 `;
 
@@ -24,6 +34,12 @@ export const ShowcaseDataContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    & > a {
+      display: none;
+    }
+  }
 `;
 
 export const DataTextContainer = styled.div`
@@ -33,7 +49,6 @@ export const DataTextContainer = styled.div`
   align-items: flex-start;
   gap: 8px;
 
-  
   h3 {
     font-family: var(--font-primary);
     font-weight: 600;
@@ -48,5 +63,3 @@ export const DataTextContainer = styled.div`
     color: var(--color-text-paragraph);
   }
 `;
-
-

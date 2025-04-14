@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const FormStyled = styled.form`
   width: 100%;
@@ -23,5 +24,16 @@ export const FormStyled = styled.form`
 
   button {
     grid-column: span 2;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
   }
 `;

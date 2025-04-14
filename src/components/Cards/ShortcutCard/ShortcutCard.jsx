@@ -14,15 +14,18 @@ function ShortcutCard({ cardType }) {
 
   return (
     <ShortcutCardStyled>
-      <img src={SelectedIcon} alt="bg-icon" />
-      <TextContainer>
-        <h4>{cardType === "services" ? "Services" : "About me"}</h4>
-        <p>
-          {cardType === "services"
-            ? "Aquí encontrarás algunos de mis trabajos destacados."
-            : "Aquí encontrarás algunos de mis trabajos destacados."}
-        </p>
-      </TextContainer>
+      <div>
+        <img src={SelectedIcon} alt="bg-icon" />
+        <TextContainer>
+          <h4>{cardType === "services" ? "Services" : "About me"}</h4>
+          <p>
+            {cardType === "services"
+              ? "Aquí encontrarás algunos de mis trabajos destacados."
+              : "Aquí encontrarás algunos de mis trabajos destacados."}
+          </p>
+        </TextContainer>
+      </div>
+
       <CardButton to={cardType === "services" ? "/services" : "/about"}>
         View more
         <FiArrowRightCircle />

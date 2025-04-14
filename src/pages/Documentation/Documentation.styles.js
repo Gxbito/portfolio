@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const DocumentationContainer = styled.div`
   width: 100%;
@@ -15,6 +16,14 @@ export const DocumentationContainer = styled.div`
     top: 100px;
     align-self: start;
     height: fit-content;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+
+    & > div:nth-child(2) {
+      display: none;
+    }
   }
 `;
 
@@ -33,10 +42,24 @@ export const DocumentationDataContainer = styled.div`
     background-color: var(--color-bg-card);
     width: 100%;
     height: 416px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      height: 224px;
+    }
   }
 
+  & > div:nth-child(2),
   & > div:nth-child(2) > img {
+    width: 100%;
     height: 588px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      height: 306px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 40px;
   }
 `;
 
@@ -89,6 +112,12 @@ export const TitleContainer = styled.div`
     color: var(--color-text-paragraph);
     line-height: 140%;
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
+  }
 `;
 
 export const GalleryContainer = styled.div`
@@ -105,10 +134,19 @@ export const GalleryContainer = styled.div`
     background-color: var(--color-bg-card);
     width: 100%;
     height: 416px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      height: 224px;
+    }
   }
 
   & > img:first-child {
     grid-column: span 2;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -119,7 +157,6 @@ export const TextContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  padding: 0px 170px;
 
   h4 {
     font-family: var(--font-primary);
@@ -134,6 +171,7 @@ export const TextContainer = styled.div`
     font-size: var(--font-size-large-paragraph);
     color: var(--color-text-paragraph);
     line-height: 140%;
+    max-width: 82ch;
   }
 `;
 

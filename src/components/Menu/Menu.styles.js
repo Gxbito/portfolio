@@ -1,17 +1,28 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const MenuContainer = styled.nav`
   width: 100%;
   max-width: 280px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 52px 40px;
+  padding: 12px 0px;
   gap: 60px;
-  top: 0;
+  top: 30px;
   position: sticky;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    max-width: 100%;
+    position: initial;
+    width: 100%;
+    padding: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+  }
 `;
 
 export const OwnerDataContainer = styled.div`
@@ -74,17 +85,21 @@ export const NavLinksContainer = styled.ul`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 16px; 
+    padding: 16px;
     gap: 16px;
     border-radius: 8px;
-    
+
     font-family: var(--font-secondary);
     font-weight: 500;
     font-size: var(--font-size-button);
     color: var(--color-text-paragraph);
-    
+
     transition: all 0.2s ease;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
   }
 `;

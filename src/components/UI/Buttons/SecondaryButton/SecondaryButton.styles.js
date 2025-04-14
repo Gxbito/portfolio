@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const SecondaryButtonStyled = styled.button`
   max-height: 50px;
@@ -20,4 +21,16 @@ export const SecondaryButtonStyled = styled.button`
   font-size: var(--font-size-button);
   color: var(--color-text-title);
   text-decoration: none;
+
+  span {
+    display: flex;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 12px 16px;
+
+    span {
+      display: none;
+    }
+  }
 `;

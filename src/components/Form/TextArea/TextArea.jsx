@@ -1,9 +1,9 @@
 import { TextAreaContainer, TextAreaStyled } from "./TextArea.styles";
 
-function TextArea() {
+function TextArea({placeholder}) {
   return (
     <TextAreaContainer>
-      <TextAreaStyled />
+      <TextAreaStyled placeholder={placeholder}/>
     </TextAreaContainer>
   );
 }

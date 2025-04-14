@@ -13,9 +13,11 @@ import {
   FiBriefcase,
   FiPenTool,
 } from "react-icons/fi";
-import BadgeIcon from "../../assets/icons/web/Badge.svg";
+import BadgeIcon from "@/assets/icons/web/Badge.svg";
 import { Link } from "react-router-dom";
-import AnimatedWrapper from "../Layout/AnimatedWrapper/AnimatedWrapper";
+import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
+import IconButton from "@/components/UI/Buttons/IconButton/IconButton";
+import MenuIcon from "../../assets/icons/web/menu-icon.svg";
 
 const navItems = [
   { to: "/", icon: <FiHome />, label: "Home" },
@@ -32,7 +34,7 @@ function Menu() {
     <MenuContainer>
       <OwnerDataContainer>
         <AnimatedWrapper y={0} x={20}>
-          <img src={BadgeIcon} alt="Badge Icon"/>
+          <img src={BadgeIcon} alt="Badge Icon" />
         </AnimatedWrapper>
 
         <OwnerDataTextContainer>
@@ -63,6 +65,10 @@ function Menu() {
           </AnimatedWrapper>
         ))}
       </NavLinksContainer>
+
+      <IconButton>
+        <img src={MenuIcon} alt="" />
+      </IconButton>
     </MenuContainer>
   );
 }

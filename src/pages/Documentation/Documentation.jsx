@@ -8,7 +8,8 @@ import {
   TextContainer,
   TitleContainer,
 } from "./Documentation.styles";
-import AnimatedWrapper from "../../components/Layout/AnimatedWrapper/AnimatedWrapper";
+import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
+import HiddenWrapper from "@/components/Layout/HiddenWrapper/HiddenWrapper";
 
 const documentationItems = [
   { title: "Overview" },
@@ -29,9 +30,11 @@ function Documentation() {
       <DocumentationContainer>
         <DocumentationDataContainer>
           <TitleContainer>
-            <AnimatedWrapper >
-              <h5>Frontend Developer – November 2024</h5>
-            </AnimatedWrapper>
+            <HiddenWrapper hideOn="mobile">
+              <AnimatedWrapper>
+                <h5>Frontend Developer – November 2024</h5>
+              </AnimatedWrapper>
+            </HiddenWrapper>
 
             <AnimatedWrapper delay={0.1}>
               <h2>E-Commerce de Moda Optimizado</h2>
@@ -45,7 +48,7 @@ function Documentation() {
             </AnimatedWrapper>
           </TitleContainer>
 
-          <AnimatedWrapper style={{ width: "100%", height: "588px" }}>
+          <AnimatedWrapper>
             <img src="" alt="" />
           </AnimatedWrapper>
 

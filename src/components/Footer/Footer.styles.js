@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const FooterContainer = styled.footer`
   width: 100%;
@@ -17,12 +18,25 @@ export const FooterContainer = styled.footer`
     font-size: var(--font-size-large-paragraph);
     color: var(--color-input-text);
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 40px 24px;
+    gap: 32px;
+  }
 `;
 
 export const VerticalBar = styled.span`
   width: 1px;
   height: 100%;
   background-color: var(--color-border);
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+    height: 1px;
+  }
 `;
 
 export const IconsContainer = styled.div`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const TextWrapperStyled = styled.div`
   width: 100%;
@@ -33,5 +34,13 @@ export const TextWrapperStyled = styled.div`
     font-size: var(--font-size-large-paragraph);
     color: var(--color-text-paragraph);
     line-height: 140%;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: var(--font-size-small-paragraph);
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 12px;
   }
 `;

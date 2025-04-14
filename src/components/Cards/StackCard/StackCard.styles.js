@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const StackCardStyled = styled.div`
   width: 100%;
@@ -32,8 +33,12 @@ export const StackTextContainer = styled.div`
   p {
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: var(--font-size-large-paragraph);
+    font-size: var(--font-size-medium-paragraph);
     color: var(--color-text-paragraph);
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 16px;
   }
 `;
 
@@ -52,5 +57,12 @@ export const StackContainer = styled.div`
 
   & > a:last-child {
     grid-column: span 2;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 32px;
   }
 `;

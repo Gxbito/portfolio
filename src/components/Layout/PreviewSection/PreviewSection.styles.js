@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const PreviewSectionWrapper = styled.div`
   width: 100%;
@@ -14,6 +15,12 @@ export const PreviewSectionData = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+  }
 `;
 
 export const DataContainer = styled.div`
@@ -28,6 +35,14 @@ export const DataContainer = styled.div`
     height: auto;
     border: 4px solid var(--color-border);
     border-radius: 20px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      display: none;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 0px;
   }
 `;
 
@@ -47,7 +62,7 @@ export const DataTextContainer = styled.div`
 
   h6 {
     font-family: var(--font-secondary);
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--font-size-header-6);
     color: var(--color-text-paragraph);
   }
@@ -56,6 +71,13 @@ export const DataTextContainer = styled.div`
 export const PreviewSectionCardContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: ${({ sectionType }) =>
+    sectionType === "certificates"
+      ? "repeat(2, 1fr)"
+      : "repeat(auto-fill, minmax(300px, 1fr))"};
   gap: 28px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+  }
 `;

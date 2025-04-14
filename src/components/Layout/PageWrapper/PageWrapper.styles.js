@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const PageWrapperStyled = styled.div`
   width: 100%;
@@ -10,7 +11,6 @@ export const PageWrapperStyled = styled.div`
   background-color: var(--color-bg-page);
   box-shadow: var(--shadow-page);
   border-radius: 24px;
-  margin: 40px 40px 40px 0px;
   position: relative;
 
   & > div:first-child {
@@ -19,6 +19,10 @@ export const PageWrapperStyled = styled.div`
     position: absolute;
     overflow: hidden;
     border-radius: 16px 16px 0px 0px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      border-radius: 0px;
+    }
 
     & > div {
       position: relative;
@@ -56,7 +60,8 @@ export const PageWrapperStyled = styled.div`
     z-index: 1;
   }
 
-  #bg-light-2, #bg-light-2-filter {
+  #bg-light-2,
+  #bg-light-2-filter {
     position: absolute;
     left: -25%;
     top: -620px;
@@ -74,18 +79,27 @@ export const PageWrapperStyled = styled.div`
     top: 0;
     z-index: 1;
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    border-radius: 0px;
+  }
 `;
 
 export const PageContent = styled.div`
   width: 100%;
-  max-width: ${({ page }) => (page === "documentation" ? "1452px" : "1200px")};
+  max-width: ${({ page }) => (page === "documentation" ? "auto" : "1200px")};
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: ${({ page }) =>
-    page === "documentation" ? "60px 0px" : "145px 0px"};
+    page === "documentation" ? "60px 54px" : "145px 0px"};
   gap: ${({ page }) => (page === "documentation" ? "60px" : "145px")};
   z-index: 2;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 24px;
+    gap: 48px;
+  }
 `;

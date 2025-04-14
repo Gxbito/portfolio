@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const PrimaryButtonStyled = styled.button`
   max-height: 50px;
@@ -22,4 +23,8 @@ export const PrimaryButtonStyled = styled.button`
   font-size: var(--font-size-button);
   color: var(--color-text-title);
   text-decoration: none;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 12px 16px;
+  }
 `;

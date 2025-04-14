@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const TechGroupCardStyled = styled.div`
   width: 100%;
@@ -19,5 +20,12 @@ export const TechGroupCardStyled = styled.div`
     font-size: var(--font-size-header-4);
     color: var(--color-text-title);
     grid-column: span 2;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
   }
 `;

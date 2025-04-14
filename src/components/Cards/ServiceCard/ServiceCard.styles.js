@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const ServiceCardStyled = styled.div`
   width: 100%;
@@ -16,8 +17,18 @@ export const ServiceCardStyled = styled.div`
   img {
     width: 64px;
     height: auto;
-    border: 4px solid var(--color-border);
+    outline: 4px solid var(--color-border);
     border-radius: 20px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 44px;
+      border-radius: 8px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 24px;
+    gap: 24px;
   }
 `;
 

@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const CertificateCardStyled = styled.div`
   width: auto;
   min-width: 340px;
+  height: 450px;
 
   display: flex;
   flex-direction: column;
@@ -15,11 +17,16 @@ export const CertificateCardStyled = styled.div`
   box-shadow: var(--shadow-card);
   border: 1px solid var(--color-border);
   border-radius: 16px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    min-width: 100%;
+    height: 290px;
+  }
 `;
 
 export const ImageCardContainer = styled.div`
   width: 100%;
-  height: 290px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const TechnologyStyled = styled.div`
   display: flex;
@@ -9,6 +10,14 @@ export const TechnologyStyled = styled.div`
   img {
     width: 64px;
     height: auto;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 44px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    align-items: flex-start;
   }
 `;
 
@@ -26,10 +35,10 @@ export const TechnologyDataContainer = styled.div`
     color: var(--color-text-title);
   }
 
-  h6 {
+  p {
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: var(--font-size-header-6);
+    font-size: var(--font-size-small-paragraph);
     color: var(--color-text-paragraph);
   }
 `;

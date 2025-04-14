@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const TimelineCardStyled = styled.div`
   width: 100%;
@@ -17,8 +18,17 @@ export const TimelineCardStyled = styled.div`
   img {
     width: 64px;
     height: auto;
-    border: 4px solid var(--color-border);
+    outline: 4px solid var(--color-border);
     border-radius: 20px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 44px;
+      border-radius: 8px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 24px;
   }
 `;
 
@@ -47,8 +57,9 @@ export const TextContainer = styled.div`
   p {
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: var(--font-size-large-paragraph);
+    font-size: var(--font-size-medium-paragraph);
     color: var(--color-text-paragraph);
+    line-height: 140%;
     margin-top: 8px;
   }
 
@@ -67,5 +78,10 @@ export const TextContainer = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 4px;
+    padding: 0px;
   }
 `;

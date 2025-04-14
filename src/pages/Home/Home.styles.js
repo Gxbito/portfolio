@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const TextContainer = styled.div`
   max-width: 600px;
@@ -42,4 +43,9 @@ export const ShorcutCardsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 48px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 24px;
+  }
 `;

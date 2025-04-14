@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
 export const ProjectsContainer = styled.div`
   width: 100%;
@@ -7,4 +8,8 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 80px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 48px;
+  }
 `;

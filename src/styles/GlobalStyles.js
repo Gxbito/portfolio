@@ -60,6 +60,26 @@ const GlobalStyles = createGlobalStyle`
     --font-size-small-paragraph: 0.875rem;   /* 14px */
   }
 
+  @media (max-width: 1200px) {
+    :root {
+      /* Font Sizes - MOBILE */
+      --font-size-header-1: 2rem;           /* 32px */
+      --font-size-header-2: 1.75rem;        /* 28px */
+      --font-size-header-3: 1.5rem;         /* 24px */
+      --font-size-header-4: 1.25rem;        /* 20px */
+      --font-size-header-5: 1.125rem;       /* 18px */
+      --font-size-header-6: 1rem;           /* 16px */
+
+      --font-size-button: 0.88rem;          /* 14px */
+      --font-size-auxiliar: 0.8125rem;      /* 13px */
+      --font-size-tags: 0.75rem;            /* 12px */
+
+      --font-size-large-paragraph: 1rem;    /* 16px */
+      --font-size-medium-paragraph: 0.9375rem; /* 15px */
+      --font-size-small-paragraph: 0.8125rem;  /* 13px */
+    }
+}
+
 `;
 
 export default GlobalStyles;

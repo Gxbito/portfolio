@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { breakpoints } from "@/styles/theme";
 
 export const WorkCardStyled = styled(Link)`
   width: auto;
@@ -10,7 +11,7 @@ export const WorkCardStyled = styled(Link)`
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 8px 8px 24px 8px;
+  padding: 8px;
 
   background-color: var(--color-bg-card);
   box-shadow: var(--shadow-card);
@@ -18,6 +19,10 @@ export const WorkCardStyled = styled(Link)`
   border-radius: 16px;
 
   text-decoration: none;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    min-width: 100%;
+  }
 `;
 
 export const ImageCardContainer = styled.div`
@@ -38,7 +43,7 @@ export const TextCardContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
-  padding: 0px 8px;
+  padding: 16px;
 
   span {
     font-family: var(--font-secondary);
@@ -52,5 +57,9 @@ export const TextCardContainer = styled.div`
     font-weight: 600;
     font-size: var(--font-size-header-4);
     color: var(--color-text-title);
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 8px;
   }
 `;
