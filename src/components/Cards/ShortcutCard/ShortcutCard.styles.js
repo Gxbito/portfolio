@@ -17,7 +17,7 @@ export const ShortcutCardStyled = styled.div`
   img {
     width: 64px;
     height: auto;
-    border: 4px solid var(--color-border);
+    outline: 4px solid var(--color-border);
     border-radius: 20px;
 
     @media (max-width: ${breakpoints.mobile}) {

@@ -5,14 +5,14 @@ import {
 } from "./WorkCard.styles";
 import Tag from "../../UI/Tag/Tag";
 
-function WorkCard() {
+function WorkCard({id, title, name, image, year}) {
   return (
-    <WorkCardStyled to="/documentation">
-      <ImageCardContainer>
-        <Tag>2024</Tag>
+    <WorkCardStyled to={`/documentation/${id}`} id={id}>
+      <ImageCardContainer image={image}>
+        <Tag>{year}</Tag>
         <TextCardContainer>
-          <span>TRENDSETTER THREADS</span>
-          <h4>E-Commerce Pro</h4>
+          <span>{name}</span>
+          <h4>{title}</h4>
         </TextCardContainer>
       </ImageCardContainer>
     </WorkCardStyled>

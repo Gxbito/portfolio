@@ -38,19 +38,25 @@ export const TimelineContainer = styled.div`
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 16px 1fr;
+  grid-template-columns: auto 16px auto;
   justify-content: space-between;
   align-items: flex-start;
   gap: 80px;
+  position: relative;
 
   & > :first-child {
-    top: 0;
-    z-index: 1;
+    position: sticky;
+    top: 80px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
     gap: 32px;
+
+    & > :first-child {
+      position: initial;
+      top: auto;
+    }
 
     & > div:nth-child(2) {
       display: none;

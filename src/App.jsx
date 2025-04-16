@@ -27,7 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/stack" element={<Stack />} />
-          <Route path="/documentation" element={<Documentation />} />
+          <Route path="/documentation/:id" element={<Documentation />} />
         </Routes>
       </MainWrapper>
     </Router>

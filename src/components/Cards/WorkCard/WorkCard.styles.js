@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import { breakpoints } from "@/styles/theme";
 
 export const WorkCardStyled = styled(Link)`
-  width: auto;
-  min-width: 340px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,12 +14,7 @@ export const WorkCardStyled = styled(Link)`
   box-shadow: var(--shadow-card);
   border: 1px solid var(--color-border);
   border-radius: 16px;
-
   text-decoration: none;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    min-width: 100%;
-  }
 `;
 
 export const ImageCardContainer = styled.div`
@@ -34,6 +26,10 @@ export const ImageCardContainer = styled.div`
   align-items: flex-end;
   padding: 16px;
   border-radius: 8px;
+
+  background-image: url(${(props) => props.image});
+  background-size: cover;
+  background-position: center;
 `;
 
 export const TextCardContainer = styled.div`
@@ -43,13 +39,13 @@ export const TextCardContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
-  padding: 16px;
 
   span {
     font-family: var(--font-secondary);
     font-weight: 600;
     font-size: var(--font-size-tags);
     color: var(--color-text-paragraph);
+    text-transform: uppercase;
   }
 
   h4 {

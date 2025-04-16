@@ -35,6 +35,14 @@ export const OwnerDataContainer = styled.div`
     width: 56px;
     height: auto;
     display: block;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 44px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 12px;
   }
 `;
 
@@ -59,6 +67,10 @@ export const OwnerDataTextContainer = styled.div`
     font-size: var(--font-size-auxiliar);
     color: var(--color-text-paragraph);
     letter-spacing: 0.4px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 4px;
   }
 `;
 

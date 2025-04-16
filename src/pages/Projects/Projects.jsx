@@ -3,6 +3,7 @@ import TextWrapper from "../../components/Layout/TextWrapper/TextWrapper";
 import ShowcaseCard from "../../components/Cards/ShowcaseCard/ShowcaseCard";
 import { ProjectsContainer } from "./Projects.styles";
 import AnimatedWrapper from "../../components/Layout/AnimatedWrapper/AnimatedWrapper";
+import projectsData from "@/data/projectsData";
 
 function Projects() {
   return (
@@ -21,18 +22,11 @@ function Projects() {
         </AnimatedWrapper>
       </TextWrapper>
       <ProjectsContainer>
-        <AnimatedWrapper style={{ width: "100%" }}>
-          <ShowcaseCard type="project" />
-        </AnimatedWrapper>
-        <AnimatedWrapper style={{ width: "100%" }}>
-          <ShowcaseCard type="project" />
-        </AnimatedWrapper>
-        <AnimatedWrapper style={{ width: "100%" }}>
-          <ShowcaseCard type="project" />
-        </AnimatedWrapper>
-        <AnimatedWrapper style={{ width: "100%" }}>
-          <ShowcaseCard type="project" />
-        </AnimatedWrapper>
+        {projectsData.map((item, i) => (
+          <AnimatedWrapper key={i} style={{ width: "100%" }}>
+            <ShowcaseCard {...item} type="project" />
+          </AnimatedWrapper>
+        ))}
       </ProjectsContainer>
     </PageWrapper>
   );

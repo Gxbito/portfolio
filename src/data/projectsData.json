@@ -1,16 +1,16 @@
 [
   {
-    "id": "work-1",
+    "id": "project-1",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
     "image": "src/assets/images/placeholder-image.jpg",
     "year": "2024",
     "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg"
     ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
     "stack": [
@@ -65,20 +65,29 @@
     ]
   },
   {
-    "id": "work-2",
+    "id": "project-2",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
     "image": "src/assets/images/placeholder-image.jpg",
     "year": "2024",
     "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg"
     ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": [
+      "React",
+      "Context API",
+      "Axios",
+      "Styled-components",
+      "React router",
+      "Yup",
+      "Formik",
+      "React icons"
+    ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "sections": [
@@ -121,20 +130,29 @@
     ]
   },
   {
-    "id": "work-3",
+    "id": "project-3",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
     "image": "src/assets/images/placeholder-image.jpg",
     "year": "2024",
     "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg"
     ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": [
+      "React",
+      "Context API",
+      "Axios",
+      "Styled-components",
+      "React router",
+      "Yup",
+      "Formik",
+      "React icons"
+    ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "sections": [
@@ -177,20 +195,29 @@
     ]
   },
   {
-    "id": "work-4",
+    "id": "project-4",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
     "image": "src/assets/images/placeholder-image.jpg",
     "year": "2024",
     "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg",
+      "/images/projects/placeholder-image.jpg"
     ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": [
+      "React",
+      "Context API",
+      "Axios",
+      "Styled-components",
+      "React router",
+      "Yup",
+      "Formik",
+      "React icons"
+    ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "sections": [

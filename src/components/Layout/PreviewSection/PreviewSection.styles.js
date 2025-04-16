@@ -33,7 +33,7 @@ export const DataContainer = styled.div`
     display: block;
     width: 64px;
     height: auto;
-    border: 4px solid var(--color-border);
+    outline: 4px solid var(--color-border);
     border-radius: 20px;
 
     @media (max-width: ${breakpoints.mobile}) {
@@ -60,11 +60,15 @@ export const DataTextContainer = styled.div`
     color: var(--color-text-title);
   }
 
-  h6 {
+  p {
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: var(--font-size-header-6);
+    font-size: var(--font-size-medium-paragraph);
     color: var(--color-text-paragraph);
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 4px;
   }
 `;
 
@@ -74,7 +78,7 @@ export const PreviewSectionCardContainer = styled.div`
   grid-template-columns: ${({ sectionType }) =>
     sectionType === "certificates"
       ? "repeat(2, 1fr)"
-      : "repeat(auto-fill, minmax(300px, 1fr))"};
+      : "repeat(auto-fill, minmax(340px, 1fr))"};
   gap: 28px;
 
   @media (max-width: ${breakpoints.mobile}) {

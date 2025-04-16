@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
 import IconButton from "@/components/UI/Buttons/IconButton/IconButton";
 import MenuIcon from "../../assets/icons/web/menu-icon.svg";
+import HiddenWrapper from "@/components/Layout/HiddenWrapper/HiddenWrapper";
 
 const navItems = [
   { to: "/", icon: <FiHome />, label: "Home" },
@@ -66,9 +67,11 @@ function Menu() {
         ))}
       </NavLinksContainer>
 
-      <IconButton>
-        <img src={MenuIcon} alt="" />
-      </IconButton>
+      <HiddenWrapper hideOn="desktop">
+        <IconButton>
+          <img src={MenuIcon} alt="" />
+        </IconButton>
+      </HiddenWrapper>
     </MenuContainer>
   );
 }

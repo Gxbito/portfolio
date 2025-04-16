@@ -43,14 +43,25 @@ export const PageWrapperStyled = styled.div`
     top: 0;
     right: -20%;
     z-index: 1;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 800px;
+      right: -400px;
+    }
   }
 
   #bg-pattern-2 {
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 107px;
     right: -25%;
     z-index: 1;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 775px;
+      top: 75px;
+      right: -400px;
+    }
   }
 
   #bg-light {
@@ -58,6 +69,13 @@ export const PageWrapperStyled = styled.div`
     left: -10%;
     top: -550px;
     z-index: 1;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 450px;
+      left: -100px;
+      top: -120px;
+      filter: blur(30px);
+    }
   }
 
   #bg-light-2,
@@ -66,10 +84,21 @@ export const PageWrapperStyled = styled.div`
     left: -25%;
     top: -620px;
     z-index: 1;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 500px;
+      left: -140px;
+      top: -150px;
+    }
   }
 
   #bg-light-2-filter {
     filter: brightness(70%);
+
+    @media (max-width: ${breakpoints.mobile}) {
+      filter: brightness(100%);
+      filter: blur(30px);
+    }
   }
 
   #bg-light-header {
@@ -78,23 +107,28 @@ export const PageWrapperStyled = styled.div`
     left: 0;
     top: 0;
     z-index: 1;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 100vw;
+      top: 75px;
+    }
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     border-radius: 0px;
+    padding: 0px;
   }
 `;
 
 export const PageContent = styled.div`
   width: 100%;
-  max-width: ${({ page }) => (page === "documentation" ? "auto" : "1200px")};
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: ${({ page }) =>
-    page === "documentation" ? "60px 54px" : "145px 0px"};
+    page === "documentation" ? "60px 54px" : "145px 145px"};
   gap: ${({ page }) => (page === "documentation" ? "60px" : "145px")};
   z-index: 2;
 

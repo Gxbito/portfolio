@@ -51,7 +51,7 @@ export const DocumentationDataContainer = styled.div`
   & > div:nth-child(2),
   & > div:nth-child(2) > img {
     width: 100%;
-    height: 588px;
+    height: 612px;
 
     @media (max-width: ${breakpoints.mobile}) {
       height: 306px;

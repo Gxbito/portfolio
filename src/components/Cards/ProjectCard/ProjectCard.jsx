@@ -7,26 +7,21 @@ import {
 
 import Tag from "@/components/UI/Tag/Tag";
 
-function ProjectCard() {
+function ProjectCard({ id, title, name, image, year, stack }) {
   return (
-    <ProjectCardStyled to="/documentation">
-      <ImageCardContainer>
-        <Tag>2024</Tag>
+    <ProjectCardStyled to={`/documentation/${id}`} id={id}>
+      <ImageCardContainer image={image}>
+        <Tag>{year}</Tag>
       </ImageCardContainer>
       <TextCardContainer>
-        <span>TRENDSETTER THREADS</span>
-        <h4>E-Commerce Pro</h4>
+        <span>{name}</span>
+        <h4>{title}</h4>
       </TextCardContainer>
 
       <TagCardContainer>
-        <Tag data="React" />
-        <Tag data="Context API" />
-        <Tag data="Axios" />
-        <Tag data="Styled-components" />
-        <Tag data="React router" />
-        <Tag data="Yup" />
-        <Tag data="Formik" />
-        <Tag data="React icons" />
+        {stack.map((tech, i) => (
+          <Tag key={i} data={tech} />
+        ))}
       </TagCardContainer>
     </ProjectCardStyled>
   );

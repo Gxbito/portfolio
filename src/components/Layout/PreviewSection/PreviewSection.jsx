@@ -14,6 +14,8 @@ import WorksIcon from "../../../assets/icons/web/Ruler.svg";
 import ProjectsIcon from "../../../assets/icons/web/Flash.svg";
 import CertificatesIcon from "../../../assets/icons/web/Badge.svg";
 import AnimatedWrapper from "../AnimatedWrapper/AnimatedWrapper";
+import projectsData from "@/data/projectsData.json";
+import worksData from "@/data/worksData.json";
 
 const iconsMap = {
   works: WorksIcon,
@@ -26,29 +28,25 @@ function PreviewSection({ sectionType }) {
     if (sectionType === "works") {
       return (
         <>
-          <AnimatedWrapper>
-            <WorkCard />
-          </AnimatedWrapper>
-          <AnimatedWrapper delay="0.1">
-            <WorkCard />
-          </AnimatedWrapper>
-          <AnimatedWrapper delay="0.2">
-            <WorkCard />
-          </AnimatedWrapper>
+          {worksData.slice(0, 3).map((item, i) => (
+            <AnimatedWrapper key={i} delay={i * 0.1}>
+              <WorkCard
+                {...item}
+              />
+            </AnimatedWrapper>
+          ))}
         </>
       );
     } else if (sectionType === "projects") {
       return (
         <>
-          <AnimatedWrapper>
-            <ProjectCard />
-          </AnimatedWrapper>
-          <AnimatedWrapper delay="0.1">
-            <ProjectCard />
-          </AnimatedWrapper>
-          <AnimatedWrapper delay="0.2">
-            <ProjectCard />
-          </AnimatedWrapper>
+          {projectsData.slice(0, 3).map((item, i) => (
+            <AnimatedWrapper key={i} delay={i * 0.1}>
+              <ProjectCard
+                {...item}
+              />
+            </AnimatedWrapper>
+          ))}
         </>
       );
     } else {
@@ -80,11 +78,11 @@ function PreviewSection({ sectionType }) {
               <h5>{sectionType === "works" ? "Works" : "Projects"}</h5>
             </AnimatedWrapper>
             <AnimatedWrapper y={0} x={20} delay={0.1}>
-              <h6>
+              <p>
                 {sectionType === "works"
                   ? "Aquí encontrarás algunos de mis trabajos destacados."
                   : "Aquí encontrarás algunos de mis proyectos destacados."}
-              </h6>
+              </p>
             </AnimatedWrapper>
           </DataTextContainer>
         </DataContainer>
@@ -100,7 +98,9 @@ function PreviewSection({ sectionType }) {
         </AnimatedWrapper>
       </PreviewSectionData>
 
-      <PreviewSectionCardContainer sectionType={sectionType}>{renderCards()}</PreviewSectionCardContainer>
+      <PreviewSectionCardContainer sectionType={sectionType}>
+        {renderCards()}
+      </PreviewSectionCardContainer>
     </PreviewSectionWrapper>
   );
 }

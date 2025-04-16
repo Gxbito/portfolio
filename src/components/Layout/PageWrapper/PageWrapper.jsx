@@ -31,11 +31,7 @@ function PageWrapper({ children, page }) {
             </>
           ) : page === "home" ? (
             <>
-              <img
-                src={BackgroundVerticalLight}
-                alt="bg-light"
-                id="bg-light"
-              />
+              <img src={BackgroundVerticalLight} alt="bg-light" id="bg-light" />
               <img src={BackgroundHomePattern} alt="bg-home" id="bg-home" />
             </>
           ) : (
