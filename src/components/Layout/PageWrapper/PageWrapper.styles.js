@@ -18,7 +18,8 @@ export const PageWrapperStyled = styled.div`
     height: 100vh;
     position: absolute;
     overflow: hidden;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 32px 32px 0px 0px;
+    z-index: 1;
 
     @media (max-width: ${breakpoints.mobile}) {
       border-radius: 0px;
@@ -59,7 +60,7 @@ export const PageWrapperStyled = styled.div`
 
     @media (max-width: ${breakpoints.mobile}) {
       width: 775px;
-      top: 75px;
+      top: 0;
       right: -400px;
     }
   }
@@ -110,7 +111,7 @@ export const PageWrapperStyled = styled.div`
 
     @media (max-width: ${breakpoints.mobile}) {
       width: 100vw;
-      top: 75px;
+      top: -4px;
     }
   }
 
@@ -123,17 +124,27 @@ export const PageWrapperStyled = styled.div`
 export const PageContent = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: ${({ page }) =>
     page === "documentation" ? "60px 54px" : "145px 145px"};
-  gap: ${({ page }) => (page === "documentation" ? "60px" : "145px")};
-  z-index: 2;
+
+  & > div:first-child {
+    margin: 0 auto;
+    position: relative;
+    max-width: ${({ page }) =>
+    page === "documentation" ? "100%" : "1200px"};;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: ${({ page }) => (page === "documentation" ? "60px" : "145px")};
+    z-index: 3;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      gap: 48px;
+    }
+  }
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 24px;
-    gap: 48px;
   }
 `;

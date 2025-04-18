@@ -28,7 +28,6 @@ export const DocumentationContainer = styled.div`
 `;
 
 export const DocumentationDataContainer = styled.div`
-  max-width: 1200px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -69,14 +68,27 @@ export const DocumentationTitltesContainer = styled.ul`
   justify-content: center;
   align-items: flex-start;
   list-style: none;
-  gap: 48px;
+  gap: 32px;
+`;
 
-  li {
-    font-family: var(--font-secondary);
-    font-weight: 500;
-    font-size: var(--font-size-button);
-    color: var(--color-text-paragraph);
-    cursor: pointer;
+export const DocumentationTitle = styled.li`
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: var(--font-size-button);
+  cursor: pointer;
+
+  color: ${({ isActive }) =>
+    isActive ? "var(--color-text-title)" : "var(--color-text-paragraph)"};
+  text-shadow: ${({ isActive }) =>
+    isActive ? "0 0 10px rgba(255, 255, 255, 0.5)" : ""};
+  scale: ${({ isActive }) => (isActive ? "1.1" : "1")};
+  transform: ${({ isActive }) =>
+    isActive ? "translateY(1px)" : "translateY(0px)"};
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--color-text-title);
+    transform: translateY(2px);
   }
 `;
 

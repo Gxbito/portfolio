@@ -17,10 +17,23 @@ export const SecondaryButtonStyled = styled.button`
   border-radius: 8px;
 
   font-family: var(--font-primary);
-  font-weight: 700;
+  font-weight: 500;
   font-size: var(--font-size-button);
   color: var(--color-text-title);
   text-decoration: none;
+  transition: all 0.2s ease, transform 0.1s ease;
+
+  &:hover {
+    background: var(--color-secondary-button-gradient-hover);
+    border-color: var(--color-border-hover);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    background: var(--color-secondary-button-gradient-active);
+    border-color: var(--color-border-active);
+    transform: translateY(1px);
+  }
 
   span {
     display: flex;

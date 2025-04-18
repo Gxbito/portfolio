@@ -81,16 +81,15 @@ export const NavLinksContainer = styled.ul`
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
+  list-style: none;
 
-  li {
-    width: 100%;
-    list-style: none;
-
-    a:hover {
-      background-color: var(--color-card-button);
-      color: var(--color-text-title);
-    }
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
   }
+`;
+
+export const NavItem = styled.li`
+  width: 100%;
 
   a {
     max-width: 220px;
@@ -109,9 +108,19 @@ export const NavLinksContainer = styled.ul`
     transition: all 0.2s ease;
     text-decoration: none;
     cursor: pointer;
+
+    background-color: ${({ active }) =>
+      active ? "var(--color-card-button)" : "transparent"};
+    color: ${({ active }) =>
+      active ? "var(--color-text-title)" : "var(--color-text-paragraph)"};
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
-    display: none;
+  a:hover {
+    background-color: var(--color-card-button);
+    color: var(--color-text-title);
+  }
+
+  a:active {
+    transform: scale(0.98);
   }
 `;

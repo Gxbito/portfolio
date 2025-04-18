@@ -10,7 +10,14 @@ import AnimatedWrapper from "../../Layout/AnimatedWrapper/AnimatedWrapper";
 
 function StackCard() {
   const selectedTechnologies = stackData.filter((tech) =>
-    ["Material UI", "JavaScript", "React", "WordPress"].includes(tech.title)
+    [
+      "Material UI",
+      "JavaScript",
+      "React",
+      "WordPress",
+      "Figma",
+      "Vite",
+    ].includes(tech.title)
   );
 
   return (

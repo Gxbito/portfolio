@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto 1fr auto auto;
   align-items: center;
-  padding: 28px 60px;
+  padding: 28px 54px;
   gap: 60px;
   border-radius: 16px 16px 0px 0px;
   background-color: var(--color-bg-card);
@@ -23,6 +23,7 @@ export const HeaderContainer = styled.div`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
+    height: 77px;
     grid-template-columns: auto 1fr auto;
     padding: 16px;
     border-radius: 0px;

@@ -4,6 +4,7 @@ import PageWrapper from "@/components/Layout/PageWrapper/PageWrapper";
 import {
   DocumentationContainer,
   DocumentationDataContainer,
+  DocumentationTitle,
   DocumentationTitltesContainer,
   GalleryContainer,
   Separator,
@@ -36,9 +37,9 @@ function Documentation() {
   const activeSection = useActiveSection();
 
   const handleSectionClick = (index) => {
-    const el = document.getElementById(`section-${index}`);
-    if (el) {
-      el.scrollIntoView({
+    const section = document.getElementById(`section-${index}`);
+    if (section) {
+      section.scrollIntoView({
         behavior: "smooth",
         block: "center",
       });
@@ -144,15 +145,12 @@ function Documentation() {
           <DocumentationTitltesContainer>
             {documentationItems.map((item, i) => (
               <AnimatedWrapper key={i}>
-                <li
+                <DocumentationTitle
+                  isActive={activeSection === i}
                   onClick={() => handleSectionClick(i)}
-                  style={{
-                    cursor: "pointer",
-                    color: activeSection === i ? "white" : "gray",
-                  }}
                 >
                   {item.title}
-                </li>
+                </DocumentationTitle>
               </AnimatedWrapper>
             ))}
           </DocumentationTitltesContainer>

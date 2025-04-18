@@ -15,6 +15,21 @@ export const ProjectCardStyled = styled(Link)`
   border: 1px solid var(--color-border);
   border-radius: 16px;
   text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover, 0 4px 12px rgba(255, 255, 255, 0.05));
+    background-color: var(--color-bg-card-hover);
+    border: 1px solid var(--color-border-hover);
+  }
+
+  &:active {
+    transform: scale(0.99);
+    box-shadow: var(--shadow-card-active, 0 0 0 2px rgba(255, 255, 255, 0.1));
+    background-color: var(--color-bg-card-active);
+    border: 1px solid var(--color-border-active);
+  }
 `;
 
 export const ImageCardContainer = styled.div`

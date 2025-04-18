@@ -47,16 +47,13 @@ export const StackContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  gap: 48px;
-  padding: 48px;
+  gap: 32px;
+  padding: 32px;
   background-color: var(--color-bg-menu);
-
-  button {
-    grid-column: span 2;
-  }
 
   & > a:last-child {
     grid-column: span 2;
+    margin-top: 24px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {

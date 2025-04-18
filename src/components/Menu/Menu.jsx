@@ -1,8 +1,10 @@
+import { useLocation } from "react-router-dom";
 import {
   MenuContainer,
   OwnerDataContainer,
   OwnerDataTextContainer,
   NavLinksContainer,
+  NavItem,
 } from "./Menu.styles";
 import {
   FiHome,
@@ -31,6 +33,9 @@ const navItems = [
 ];
 
 function Menu() {
+  const location = useLocation();
+  console.log(location.pathname);
+
   return (
     <MenuContainer>
       <OwnerDataContainer>
@@ -49,22 +54,25 @@ function Menu() {
       </OwnerDataContainer>
 
       <NavLinksContainer>
-        {navItems.map((item, i) => (
-          <AnimatedWrapper
-            key={item.to}
-            delay={i * 0.1}
-            x={40}
-            y={0}
-            style={{ width: "100%" }}
-          >
-            <li>
-              <Link to={item.to}>
-                {item.icon}
-                {item.label}
-              </Link>
-            </li>
-          </AnimatedWrapper>
-        ))}
+        {navItems.map((item, i) => {
+          console.log(location.pathname === item.to);
+          return (
+            <AnimatedWrapper
+              key={item.to}
+              delay={i * 0.1}
+              x={40}
+              y={0}
+              style={{ width: "100%" }}
+            >
+              <NavItem active={location.pathname === item.to}>
+                <Link to={item.to}>
+                  {item.icon}
+                  {item.label}
+                </Link>
+              </NavItem>
+            </AnimatedWrapper>
+          );
+        })}
       </NavLinksContainer>
 
       <HiddenWrapper hideOn="desktop">
