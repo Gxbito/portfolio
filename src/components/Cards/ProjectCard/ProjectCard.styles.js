@@ -15,7 +15,7 @@ export const ProjectCardStyled = styled(Link)`
   border: 1px solid var(--color-border);
   border-radius: 16px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);

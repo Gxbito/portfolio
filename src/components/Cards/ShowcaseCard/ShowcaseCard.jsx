@@ -8,7 +8,7 @@ import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 
 function ShowcaseCard({ id, title, description, image, type }) {
   return (
-    <ShowcaseCardStyled>
+    <ShowcaseCardStyled to={`/documentation/${id}`} id={id}>
       <ShowcaseDataContainer>
         <DataTextContainer>
           <h3>{title}</h3>

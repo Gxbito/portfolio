@@ -130,8 +130,7 @@ export const PageContent = styled.div`
   & > div:first-child {
     margin: 0 auto;
     position: relative;
-    max-width: ${({ page }) =>
-    page === "documentation" ? "100%" : "1200px"};;
+    max-width: ${({ page }) => (page === "documentation" ? "100%" : "1200px")};
     display: flex;
     flex-direction: column;
     justify-content: center;
