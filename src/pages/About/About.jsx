@@ -27,17 +27,15 @@ function About() {
           </AnimatedWrapper>
           <AnimatedWrapper y={0} x={40} delay={0.1}>
             <p>
-              Soy Gabriel Martínez, desarrollador frontend con más de 2 años de
-              experiencia creando interfaces intuitivas, atractivas y
-              optimizadas. Mi pasión por el diseño y la tecnología me ha llevado
-              a dominar herramientas modernas como React, Material UI y Figma.
+              I'm Gabriel Martínez, a frontend developer with over 2 years of
+              experience building intuitive, attractive, and optimized
+              interfaces. My passion for design and technology has led me to
+              master modern tools like React, Material UI, and Figma.
               <br />
-              <br />
-              Me especializo en transformar ideas en productos digitales claros
-              y accesibles, siempre con un enfoque en la experiencia del
-              usuario. Mi objetivo es crear aplicaciones que no solo sean
-              eficientes, sino que también generen un impacto positivo en
-              quienes las utilizan
+              <br />I specialize in turning ideas into clear, accessible digital
+              products, always with a strong focus on user experience. My goal
+              is to create applications that are not only efficient but also
+              leave a positive impact on those who use them.
             </p>
           </AnimatedWrapper>
         </TextWrapper>
@@ -45,15 +43,14 @@ function About() {
       <TimelineContainer>
         <TextWrapper>
           <AnimatedWrapper y={0} x={40}>
-            <h3>Mi Trayectoria Profesional</h3>
+            <h3>My Professional Journey</h3>
           </AnimatedWrapper>
           <AnimatedWrapper y={0} x={40} delay={0.1}>
             <p>
-              Cada paso en mi carrera ha sido una oportunidad para aprender y
-              crecer. Desde proyectos iniciales que me enseñaron las bases del
-              desarrollo web, hasta colaboraciones más desafiantes en las que
-              perfeccioné mis habilidades, cada experiencia ha moldeado mi
-              enfoque profesional
+              Every step in my career has been an opportunity to learn and grow.
+              From early projects that taught me the fundamentals of web
+              development to more challenging collaborations where I refined my
+              skills — each experience has shaped my professional approach.
             </p>
           </AnimatedWrapper>
         </TextWrapper>

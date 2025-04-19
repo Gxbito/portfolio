@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import PageWrapper from "@/components/Layout/PageWrapper/PageWrapper";
 import {
@@ -70,16 +69,42 @@ function Documentation() {
             <img src={project.gallery[0]} alt="project" />
           </AnimatedWrapper>
 
-          {project.sections.slice(0, 2).map((item, i) => (
-            <AnimatedWrapper key={i}>
-              <TextContainer>
-                <h4 id={`section-${i}`}>{item.title}</h4>
-                {item.content.split("\n").map((line, index) => (
-                  <p key={index}>{line}</p>
-                ))}
-              </TextContainer>
-            </AnimatedWrapper>
-          ))}
+          {project.sections.slice(0, 2).map((item, i) => {
+            const globalIndex = i + 0;
+            return (
+              <AnimatedWrapper key={i}>
+                <TextContainer>
+                  <h4 id={`section-${globalIndex}`}>{item.title}</h4>
+          
+                  {item.content.map((block, index) => {
+                    if (block.type === "paragraph") {
+                      return (
+                        <p
+                          key={index}
+                          dangerouslySetInnerHTML={{ __html: block.text }}
+                        />
+                      );
+                    }
+          
+                    if (block.type === "list") {
+                      return (
+                        <ul key={index}>
+                          {block.items.map((li, liIndex) => (
+                            <li
+                              key={liIndex}
+                              dangerouslySetInnerHTML={{ __html: li }}
+                            />
+                          ))}
+                        </ul>
+                      );
+                    }
+          
+                    return null;
+                  })}
+                </TextContainer>
+              </AnimatedWrapper>
+            );
+          })}
 
           <GalleryContainer>
             <AnimatedWrapper style={{ gridColumn: "span 2" }}>
@@ -96,12 +121,32 @@ function Documentation() {
           {project.sections.slice(2, 4).map((item, i) => {
             const globalIndex = i + 2;
             return (
-              <AnimatedWrapper key={globalIndex}>
+              <AnimatedWrapper key={i}>
                 <TextContainer>
                   <h4 id={`section-${globalIndex}`}>{item.title}</h4>
-                  {item.content.split("\n").map((line, index) => (
-                    <p key={index}>{line}</p>
-                  ))}
+                  {item.content.map((block, index) => {
+                    if (block.type === "paragraph") {
+                      return (
+                        <p
+                          key={index}
+                          dangerouslySetInnerHTML={{ __html: block.text }}
+                        />
+                      );
+                    }
+                    if (block.type === "list") {
+                      return (
+                        <ul key={index}>
+                          {block.items.map((item, idx) => (
+                            <li
+                              key={idx}
+                              dangerouslySetInnerHTML={{ __html: item }}
+                            />
+                          ))}
+                        </ul>
+                      );
+                    }
+                    return null;
+                  })}
                 </TextContainer>
               </AnimatedWrapper>
             );
@@ -111,12 +156,32 @@ function Documentation() {
           {project.sections.slice(4, 6).map((item, i) => {
             const globalIndex = i + 4;
             return (
-              <AnimatedWrapper key={globalIndex}>
+              <AnimatedWrapper key={i}>
                 <TextContainer>
                   <h4 id={`section-${globalIndex}`}>{item.title}</h4>
-                  {item.content.split("\n").map((line, index) => (
-                    <p key={index}>{line}</p>
-                  ))}
+                  {item.content.map((block, index) => {
+                    if (block.type === "paragraph") {
+                      return (
+                        <p
+                          key={index}
+                          dangerouslySetInnerHTML={{ __html: block.text }}
+                        />
+                      );
+                    }
+                    if (block.type === "list") {
+                      return (
+                        <ul key={index}>
+                          {block.items.map((item, idx) => (
+                            <li
+                              key={idx}
+                              dangerouslySetInnerHTML={{ __html: item }}
+                            />
+                          ))}
+                        </ul>
+                      );
+                    }
+                    return null;
+                  })}
                 </TextContainer>
               </AnimatedWrapper>
             );
@@ -133,9 +198,29 @@ function Documentation() {
               <AnimatedWrapper key={i}>
                 <TextContainer>
                   <h4 id={`section-${globalIndex}`}>{item.title}</h4>
-                  {item.content.split("\n").map((line, index) => (
-                    <p key={index}>{line}</p>
-                  ))}
+                  {item.content.map((block, index) => {
+                    if (block.type === "paragraph") {
+                      return (
+                        <p
+                          key={index}
+                          dangerouslySetInnerHTML={{ __html: block.text }}
+                        />
+                      );
+                    }
+                    if (block.type === "list") {
+                      return (
+                        <ul key={index}>
+                          {block.items.map((item, idx) => (
+                            <li
+                              key={idx}
+                              dangerouslySetInnerHTML={{ __html: item }}
+                            />
+                          ))}
+                        </ul>
+                      );
+                    }
+                    return null;
+                  })}
                 </TextContainer>
               </AnimatedWrapper>
             );

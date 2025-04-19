@@ -13,7 +13,7 @@ export const DocumentationContainer = styled.div`
 
   & > div:nth-child(2) {
     position: sticky;
-    top: 100px;
+    top: 60px;
     align-self: start;
     height: fit-content;
   }
@@ -123,6 +123,7 @@ export const TitleContainer = styled.div`
     font-size: var(--font-size-large-paragraph);
     color: var(--color-text-paragraph);
     line-height: 140%;
+    max-width: 60ch;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -184,6 +185,34 @@ export const TextContainer = styled.div`
     color: var(--color-text-paragraph);
     line-height: 140%;
     max-width: 82ch;
+
+    strong {
+      color: var(--color-text-title);
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    gap: 24px;
+
+    li {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: var(--font-size-large-paragraph);
+      color: var(--color-text-paragraph);
+      line-height: 140%;
+      max-width: 82ch;
+
+      strong {
+        color: var(--color-text-title);
+        font-weight: 600;
+      }
+    }
   }
 `;
 

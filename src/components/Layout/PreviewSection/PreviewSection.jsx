@@ -30,9 +30,7 @@ function PreviewSection({ sectionType }) {
         <>
           {worksData.slice(0, 3).map((item, i) => (
             <AnimatedWrapper key={i} delay={i * 0.1}>
-              <WorkCard
-                {...item}
-              />
+              <WorkCard {...item} />
             </AnimatedWrapper>
           ))}
         </>
@@ -42,9 +40,7 @@ function PreviewSection({ sectionType }) {
         <>
           {projectsData.slice(0, 3).map((item, i) => (
             <AnimatedWrapper key={i} delay={i * 0.1}>
-              <ProjectCard
-                {...item}
-              />
+              <ProjectCard {...item} />
             </AnimatedWrapper>
           ))}
         </>
@@ -75,20 +71,22 @@ function PreviewSection({ sectionType }) {
 
           <DataTextContainer>
             <AnimatedWrapper y={0} x={20}>
-              <h5>{sectionType === "works" ? "Works" : "Projects"}</h5>
+              <h5>{sectionType === "works" ? "Works" : sectionType === "projects" ? "Projects" : "Certificates"}</h5>
             </AnimatedWrapper>
             <AnimatedWrapper y={0} x={20} delay={0.1}>
               <p>
                 {sectionType === "works"
-                  ? "Aquí encontrarás algunos de mis trabajos destacados."
-                  : "Aquí encontrarás algunos de mis proyectos destacados."}
+                  ? "Explore some of my featured work"
+                  : sectionType === "projects"
+                  ? "A selection of my most notable projects"
+                  : "Take a look at my certifications"}
               </p>
             </AnimatedWrapper>
           </DataTextContainer>
         </DataContainer>
         <AnimatedWrapper y={0} x={-20}>
           <SecondaryButton
-            to={sectionType === "works" ? "/works" : "/projects"}
+            to={sectionType === "works" ? "/works" : sectionType === "projects" ? "/projects" : "/certificates"}
           >
             View all
             <span>

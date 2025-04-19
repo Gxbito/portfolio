@@ -20,8 +20,8 @@ function ShortcutCard({ cardType }) {
           <h4>{cardType === "services" ? "Services" : "About me"}</h4>
           <p>
             {cardType === "services"
-              ? "Aquí encontrarás algunos de mis trabajos destacados."
-              : "Aquí encontrarás algunos de mis trabajos destacados."}
+              ? "Explore the services I provide as a frontend developer"
+              : "A glimpse into who I am and what drives my work"}
           </p>
         </TextContainer>
       </div>

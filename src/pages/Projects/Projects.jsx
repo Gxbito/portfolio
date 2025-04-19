@@ -10,14 +10,14 @@ function Projects() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Hitos de Mi Carrera</h2>
+          <h2>Career Highlights</h2>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
-            Cada proyecto representa un desafío resuelto, una oportunidad de
-            aprender y una muestra de mi compromiso con el diseño y el
-            desarrollo web. Aquí encontrarás los trabajos que destacan por su
-            creatividad, funcionalidad y atención al detalle. ¡Descúbrelos!
+            Each project reflects a solved challenge, a learning opportunity,
+            and my commitment to quality in design and development. These are
+            the works that stand out for their creativity, functionality, and
+            attention to detail.
           </p>
         </AnimatedWrapper>
       </TextWrapper>

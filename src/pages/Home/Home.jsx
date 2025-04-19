@@ -22,8 +22,8 @@ function Home() {
 
         <AnimatedWrapper>
           <p>
-            Con 2 años de experiencia en React, me apasiona crear interfaces
-            optimizadas y atractivas.
+            Passionate about crafting optimized and visually appealing
+            interfaces, with 2 years of experience using React.
           </p>
         </AnimatedWrapper>
 
@@ -42,6 +42,7 @@ function Home() {
 
       <PreviewSection sectionType="works" />
       <PreviewSection sectionType="projects" />
+      <PreviewSection sectionType="certificates" />
       <ShorcutCardsContainer>
         <AnimatedWrapper style={{ width: "100%" }}>
           <ShortcutCard cardType="services" />

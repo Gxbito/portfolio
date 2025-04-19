@@ -10,20 +10,20 @@ function Works() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Mi Trabajo Destacado</h2>
+          <h2>Featured Work</h2>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
-            Pequeños destellos de lo que he construido: una colección de
-            proyectos que reflejan mi pasión por el desarrollo frontend y la
-            creación de experiencias digitales impactantes.
+            A selection of my work showcasing my skills in frontend development
+            and my focus on building clean, efficient, and user-centered digital
+            experiences.
           </p>
         </AnimatedWrapper>
       </TextWrapper>
       <WorksContainer>
         {worksData.map((item, i) => (
           <AnimatedWrapper key={i} style={{ width: "100%" }}>
-            <ShowcaseCard {...item} type="works"/>
+            <ShowcaseCard {...item} type="works" />
           </AnimatedWrapper>
         ))}
       </WorksContainer>

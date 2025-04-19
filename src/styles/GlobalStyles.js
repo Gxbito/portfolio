@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     /* Text */
     --color-text-main-title: linear-gradient(162deg, #F0F0F0 30%, #8F9BA8 100%);
     --color-text-title: #F0F0F0;
-    --color-text-paragraph: #9DA5AE;
+    --color-text-paragraph: #ccd0d4;
     --color-placeholder: #6E7681;  
 
     /* Interactive */

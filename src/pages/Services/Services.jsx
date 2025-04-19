@@ -10,13 +10,15 @@ function Services() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Hablemos de tus ideas</h2>
+          <h2>Let's Turn Your Ideas into Reality</h2>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
-            ¿Tienes un proyecto en mente o necesitas colaboración para llevar
-            tus ideas al siguiente nivel? Completa el formulario o contáctame a
-            través de mis redes sociales. Estoy aquí para crear contigo.
+            Do you have a project in mind or need a skilled developer to take
+            your ideas to the next level? Whether you're looking for a custom
+            web solution, a fresh design, or a complete frontend experience, I'm
+            here to collaborate with you. Fill out the form or reach out through
+            my social channels—let's create something amazing together!
           </p>
         </AnimatedWrapper>
       </TextWrapper>

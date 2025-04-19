@@ -14,13 +14,13 @@ function Stack() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Tecnologías que domino</h2>
+          <h2>Technologies I Master</h2>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
-            Como desarrollador frontend especializado en interfaces modernas,
-            utilizo estas tecnologías para construir experiencias digitales
-            eficientes y atractivas.
+            As a frontend developer specializing in modern interfaces, I
+            leverage these technologies to craft efficient and engaging digital
+            experiences.
           </p>
         </AnimatedWrapper>
       </TextWrapper>

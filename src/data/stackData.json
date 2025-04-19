@@ -3,105 +3,105 @@
     "id": 1,
     "icon": "/src/assets/icons/stack/html.svg",
     "title": "HTML",
-    "description": "Lenguaje base para la construcción de páginas web.",
-    "category": "Web development"
+    "description": "Foundational language for building web pages.",
+    "category": "Web Development"
   },
   {
     "id": 2,
     "icon": "/src/assets/icons/stack/css.svg",
     "title": "CSS",
-    "description": "Estilos para dar diseño y estructura visual a las páginas.",
-    "category": "Web development"
+    "description": "Styling language for designing and structuring visual elements.",
+    "category": "Web Development"
   },
   {
     "id": 3,
     "icon": "/src/assets/icons/stack/js.svg",
     "title": "JavaScript",
-    "description": "Lenguaje de programación para añadir interactividad.",
-    "category": "Web development"
+    "description": "Programming language used to add interactivity to websites.",
+    "category": "Web Development"
   },
   {
     "id": 4,
     "icon": "/src/assets/icons/stack/reactjs.svg",
     "title": "React",
-    "description": "Biblioteca para construir interfaces de usuario dinámicas.",
+    "description": "Library for building dynamic user interfaces.",
     "category": "Frameworks"
   },
   {
     "id": 5,
     "icon": "/src/assets/icons/stack/materialui.svg",
     "title": "Material UI",
-    "description": "Framework para estilos basado en Material Design.",
+    "description": "Styling framework based on Google's Material Design.",
     "category": "Frameworks"
   },
   {
     "id": 6,
     "icon": "/src/assets/icons/stack/sass.svg",
     "title": "SASS",
-    "description": "Preprocesador CSS que facilita estilos más avanzados.",
+    "description": "CSS preprocessor that enables more advanced styling.",
     "category": "Frameworks"
   },
   {
     "id": 7,
     "icon": "/src/assets/icons/stack/tailwindcss.svg",
     "title": "Tailwind CSS",
-    "description": "Framework de utilidades para estilos rápidos y modulares.",
+    "description": "Utility-first framework for fast and modular styling.",
     "category": "Frameworks"
   },
   {
     "id": 8,
     "icon": "/src/assets/icons/stack/figma.svg",
     "title": "Figma",
-    "description": "Herramienta para diseño y prototipado UI/UX.",
+    "description": "Tool for UI/UX design and prototyping.",
     "category": "Design Tools"
   },
   {
     "id": 9,
     "icon": "/src/assets/icons/stack/ps.svg",
     "title": "Photoshop",
-    "description": "Software de edición de imágenes y diseño gráfico.",
+    "description": "Software for image editing and graphic design.",
     "category": "Design Tools"
   },
   {
     "id": 10,
     "icon": "/src/assets/icons/stack/npm.svg",
     "title": "NPM",
-    "description": "Gestor de paquetes para proyectos JavaScript.",
+    "description": "Package manager for JavaScript projects.",
     "category": "Package Management"
   },
   {
     "id": 11,
     "icon": "/src/assets/icons/stack/github.svg",
     "title": "GitHub",
-    "description": "Plataforma para control de versiones y colaboración.",
+    "description": "Platform for version control and team collaboration.",
     "category": "Package Management"
   },
   {
     "id": 12,
     "icon": "/src/assets/icons/stack/git.svg",
     "title": "Git",
-    "description": "Sistema de control de versiones distribuido.",
+    "description": "Distributed version control system.",
     "category": "Package Management"
   },
   {
     "id": 13,
     "icon": "/src/assets/icons/stack/webpack.svg",
     "title": "Webpack",
-    "description": "Empaquetador de módulos para proyectos JavaScript.",
+    "description": "Module bundler for JavaScript projects.",
     "category": "Building and Optimizing"
   },
   {
     "id": 14,
     "icon": "/src/assets/icons/stack/vitejs.svg",
     "title": "Vite",
-    "description": "Herramienta de desarrollo rápido para aplicaciones modernas.",
+    "description": "Fast development tool for modern web applications.",
     "category": "Building and Optimizing"
   },
   {
     "id": 15,
     "icon": "/src/assets/icons/stack/wordpress.svg",
     "title": "WordPress",
-    "description": "CMS popular para creación de sitios web.",
+    "description": "Popular CMS for building websites.",
     "category": "Content Management System"
   }
 ]

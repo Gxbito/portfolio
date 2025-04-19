@@ -1,10 +1,10 @@
 [
   {
-    "id": "work-1",
-    "name": "Trendsetter Threads",
-    "title": "E-Commerce de Moda Optimizado",
+    "id": "ranking-platform",
+    "name": "GEOMAX",
+    "title": "Plataforma de Rankings de Geometry Dash",
     "image": "src/assets/images/placeholder-image.jpg",
-    "year": "2024",
+    "year": "2023",
     "gallery": [
       "/images/works/placeholder-image.jpg",
       "/images/works/placeholder-image.jpg",
@@ -12,7 +12,7 @@
       "/images/works/placeholder-image.jpg",
       "/images/works/placeholder-image.jpg"
     ],
-    "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
+    "description": "Sitio web que centraliza y visualiza los puntajes globales más altos en los niveles más desafiantes del videojuego Geometry Dash",
     "stack": [
       "React",
       "Context API",
@@ -28,48 +28,136 @@
     "sections": [
       {
         "title": "Overview",
-        "content": "Este proyecto es el resultado de combinar creatividad y tecnología para resolver un problema real. Desde la etapa inicial, el enfoque estuvo en garantizar que cada elemento del diseño y funcionalidad reflejara las necesidades del usuario final.\nMás que un proyecto, esta solución representa un puente entre la innovación y la practicidad. Su desarrollo permitió aplicar metodologías ágiles para alcanzar un producto sólido y relevante para el mercado."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El equipo de GEOMAX, una plataforma de rankings globales para jugadores de Geometry Dash, me contactó con un problema claro: su sitio web tenía un diseño anticuado, poco intuitivo y con una experiencia de usuario limitada. Querían un rediseño completo que estuviera a la altura de la comunidad competitiva que lo utilizaba a diario."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mi rol fue transformar completamente el frontend del sitio, comenzando por rediseñar cada sección en Figma y luego desarrollándolas desde cero con tecnologías modernas como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>React</strong>. El objetivo fue crear una experiencia más clara, atractiva y funcional, sin perder la conexión con los datos ya existentes gestionados por el backend."
+          }
+        ]
       },
       {
         "title": "Tecnologías",
-        "content": "El stack tecnológico incluyó herramientas modernas como TypeScript para mejorar la robustez del código, junto con Tailwind CSS para estilos rápidos y consistentes. También se aprovechó GitHub Actions para implementar CI/CD, asegurando integraciones rápidas y efectivas.\nTecnologías como Firebase para la base de datos en tiempo real y Webpack para la optimización del bundle fueron clave en este proyecto, garantizando velocidad y escalabilidad. Cada elección tecnológica se realizó en base a las necesidades específicas de los usuarios y del entorno de desarrollo."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El proyecto fue rediseñado desde cero en Figma, y luego desarrollado utilizando HTML, CSS, JavaScript y React. Además, integré Django como backend, trabajando en conjunto con un desarrollador backend para lograr una experiencia completa y dinámica."
+          },
+          {
+            "type": "paragraph",
+            "text": "Todo el sistema fue organizado en componentes reutilizables, facilitando futuras actualizaciones y colaboraciones."
+          }
+        ]
       },
       {
         "title": "Desafíos",
-        "content": "El mayor desafío fue lograr una sincronización perfecta entre múltiples usuarios en tiempo real. Esto requirió no solo ajustes técnicos, sino también pruebas exhaustivas para garantizar estabilidad bajo altas cargas.\nEncontrar el balance entre un diseño visual atractivo y un rendimiento óptimo fue otro reto importante. Optimizamos cada componente para garantizar tiempos de carga rápidos, incluso en conexiones lentas."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El mayor reto fue tener que limpiar el desastre técnico dejado por un desarrollador anterior: código espagueti ilegible, carpetas desorganizadas, y lógica confusa. Me encargué de borrar todo lo innecesario, reestructurar el proyecto, y comenzar desde cero sin perder las conexiones esenciales del backend en Django."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, fue mi primera experiencia trabajando en conjunto con un backend, lo cual exigió una rápida adaptación a una dinámica de trabajo más profesional."
+          }
+        ]
       },
       {
         "title": "Proceso",
-        "content": "Cada etapa del proceso fue documentada meticulosamente, desde los primeros bosquejos hasta el diseño interactivo en Figma. Esto permitió un flujo de trabajo transparente, donde cada iteración estuvo basada en el feedback de los usuarios.\nSe adoptó una metodología SCRUM con sprints semanales, asegurando que las tareas fueran priorizadas y entregadas en tiempo. Las reuniones de retrospectiva ayudaron a ajustar el enfoque en cada etapa."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El trabajo comenzó con una auditoría visual y funcional del sitio original. Desde el primer momento supe que el rediseño no solo debía ser estético, sino también estratégico: mejorar la usabilidad, jerarquizar la información y hacer que los jugadores encontraran lo que buscaban con menos clics."
+          },
+          {
+            "type": "paragraph",
+            "text": "Comencé diseñando cada sección en Figma, siempre en contacto con el equipo. Cada dos o tres días presentaba avances, recibía feedback y ajustábamos detalles juntos. Esta dinámica permitió que el cliente se sintiera parte del proceso y que las decisiones fueran tomadas en base a necesidades reales."
+          }
+        ]
       },
       {
         "title": "Lecciones aprendidas",
-        "content": "Este proyecto reforzó la importancia de la comunicación clara con los stakeholders. Al mantener un flujo constante de feedback, se evitaron malentendidos y se lograron mejores resultados.\nLa experiencia subrayó la importancia de realizar pruebas exhaustivas en diferentes entornos. Esto ayudó a identificar y solucionar problemas de compatibilidad que inicialmente no se habían considerado."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Este proyecto me enseñó a moverme con soltura en entornos que no controlaba del todo, a adaptarme rápidamente y a trabajar de manera colaborativa en un equipo técnico. Aprendí a tomar decisiones difíciles como eliminar por completo el código existente, a priorizar la calidad del desarrollo por encima del apuro, y a pensar a largo plazo en cada línea que escribía."
+          },
+          {
+            "type": "paragraph",
+            "text": "También reforcé mis habilidades de comunicación, presentando avances de manera clara y proponiendo soluciones cuando el equipo no sabía exactamente lo que quería, transformando ideas sueltas en funcionalidades concretas."
+          }
+        ]
       },
       {
         "title": "Evolución futura",
-        "content": "Un paso lógico hacia el futuro sería la integración de inteligencia artificial para personalizar aún más la experiencia del usuario. Esto podría incluir recomendaciones basadas en patrones de uso.\nOtra área de evolución sería la expansión multilingüe del proyecto, permitiendo llegar a audiencias globales con interfaces adaptadas culturalmente."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "GEOMAX aún tiene muchísimo potencial por explotar. En el corto y mediano plazo, se proyecta la incorporación de nuevas funcionalidades sociales que permitan a los jugadores interactuar entre sí, seguir perfiles, comentar puntajes y crear comunidades alrededor de los rankings."
+          },
+          {
+            "type": "paragraph",
+            "text": "También se está considerando implementar un sistema de recompensas gamificado, donde los usuarios puedan desbloquear insignias o logros al completar desafíos semanales o alcanzar cierto puntaje en la ruleta personalizada. Esto no solo aumentará la retención, sino que convertirá a la plataforma en una experiencia aún más inmersiva."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, está en los planes integrar gráficos estadísticos avanzados, utilizando bibliotecas como D3 o Chart.js, para visualizar el rendimiento histórico de los jugadores y las tendencias globales en tiempo real."
+          }
+        ]
       },
       {
         "title": "Características clave",
-        "content": "Una de las principales características es la funcionalidad de búsqueda avanzada, que permite a los usuarios encontrar información específica en segundos gracias a filtros dinámicos y una interfaz de autocompletado.\nAdemás, incluye un sistema de notificaciones en tiempo real para mantener a los usuarios actualizados sin interrumpir su flujo de trabajo."
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>Ruleta dinámica:</strong> desarrollé una ruleta interactiva en React que genera niveles aleatorios según los filtros seleccionados por el usuario. Estos niveles se agrupan y pueden ser guardados para intentar superarlos en el orden propuesto.",
+              "<strong>Modo claro/oscuro:</strong> el sitio cambia su tema automáticamente mediante variables CSS, lo que mejora la accesibilidad y el confort visual.",
+              "<strong>Fondos animados personalizados:</strong> diseñé un fondo visual con los personajes del juego que se desplaza de forma fluida al hacer scroll, generando una experiencia envolvente sin sacrificar rendimiento.",
+              "<strong>Perfiles de usuario con historial:</strong> los usuarios pueden almacenar sus ruletas, ver su progreso y gestionar sus desafíos desde su cuenta personal."
+            ]
+          }
+        ]
       },
       {
         "title": "Integraciones",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>React Router</strong> para la navegación entre vistas.",
+              "<strong>React Icons</strong> para iconografía moderna y personalizable.",
+              "Integración con el backend en <strong>Django + SQLite</strong>, con datos cifrados y lógica personalizada para autenticar y testear usuarios.",
+              "Bloques dinámicos de Django embebidos en el código React para imprimir contenido del servidor.",
+              "Herramientas y scripts para testing rápido con cuentas dummy proporcionadas por el backend developer."
+            ]
+          }
+        ]
       },
       {
         "title": "Documentación",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cada archivo y componente está comentado y organizado bajo una estructura lógica basada en funcionalidades. La nomenclatura es consistente y clara, y el código está diseñado para que cualquier miembro del equipo —actual o futuro— pueda incorporarse rápidamente sin perder tiempo descifrando qué hace cada cosa."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, se documentaron las convenciones de estilo y la estructura del proyecto para asegurar una base sólida sobre la cual continuar construyendo."
+          }
+        ]
       }
     ]
   },
   {
     "id": "work-2",
-    "name": "Trendsetter Threads",
-    "title": "E-Commerce de Moda Optimizado",
+    "name": "NETTV MAGAZINE",
+    "title": "Página informativa para marca internacional",
     "image": "src/assets/images/placeholder-image.jpg",
-    "year": "2024",
+    "year": "2023",
     "gallery": [
       "/images/works/placeholder-image.jpg",
       "/images/works/placeholder-image.jpg",
@@ -84,39 +172,133 @@
     "sections": [
       {
         "title": "Overview",
-        "content": "Este proyecto es el resultado de combinar creatividad y tecnología para resolver un problema real. Desde la etapa inicial, el enfoque estuvo en garantizar que cada elemento del diseño y funcionalidad reflejara las necesidades del usuario final.\nMás que un proyecto, esta solución representa un puente entre la innovación y la practicidad. Su desarrollo permitió aplicar metodologías ágiles para alcanzar un producto sólido y relevante para el mercado."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Este proyecto surgió de la necesidad de un grupo israelí (empresa o comunidad) por contar con una web moderna y minimalista que sirviera como escaparate digital para su contenido. Me contactaron a través de Fiverr con una idea clara: querían una página sencilla, directa, sin distracciones, que mostrara una imagen destacada, un formulario funcional y varias secciones con artículos, noticias recientes y marcas destacadas."
+          },
+          {
+            "type": "paragraph",
+            "text": "El trabajo implicó diseñar desde cero una web responsive, elegante y funcional utilizando únicamente HTML, CSS y JavaScript, sin frameworks. Además, se crearon múltiples pantallas con el mismo layout pero diferente encabezado e imagen, adaptadas a distintos fines dentro del sitio."
+          }
+        ]
       },
       {
         "title": "Tecnologías",
-        "content": "El stack tecnológico incluyó herramientas modernas como TypeScript para mejorar la robustez del código, junto con Tailwind CSS para estilos rápidos y consistentes. También se aprovechó GitHub Actions para implementar CI/CD, asegurando integraciones rápidas y efectivas.\nTecnologías como Firebase para la base de datos en tiempo real y Webpack para la optimización del bundle fueron clave en este proyecto, garantizando velocidad y escalabilidad. Cada elección tecnológica se realizó en base a las necesidades específicas de los usuarios y del entorno de desarrollo."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Para este proyecto decidí mantener una stack liviana pero robusta, aprovechando lo mejor del desarrollo web clásico sin dependencias innecesarias:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>HTML & CSS puro:</strong> Para una estructura clara y un diseño limpio que cargue rápido en cualquier dispositivo.",
+              "<strong>JavaScript:</strong> Para funcionalidades dinámicas como la carga de artículos desde un archivo JSON editable.",
+              "<strong>JSON:</strong> Integrado para facilitar al cliente la edición de títulos y contenido de noticias de forma manual, sin tocar el código fuente."
+            ]
+          }
+        ]
       },
       {
         "title": "Desafíos",
-        "content": "El mayor desafío fue lograr una sincronización perfecta entre múltiples usuarios en tiempo real. Esto requirió no solo ajustes técnicos, sino también pruebas exhaustivas para garantizar estabilidad bajo altas cargas.\nEncontrar el balance entre un diseño visual atractivo y un rendimiento óptimo fue otro reto importante. Optimizamos cada componente para garantizar tiempos de carga rápidos, incluso en conexiones lentas."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Uno de los principales desafíos fue la comunicación constante en inglés con el cliente. Si bien ya tenía experiencia con el idioma, fue la primera vez que trabajé directamente con un cliente extranjero de forma diaria."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, me pidieron integrar un formulario de Hubspot, algo completamente nuevo para mí en ese momento. Tuve que estudiar su documentación, entender cómo adaptarlo al diseño y asegurarme de que funcionara correctamente en todas las pantallas del sitio."
+          }
+        ]
       },
       {
         "title": "Proceso",
-        "content": "Cada etapa del proceso fue documentada meticulosamente, desde los primeros bosquejos hasta el diseño interactivo en Figma. Esto permitió un flujo de trabajo transparente, donde cada iteración estuvo basada en el feedback de los usuarios.\nSe adoptó una metodología SCRUM con sprints semanales, asegurando que las tareas fueran priorizadas y entregadas en tiempo. Las reuniones de retrospectiva ayudaron a ajustar el enfoque en cada etapa."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El desarrollo fue muy fluido y colaborativo. Diseñé y programé de forma iterativa, mostrando avances diarios a través de la plataforma Fiverr. A pedido del cliente, subí el sitio a Vercel desde el primer día, para que pudiera ver en tiempo real cómo iba evolucionando el proyecto y dar feedback inmediato. Esta dinámica permitió ajustar detalles sobre la marcha y garantizar que el resultado final cumpliera con sus expectativas."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, recibí todos los textos, imágenes y artículos en un documento, que transformé en un archivo JSON editable, estructurando el contenido de forma que cualquier persona del equipo pudiera modificarlo sin conocimientos técnicos."
+          }
+        ]
       },
       {
         "title": "Lecciones aprendidas",
-        "content": "Este proyecto reforzó la importancia de la comunicación clara con los stakeholders. Al mantener un flujo constante de feedback, se evitaron malentendidos y se lograron mejores resultados.\nLa experiencia subrayó la importancia de realizar pruebas exhaustivas en diferentes entornos. Esto ayudó a identificar y solucionar problemas de compatibilidad que inicialmente no se habían considerado."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Este proyecto me ayudó a consolidar mi fluidez comunicativa en inglés en un entorno profesional, y a perderle el miedo a tratar directamente con clientes internacionales. También aprendí a trabajar con formularios embebidos desde plataformas externas como Hubspot y a desarrollar bajo el principio de simplicidad y eficiencia visual."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, reforcé mi capacidad de adaptación y entrega rápida, ya que el proyecto debía estar listo en pocos días y con requerimientos muy específicos."
+          }
+        ]
       },
       {
         "title": "Evolución futura",
-        "content": "Un paso lógico hacia el futuro sería la integración de inteligencia artificial para personalizar aún más la experiencia del usuario. Esto podría incluir recomendaciones basadas en patrones de uso.\nOtra área de evolución sería la expansión multilingüe del proyecto, permitiendo llegar a audiencias globales con interfaces adaptadas culturalmente."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Aunque el sitio cumple con su propósito actual, tiene mucho potencial de crecimiento. Algunas ideas para su evolución incluyen:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Incorporar un sistema de usuarios para que los visitantes puedan guardar artículos o dejar comentarios.",
+              "Crear un panel de administración simple para editar el contenido sin tocar el JSON manualmente.",
+              "Rediseñar el layout con una estética más atractiva y dinámica.",
+              "Agregar categorías, etiquetas y filtros para navegar mejor entre noticias.",
+              "Mejorar la accesibilidad y rendimiento para audiencias globales."
+            ]
+          }
+        ]
       },
       {
         "title": "Características clave",
-        "content": "Una de las principales características es la funcionalidad de búsqueda avanzada, que permite a los usuarios encontrar información específica en segundos gracias a filtros dinámicos y una interfaz de autocompletado.\nAdemás, incluye un sistema de notificaciones en tiempo real para mantener a los usuarios actualizados sin interrumpir su flujo de trabajo."
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>Ruleta dinámica:</strong> desarrollé una ruleta interactiva en React que genera niveles aleatorios según los filtros seleccionados por el usuario. Estos niveles se agrupan y pueden ser guardados para intentar superarlos en el orden propuesto.",
+              "<strong>Modo claro/oscuro:</strong> el sitio cambia su tema automáticamente mediante variables CSS, lo que mejora la accesibilidad y el confort visual.",
+              "<strong>Fondos animados personalizados:</strong> diseñé un fondo visual con los personajes del juego que se desplaza de forma fluida al hacer scroll, generando una experiencia envolvente sin sacrificar rendimiento.",
+              "<strong>Perfiles de usuario con historial:</strong> los usuarios pueden almacenar sus ruletas, ver su progreso y gestionar sus desafíos desde su cuenta personal."
+            ]
+          }
+        ]
       },
       {
         "title": "Integraciones",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>React Router</strong> para la navegación entre vistas.",
+              "<strong>React Icons</strong> para iconografía moderna y personalizable.",
+              "Integración con el backend en <strong>Django + SQLite</strong>, con datos cifrados y lógica personalizada para autenticar y testear usuarios.",
+              "Bloques dinámicos de Django embebidos en el código React para imprimir contenido del servidor.",
+              "Herramientas y scripts para testing rápido con cuentas dummy proporcionadas por el backend developer."
+            ]
+          }
+        ]
       },
       {
         "title": "Documentación",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cada archivo y componente está comentado y organizado bajo una estructura lógica basada en funcionalidades. La nomenclatura es consistente y clara, y el código está diseñado para que cualquier miembro del equipo —actual o futuro— pueda incorporarse rápidamente sin perder tiempo descifrando qué hace cada cosa."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, se documentaron las convenciones de estilo y la estructura del proyecto para asegurar una base sólida sobre la cual continuar construyendo."
+          }
+        ]
       }
     ]
   },

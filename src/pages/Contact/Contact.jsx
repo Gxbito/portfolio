@@ -11,13 +11,14 @@ function Contact() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Hablemos de tus ideas</h2>
+          <h2>Let's Bring Your Ideas to Life</h2>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
-            ¿Tienes un proyecto en mente o necesitas colaboración para llevar
-            tus ideas al siguiente nivel? Completa el formulario o contáctame a
-            través de mis redes sociales. Estoy aquí para crear contigo.
+            Do you have a project in mind, or are you looking for a
+            collaborative partner to elevate your ideas to the next level? Fill
+            out the form or reach out to me through my social channels. I'm here
+            to create innovative solutions together with you.
           </p>
         </AnimatedWrapper>
         <ButtonsContainer>

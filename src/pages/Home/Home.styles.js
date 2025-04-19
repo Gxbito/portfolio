@@ -42,7 +42,7 @@ export const ShorcutCardsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 28px;
 
   @media (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
