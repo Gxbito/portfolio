@@ -165,17 +165,19 @@ export const GalleryContainer = styled.div`
 
 export const TextContainer = styled.div`
   width: 100%;
+  max-width: 741px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 32px;
 
   h4 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: var(--font-size-header-4);
     color: var(--color-text-title);
+    scroll-margin-top: -100px;
   }
 
   p {
@@ -213,6 +215,15 @@ export const TextContainer = styled.div`
         font-weight: 600;
       }
     }
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
   }
 `;
 

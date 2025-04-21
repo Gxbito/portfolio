@@ -24,10 +24,11 @@ function StackCard() {
     <AnimatedWrapper style={{ width: "100%" }}>
       <StackCardStyled>
         <StackTextContainer>
-          <h4>Sample text</h4>
+          <h4>Tech Stack</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-            nesciunt?
+            A selection of key tools and technologies I regularly use. Each one
+            plays a part in how I build fast, responsive, and modern web
+            experiences
           </p>
         </StackTextContainer>
 

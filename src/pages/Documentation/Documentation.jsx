@@ -72,35 +72,40 @@ function Documentation() {
           {project.sections.slice(0, 2).map((item, i) => {
             const globalIndex = i + 0;
             return (
-              <AnimatedWrapper key={i}>
+              <AnimatedWrapper
+                key={i}
+                style={{ width: "100%", maxWidth: "741px" }}
+              >
                 <TextContainer>
                   <h4 id={`section-${globalIndex}`}>{item.title}</h4>
-          
-                  {item.content.map((block, index) => {
-                    if (block.type === "paragraph") {
-                      return (
-                        <p
-                          key={index}
-                          dangerouslySetInnerHTML={{ __html: block.text }}
-                        />
-                      );
-                    }
-          
-                    if (block.type === "list") {
-                      return (
-                        <ul key={index}>
-                          {block.items.map((li, liIndex) => (
-                            <li
-                              key={liIndex}
-                              dangerouslySetInnerHTML={{ __html: li }}
-                            />
-                          ))}
-                        </ul>
-                      );
-                    }
-          
-                    return null;
-                  })}
+
+                  <div>
+                    {item.content.map((block, index) => {
+                      if (block.type === "paragraph") {
+                        return (
+                          <p
+                            key={index}
+                            dangerouslySetInnerHTML={{ __html: block.text }}
+                          />
+                        );
+                      }
+
+                      if (block.type === "list") {
+                        return (
+                          <ul key={index}>
+                            {block.items.map((li, liIndex) => (
+                              <li
+                                key={liIndex}
+                                dangerouslySetInnerHTML={{ __html: li }}
+                              />
+                            ))}
+                          </ul>
+                        );
+                      }
+
+                      return null;
+                    })}
+                  </div>
                 </TextContainer>
               </AnimatedWrapper>
             );
@@ -121,32 +126,37 @@ function Documentation() {
           {project.sections.slice(2, 4).map((item, i) => {
             const globalIndex = i + 2;
             return (
-              <AnimatedWrapper key={i}>
+              <AnimatedWrapper
+                key={i}
+                style={{ width: "100%", maxWidth: "741px" }}
+              >
                 <TextContainer>
                   <h4 id={`section-${globalIndex}`}>{item.title}</h4>
-                  {item.content.map((block, index) => {
-                    if (block.type === "paragraph") {
-                      return (
-                        <p
-                          key={index}
-                          dangerouslySetInnerHTML={{ __html: block.text }}
-                        />
-                      );
-                    }
-                    if (block.type === "list") {
-                      return (
-                        <ul key={index}>
-                          {block.items.map((item, idx) => (
-                            <li
-                              key={idx}
-                              dangerouslySetInnerHTML={{ __html: item }}
-                            />
-                          ))}
-                        </ul>
-                      );
-                    }
-                    return null;
-                  })}
+                  <div>
+                    {item.content.map((block, index) => {
+                      if (block.type === "paragraph") {
+                        return (
+                          <p
+                            key={index}
+                            dangerouslySetInnerHTML={{ __html: block.text }}
+                          />
+                        );
+                      }
+                      if (block.type === "list") {
+                        return (
+                          <ul key={index}>
+                            {block.items.map((item, idx) => (
+                              <li
+                                key={idx}
+                                dangerouslySetInnerHTML={{ __html: item }}
+                              />
+                            ))}
+                          </ul>
+                        );
+                      }
+                      return null;
+                    })}{" "}
+                  </div>
                 </TextContainer>
               </AnimatedWrapper>
             );
@@ -156,32 +166,38 @@ function Documentation() {
           {project.sections.slice(4, 6).map((item, i) => {
             const globalIndex = i + 4;
             return (
-              <AnimatedWrapper key={i}>
+              <AnimatedWrapper
+                key={i}
+                style={{ width: "100%", maxWidth: "741px" }}
+              >
                 <TextContainer>
                   <h4 id={`section-${globalIndex}`}>{item.title}</h4>
-                  {item.content.map((block, index) => {
-                    if (block.type === "paragraph") {
-                      return (
-                        <p
-                          key={index}
-                          dangerouslySetInnerHTML={{ __html: block.text }}
-                        />
-                      );
-                    }
-                    if (block.type === "list") {
-                      return (
-                        <ul key={index}>
-                          {block.items.map((item, idx) => (
-                            <li
-                              key={idx}
-                              dangerouslySetInnerHTML={{ __html: item }}
-                            />
-                          ))}
-                        </ul>
-                      );
-                    }
-                    return null;
-                  })}
+
+                  <div>
+                    {item.content.map((block, index) => {
+                      if (block.type === "paragraph") {
+                        return (
+                          <p
+                            key={index}
+                            dangerouslySetInnerHTML={{ __html: block.text }}
+                          />
+                        );
+                      }
+                      if (block.type === "list") {
+                        return (
+                          <ul key={index}>
+                            {block.items.map((item, idx) => (
+                              <li
+                                key={idx}
+                                dangerouslySetInnerHTML={{ __html: item }}
+                              />
+                            ))}
+                          </ul>
+                        );
+                      }
+                      return null;
+                    })}
+                  </div>
                 </TextContainer>
               </AnimatedWrapper>
             );
@@ -191,36 +207,41 @@ function Documentation() {
             <img src={project.gallery[4]} alt="project" />
           </AnimatedWrapper>
 
-          {project.sections.slice(6, 9).map((item, i) => {
+          {project.sections.slice(6, 10).map((item, i) => {
             const globalIndex = i + 6;
 
             return (
-              <AnimatedWrapper key={i}>
+              <AnimatedWrapper
+                key={i}
+                style={{ width: "100%", maxWidth: "741px" }}
+              >
                 <TextContainer>
                   <h4 id={`section-${globalIndex}`}>{item.title}</h4>
-                  {item.content.map((block, index) => {
-                    if (block.type === "paragraph") {
-                      return (
-                        <p
-                          key={index}
-                          dangerouslySetInnerHTML={{ __html: block.text }}
-                        />
-                      );
-                    }
-                    if (block.type === "list") {
-                      return (
-                        <ul key={index}>
-                          {block.items.map((item, idx) => (
-                            <li
-                              key={idx}
-                              dangerouslySetInnerHTML={{ __html: item }}
-                            />
-                          ))}
-                        </ul>
-                      );
-                    }
-                    return null;
-                  })}
+                  <div>
+                    {item.content.map((block, index) => {
+                      if (block.type === "paragraph") {
+                        return (
+                          <p
+                            key={index}
+                            dangerouslySetInnerHTML={{ __html: block.text }}
+                          />
+                        );
+                      }
+                      if (block.type === "list") {
+                        return (
+                          <ul key={index}>
+                            {block.items.map((item, idx) => (
+                              <li
+                                key={idx}
+                                dangerouslySetInnerHTML={{ __html: item }}
+                              />
+                            ))}
+                          </ul>
+                        );
+                      }
+                      return null;
+                    })}
+                  </div>
                 </TextContainer>
               </AnimatedWrapper>
             );
@@ -229,7 +250,7 @@ function Documentation() {
         <div>
           <DocumentationTitltesContainer>
             {documentationItems.map((item, i) => (
-              <AnimatedWrapper key={i}>
+              <AnimatedWrapper key={i} delay={i * 0.1} x={40} y={0}>
                 <DocumentationTitle
                   isActive={activeSection === i}
                   onClick={() => handleSectionClick(i)}

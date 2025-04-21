@@ -1,6 +1,6 @@
 [
   {
-    "id": "ranking-platform",
+    "id": "geomax",
     "name": "GEOMAX",
     "title": "Plataforma de Rankings de Geometry Dash",
     "image": "src/assets/images/placeholder-image.jpg",
@@ -153,7 +153,7 @@
     ]
   },
   {
-    "id": "work-2",
+    "id": "nettv-magazine",
     "name": "NETTV MAGAZINE",
     "title": "Página informativa para marca internacional",
     "image": "src/assets/images/placeholder-image.jpg",
@@ -264,10 +264,686 @@
           {
             "type": "list",
             "items": [
-              "<strong>Ruleta dinámica:</strong> desarrollé una ruleta interactiva en React que genera niveles aleatorios según los filtros seleccionados por el usuario. Estos niveles se agrupan y pueden ser guardados para intentar superarlos en el orden propuesto.",
-              "<strong>Modo claro/oscuro:</strong> el sitio cambia su tema automáticamente mediante variables CSS, lo que mejora la accesibilidad y el confort visual.",
-              "<strong>Fondos animados personalizados:</strong> diseñé un fondo visual con los personajes del juego que se desplaza de forma fluida al hacer scroll, generando una experiencia envolvente sin sacrificar rendimiento.",
-              "<strong>Perfiles de usuario con historial:</strong> los usuarios pueden almacenar sus ruletas, ver su progreso y gestionar sus desafíos desde su cuenta personal."
+              "<strong>Formulario de contacto integrado (Hubspot)</strong> directamente en el encabezado, disponible en distintas variantes según la sección.",
+              "<strong>Cards interactivas</strong> para cada marca, con enlaces a sus respectivos sitios.",
+              "<strong>Carga dinámica de noticias y artículos</strong> desde un archivo JSON editable, facilitando la actualización manual por parte del cliente.",
+              "<strong>Diseño responsive y ligero</strong>, optimizado para carga rápida y compatibilidad con cualquier dispositivo."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Integraciones",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Este sitio se benefició de una integración sencilla pero efectiva:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Hubspot Forms:</strong> para capturar leads sin necesidad de desarrollar un backend.",
+              "<strong>Vercel:</strong> como entorno de despliegue en tiempo real durante el desarrollo."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Gracias a esto, el cliente pudo seguir todo el avance del sitio sin barreras técnicas y mantener el contacto con sus usuarios desde el primer día."
+          }
+        ]
+      },
+      {
+        "title": "Documentación",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Se generó una estructura clara de carpetas y archivos:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>index.html</strong>, <strong>style.css</strong>, <strong>main.js</strong>: estructura base.",
+              "<strong>data.json:</strong> archivo editable con los títulos e imágenes de artículos y noticias.",
+              "Comentarios dentro del código explicando cada sección, clase o función.",
+              "Uso de <strong>alt</strong> descriptivos en imágenes para facilitar futuras ediciones.",
+              "Recomendaciones sobre cómo modificar el JSON, cambiar las imágenes o actualizar los links de marcas."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "more-time",
+    "name": "MORE TIME",
+    "title": "Landing Page de producto en Shopify ",
+    "image": "src/assets/images/placeholder-image.jpg",
+    "year": "2024",
+    "gallery": [
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg"
+    ],
+    "description": "Página de venta directa para un spray masculino, enfocada en la conversión rápida y efectiva.",
+    "stack": ["React", "Tailwind", "Framer Motion"],
+    "github": "https://github.com/Gxbito/e-commerce",
+    "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "sections": [
+      {
+        "title": "Overview",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Un emprendedor español me contactó por Fiverr para lanzar MORE TIME, una marca de spray íntimo masculino. El objetivo era crear una landing page atractiva, funcional y alineada al branding del producto, basada en el diseño provisto por su Product Designer."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mi rol fue transformar ese diseño en una web completamente funcional dentro del ecosistema de Shopify, enfocada en la conversión rápida durante una campaña de ventas temporal."
+          }
+        ]
+      },
+      {
+        "title": "Tecnologías",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Shopify presenta limitaciones para el desarrollo frontend personalizado, así que aproveché HTML y CSS avanzados para lograr una página fluida, responsiva y adaptada al diseño original."
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>HTML & CSS puro:</strong> Para adaptar con precisión el diseño del Product Designer.",
+              "<strong>Plugins oficiales de Shopify:</strong> Para integrar pasarelas de pago, seguimiento y funcionalidades de ecommerce.",
+              "<strong>Theme base personalizado:</strong> Modificado desde el panel de Shopify con acceso directo a código fuente."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desafíos",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Fue mi primer trabajo profesional dentro de Shopify, y también mi primera colaboración directa con un Product Designer. Tuve que adaptarme a un entorno de edición limitado y, al mismo tiempo, interpretar guías visuales con exactitud para mantener la estética esperada."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, trabajamos bajo un calendario muy ajustado, ya que el producto se vendería por tiempo limitado. Esto exigió entregas rápidas y una comunicación muy activa por WhatsApp y videollamadas."
+          }
+        ]
+      },
+      {
+        "title": "Proceso",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Diseñé dos versiones iniciales basadas en el branding del producto. Una vez aprobado el diseño final, comencé a modificar una plantilla de Shopify directamente desde el código."
+          },
+          {
+            "type": "paragraph",
+            "text": "Todo el desarrollo fue iterativo: mostré avances en cada llamada semanal y recibí feedback inmediato. Esta dinámica me permitió ajustar detalles sobre la marcha y lanzar el sitio rápidamente sin perder calidad."
+          }
+        ]
+      },
+      {
+        "title": "Lecciones aprendidas",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Aprendí a trabajar dentro del entorno de Shopify y a sacarle el máximo provecho al código personalizado pese a sus limitaciones. También mejoré mis habilidades de comunicación en contextos profesionales y aprendí a colaborar con diseñadores de producto de forma más efectiva."
+          },
+          {
+            "type": "paragraph",
+            "text": "Este proyecto reforzó mi capacidad de adaptación, especialmente cuando los recursos son limitados y el tiempo es clave. Fue un gran entrenamiento en eficiencia, colaboración y entrega profesional."
+          }
+        ]
+      },
+      {
+        "title": "Evolución futura",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Aunque la product page de MORE TIME fue concebida como una landing temporal para acompañar el lanzamiento inicial de la marca, su estructura modular y escalable permite múltiples posibilidades de evolución en caso de que el proyecto se relance o se convierta en algo más permanente."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Transformar la landing en un e-commerce completo con catálogo de productos, login de usuarios y sistema de recompensas.",
+              "Agregar una sección de testimonios en video o reseñas verificadas para reforzar la confianza y credibilidad del producto.",
+              "Implementar un sistema de afiliados o referidos para ampliar la difusión orgánica y aumentar las conversiones.",
+              "Desarrollar una Progressive Web App (PWA) que permita realizar compras desde el celular como si fuera una app nativa.",
+              "Integrar funcionalidades de suscripción mensual o bundles con promociones especiales por tiempo limitado."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Gracias a su base sólida en HTML, CSS y JS, y su integración inicial con Shopify, cualquier expansión futura puede desarrollarse rápidamente sin rehacer el proyecto desde cero."
+          }
+        ]
+      },
+      {
+        "title": "Características clave",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>Diseño 100% responsive y orientado a conversiones:</strong> Cada sección fue pensada para guiar al usuario hacia la acción, con una estructura visual clara, botones llamativos y testimonios estratégicamente ubicados.",
+              "<strong>Pasarelas de pago integradas:</strong> Utilicé plugins oficiales de Shopify para activar múltiples métodos de pago (tarjetas, billeteras digitales y más), asegurando una experiencia de compra sin fricción.",
+              "<strong>Optimización SEO básica:</strong> Estructuré el contenido con etiquetas semánticas, URLs limpias y tiempos de carga bajos para facilitar el posicionamiento en buscadores.",
+              "<strong>Animaciones suaves en scroll y elementos clave:</strong> Mejoré la percepción de calidad del producto utilizando transiciones suaves y microinteracciones.",
+              "<strong>Adaptabilidad total al branding:</strong> El diseño visual se construyó respetando cada guideline del Product Designer, desde los colores y tipografías hasta el tono de comunicación."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Integraciones",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "MORE TIME fue pensado para brindar una experiencia completa desde el primer clic hasta el checkout, por eso incorporé herramientas clave que facilitaron el flujo de ventas y el análisis de comportamiento del usuario."
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Shopify Payments & Mercado Pago:</strong> Integración de múltiples pasarelas para adaptarse tanto al mercado europeo como al latinoamericano, asegurando cobertura global y pagos instantáneos.",
+              "<strong>Google Analytics + Meta Pixel:</strong> Implementación de herramientas de seguimiento para medir el rendimiento de campañas publicitarias y optimizar la conversión en tiempo real.",
+              "<strong>Klaviyo:</strong> Sistema de email marketing para capturar leads y automatizar mensajes personalizados post-compra, con formularios embebidos y triggers según comportamiento del usuario.",
+              "<strong>Hubspot Forms:</strong> Inserté un formulario de contacto avanzado en el hero del sitio, conectado a una base de datos externa para gestión de leads y seguimiento comercial.",
+              "<strong>Vercel (para testing):</strong> Durante el desarrollo, monté una versión temporal en Vercel para revisión en tiempo real del cliente, permitiendo iteraciones rápidas y validación de cada cambio visual o funcional."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Estas integraciones no solo facilitaron el crecimiento inicial del producto, sino que sentaron las bases para futuras estrategias de remarketing, fidelización y expansión digital."
+          }
+        ]
+      },
+      {
+        "title": "Documentación",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Dejé instrucciones detalladas para que el cliente pudiera editar textos, imágenes y secciones desde el panel de Shopify sin romper el diseño. También incluí recomendaciones para futuras actualizaciones:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Explicación del funcionamiento de cada sección editable.",
+              "Consejos para mantener la estética si se agregan productos nuevos.",
+              "Guía de respaldo del tema actual y restauración en caso de errores.",
+              "Soporte básico para entender cómo cambiar imágenes y links."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advant",
+    "name": "ADVANT",
+    "title": "Agencia de Marketing en WordPress",
+    "image": "src/assets/images/placeholder-image.jpg",
+    "year": "2024",
+    "gallery": [
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg"
+    ],
+    "description": "Sitio web corporativo para una agencia de marketing digital con sede en EE.UU, enfocado en atraer nuevos clientes",
+    "stack": ["React", "Tailwind", "Framer Motion"],
+    "github": "https://github.com/Gxbito/e-commerce",
+    "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "sections": [
+      {
+        "title": "Overview",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Un argentino que vive en Estados Unidos me contactó por Fiverr para desarrollar el sitio de su agencia de marketing: ADVANT. Él ya tenía experiencia en SEO y un conocimiento técnico intermedio, por lo que buscaba alguien que pudiera ejecutar su visión en WordPress, manteniendo una estructura inspirada en una página de referencia que me proporcionó."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mi rol fue diseñar y desarrollar desde cero un sitio profesional, con 7 páginas internas, cuidando cada detalle visual y técnico para lograr un equilibrio entre performance, estética y posicionamiento."
+          }
+        ]
+      },
+      {
+        "title": "Tecnologías",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Aunque trabajé sobre WordPress, busqué llevar el desarrollo al siguiente nivel utilizando herramientas complementarias para asegurar una experiencia profesional:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>WordPress + Elementor:</strong> para maquetar de forma visual pero precisa, respetando el diseño original.",
+              "<strong>CSS personalizado:</strong> para ajustar estilos y romper limitaciones visuales del CMS.",
+              "<strong>Snippets de código:</strong> para lograr funcionalidades puntuales sin sobrecargar con plugins innecesarios.",
+              "<strong>Plugins esenciales:</strong> WPForms, Jetpack, Yoast SEO, Creativ.eMail, entre otros."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desafíos",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El principal reto fue trabajar dentro de las limitaciones propias de WordPress. A pesar de que no suelo usar CMS, aproveché al máximo sus capacidades combinándolas con código personalizado para no depender exclusivamente de plugins o themes restrictivos."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, el cliente quería mantener el mismo layout que la web de referencia, pero con un branding completamente distinto. Esto implicó rediseñar todos los elementos visuales —paleta de colores, tipografías, iconografía e imágenes— adaptando cada sección sin alterar la estructura base."
+          }
+        ]
+      },
+      {
+        "title": "Proceso",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Desde el primer día, el cliente me otorgó acceso total al wp-admin. Él ya tenía el dominio y hosting listos, así que pude empezar a trabajar inmediatamente. Le pedí que me confirmara cuántas páginas necesitaba y comenzamos a construir cada una, basándonos en el layout original pero aplicando su branding."
+          },
+          {
+            "type": "paragraph",
+            "text": "El flujo de trabajo fue iterativo: cada día le mostraba avances pantalla por pantalla y recibía feedback inmediato, lo que nos permitió avanzar de manera ágil y organizada. Incluso colaboramos en el SEO desde el principio, ya que el cliente tenía experiencia previa en la materia."
+          }
+        ]
+      },
+      {
+        "title": "Lecciones aprendidas",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Este proyecto me ayudó a afianzar mis habilidades con CMS, especialmente WordPress, y a entender la compatibilidad entre distintos plugins. También aprendí a integrar formularios externos como Hubspot dentro del entorno de WP sin comprometer el diseño."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, fortalecí mi capacidad de colaboración remota, adaptándome al ritmo de un cliente con visión de negocio y conocimientos técnicos avanzados."
+          }
+        ]
+      },
+      {
+        "title": "Evolución futura",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Aunque el sitio fue diseñado para cubrir las necesidades actuales de la agencia, está preparado para escalar. Algunas ideas que propuse para su evolución fueron:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agregar un área privada para clientes con acceso a reportes personalizados.",
+              "Implementar un CRM ligero directamente desde el panel de WP para seguimiento de leads.",
+              "Incorporar chat en vivo para asistencia inmediata.",
+              "Expandir la sección de artículos con contenido multimedia optimizado para SEO.",
+              "Crear un dashboard visual con estadísticas de visitas, conversiones y formularios enviados."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características clave",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>Formulario de contacto integrado (Hubspot y WPForms)</strong>, con redirección automática al mail del cliente.",
+              "<strong>Sección de blog y artículos personalizados</strong>, pensada para alimentar el SEO orgánico de forma constante.",
+              "<strong>Sistema de reservas</strong> para agendar reuniones con clientes de forma sencilla.",
+              "<strong>Diseño responsivo adaptado al branding de ADVANT</strong>, con íconos, paleta y tipografías personalizadas.",
+              "<strong>Plugins esenciales integrados</strong> para seguridad, backups y velocidad de carga óptima."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Integraciones",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El sitio fue potenciado con integraciones clave que no sólo mejoran la experiencia del usuario, sino que optimizan la gestión interna de la agencia:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>WPForms + Hubspot:</strong> para captación de leads automatizada con notificación por correo.",
+              "<strong>Yoast SEO:</strong> con configuración avanzada, títulos dinámicos y metadatos personalizados en cada página.",
+              "<strong>Jetpack:</strong> para estadísticas, seguridad básica y backups automáticos.",
+              "<strong>Google Tag Manager:</strong> para el seguimiento de eventos y campañas de marketing.",
+              "<strong>Creativ.eMail:</strong> para gestión de newsletters y automatización de correos de bienvenida."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Documentación",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Se preparó una guía de administración básica y se dejó todo documentado dentro del propio WordPress:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Comentarios explicativos en cada sección editable de Elementor.",
+              "Guía en PDF sobre cómo crear nuevos artículos y configurar el SEO con Yoast.",
+              "Explicación paso a paso para modificar imágenes, textos y enlaces desde el editor visual.",
+              "Manual de respaldo para restaurar el sitio con Jetpack en caso de errores.",
+              "Recomendaciones de mantenimiento mensual y actualizaciones seguras."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alpha-cycles",
+    "name": "Alpha Cycles",
+    "title": "Optimización comercial con agendamiento inteligente",
+    "image": "src/assets/images/placeholder-image.jpg",
+    "year": "2024",
+    "gallery": [
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg"
+    ],
+    "description": "Sitio web de una concesionaria de motos en Miami que exhibe modelos y servicios",
+    "stack": ["React", "Tailwind", "Framer Motion"],
+    "github": "https://github.com/Gxbito/e-commerce",
+    "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "sections": [
+      {
+        "title": "Overview",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Alpha Cycles es una concesionaria de motos ubicada en Miami. El proyecto surgió cuando Marco, el dueño de Advant (un cliente anterior), me contactó para que ayude a uno de sus propios clientes con una mejora puntual: desarrollar una nueva sección en su sitio donde los usuarios pudieran <strong>agendar una cita personalizada</strong> con el dueño para consultas sobre motos — con la intención de convertir esas citas en oportunidades de venta."
+          },
+          {
+            "type": "paragraph",
+            "text": "Aunque se trataba de una página simple, el foco estaba en facilitar el contacto directo con potenciales compradores, sin fricciones ni procesos largos. La experiencia debía ser lo más fluida posible, tanto para el usuario como para el equipo de Alpha."
+          }
+        ]
+      },
+      {
+        "title": "Tecnologías",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Para lograr una solución efectiva, me apoyé en tecnologías simples pero potentes:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Elementor Pro:</strong>  el constructor principal del sitio, con widgets premium que permitieron estructurar la sección sin necesidad de código complejo",
+              "<strong>WPForms + HubSpot:</strong> combinación estratégica para insertar formularios de reservas conectados directamente con el CRM del cliente.",
+              "<strong>CSS personalizado:</strong> se aplicaron ajustes visuales específicos para armonizar el diseño del formulario con la estética de la marca, superando las limitaciones predeterminadas del builder.",
+              "<strong>WordPress</strong> como base CMS WPForms: pese a las limitaciones que a veces representa, su ecosistema permitió trabajar con rapidez y precisión sobre una instalación ya existente, sin necesidad de reestructurar nada desde cero."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desafíos",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Pese a tratarse de una sola página, el proyecto me presentó varios desafíos clave:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Integrarme rápidamente a un ecosistema WordPress ajeno, ya montado y basado en Elementor Pro.",
+              "<strong>Adaptarme a la dinámica de trabajar para el cliente de un cliente</strong>, sin comunicación directa con el usuario final.",
+              "<strong>CSS personalizado:</strong> se aplicaron ajustes visuales específicos para armonizar el diseño del formulario con la estética de la marca, superando las limitaciones predeterminadas del builder.",
+              "Mantener una <strong>experiencia limpia, visualmente coherente y sin fricciones</strong> a pesar de las limitaciones del entorno."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Este tipo de proyectos “pequeños” suelen subestimarse, pero su éxito depende de una ejecución meticulosa y estratégica. Mi reto fue lograr que una simple página se convirtiera en un <strong>canal real de captación y conversión.</strong>"
+          }
+        ]
+      },
+      {
+        "title": "Proceso",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El desarrollo fue ágil pero planificado:"
+          },
+          {
+            "type": "paragraph",
+            "text": "El flujo de trabajo fue iterativo: cada día le mostraba avances pantalla por pantalla y recibía feedback inmediato, lo que nos permitió avanzar de manera ágil y organizada. Incluso colaboramos en el SEO desde el principio, ya que el cliente tenía experiencia previa en la materia."
+          }
+        ]
+      },
+      {
+        "title": "Lecciones aprendidas",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "Aprendí a sacar el <strong>máximo provecho de Elementor Pro</strong>, incluyendo widgets premium y personalización avanzada.",
+              "Mejoré mis habilidades para <strong>integrar herramientas externas como HubSpot</strong> en entornos visuales cerrados.",
+              "Reforcé mi capacidad de adaptación a entornos y equipos que ya están en marcha.",
+              "Validé que incluso una implementación mínima puede generar un <strong>alto impacto comercial</strong> si está bien diseñada."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Evolución futura",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Aunque el proyecto fue entregado como una solución puntual, detecté áreas con gran potencial de crecimiento:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Hacer el formulario dinámico según el tipo de consulta.",
+              "<strong>Incluir reseñas de clientes</strong> para generar confianza instantánea.",
+              "Agregar <strong>recordatorios automáticos</strong> o sincronización con calendarios del usuario.",
+              "Incluir <strong>mini catálogos interactivos</strong> con motos destacadas como parte del flujo de agendamiento."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características clave",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>Página de citas 100% funcional y responsiva.",
+              "<strong>Estructura enfocada en conversión</strong> sin distraer al usuario.",
+              "Compatibilidad completa con Elementor Pro y el entorno actual del cliente.",
+              "Carrusel visual con productos destacados para reforzar el aspecto comercial."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Integraciones",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El sitio fue potenciado con integraciones clave que no sólo mejoran la experiencia del usuario, sino que optimizan la gestión interna de la agencia:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>WPForms + Hubspot:</strong> permitieron vincular agendamientos con el CRM de forma limpia y sin interferencias visuales.",
+              "<strong>Elementor Pro:</strong> base para maquetado y personalización.",
+              "<strong>CSS personalizado:</strong> para un acabado visual profesional, sin necesidad de tocar el código base del sitio."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Documentación",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Se preparó una guía de administración básica y se dejó todo documentado dentro del propio WordPress:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Comentarios explicativos en cada sección editable de Elementor.",
+              "Guía en PDF sobre cómo crear nuevos artículos y configurar el SEO con Yoast.",
+              "Explicación paso a paso para modificar imágenes, textos y enlaces desde el editor visual.",
+              "Manual de respaldo para restaurar el sitio con Jetpack en caso de errores.",
+              "Recomendaciones de mantenimiento mensual y actualizaciones seguras."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sellblink",
+    "name": "Sellblink",
+    "title": "Desarrollo de sitio web inmobiliario",
+    "image": "src/assets/images/placeholder-image.jpg",
+    "year": "2024",
+    "gallery": [
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg",
+      "/images/works/placeholder-image.jpg"
+    ],
+    "description": "Sitio web inmobiliario que conecta compradores, vendedores y desarrolladores de proyectos en Perú.",
+    "stack": ["React", "Tailwind", "Framer Motion"],
+    "github": "https://github.com/Gxbito/e-commerce",
+    "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "sections": [
+      {
+        "title": "Overview",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sellblink (anteriormente Organización Sánchez) es una inmobiliaria peruana que se encuentra en plena etapa de crecimiento digital. Me contactaron para encargarme del desarrollo completo del frontend, partiendo de diseños entregados por su diseñador UX/UI."
+          },
+          {
+            "type": "paragraph",
+            "text": "El trabajo se organizó por contratos modulares, en los que cada etapa incluía entre 5 y 10 páginas nuevas. Desde el principio me sumé como desarrollador frontend exclusivo, trabajando en conjunto con un diseñador y un backend developer, dentro de una estructura ya establecida."
+          }
+        ]
+      },
+      {
+        "title": "Tecnologías",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El proyecto se construyó en React, utilizando HTML, CSS y JavaScript puro para los detalles más específicos. Se incorporaron librerías como:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>react-slick</strong>, para sliders dinámicos.",
+              "<strong>react-icons</strong>, para enriquecer visualmente los componentes.",
+              "Varias utilidades para modals y carouseles."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "También se evitó el uso de Bootstrap (por decisión del cliente) y se apostó por componentes 100% personalizados."
+          }
+        ]
+      },
+      {
+        "title": "Desafíos",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Uno de los principales retos fue integrarme a un proyecto con código preexistente, intervenido por un backend que seguía sus propias convenciones. Me pidieron que todos mis componentes vivan dentro de una carpeta /custom para mantener un orden claro."
+          },
+          {
+            "type": "paragraph",
+            "text": "Otro desafío fue tener que respetar un diseño que no era mío, lo cual me exigió ser extremadamente preciso con medidas, espaciados y tokens del Figma original."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, tuve que analizar cómo estaba armado el layout general del proyecto, que originalmente usaba plantillas rígidas, y proponer una nueva estructura más escalable y limpia."
+          }
+        ]
+      },
+      {
+        "title": "Proceso",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El desarrollo se basó en una dinámica de trabajo ágil, organizada en contratos de entregas parciales. Cada bloque de trabajo incluía un conjunto de páginas con su diseño en Figma, que yo debía convertir en código lo más fiel posible."
+          },
+          {
+            "type": "paragraph",
+            "text": "Para eso, primero analizaba en detalle los tokens y variables que aportaba el diseñador (tipografías, espaciados, paleta, etc.), y luego definía una estructura de layout personalizada que pudiera reemplazar el sistema antiguo basado en plantillas. Esto me permitió construir un entorno más limpio y escalable, manteniendo siempre la coherencia visual."
+          },
+          {
+            "type": "paragraph",
+            "text": "Una vez implementadas las páginas, notificaba al equipo por el grupo compartido —diseñador, backend y cliente— comentando los avances, push del día y cualquier duda o sugerencia para la siguiente iteración. Esta rutina de comunicación constante fue clave para mantener la fluidez del proyecto y ajustar rápidamente cualquier detalle visual o técnico."
+          }
+        ]
+      },
+      {
+        "title": "Lecciones aprendidas",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Este proyecto me ayudó a crecer profesionalmente en varios aspectos:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Aprendí a colaborar de manera fluida dentro de un equipo multidisciplinario remoto.",
+              "Me adapté rápidamente a un entorno de desarrollo ya estructurado por otros.",
+              "Incorporé buenas prácticas para estructurar componentes reutilizables y escalar un proyecto sin depender de frameworks como Bootstrap.",
+              "Fortalecí mi capacidad para seguir un diseño ajeno con fidelidad y detalle."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Evolución futura",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sellblink está en constante evolución, y el roadmap contempla varias mejoras:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Implementación de login de usuarios y sistema de cuentas.",
+              "Funcionalidad para publicar propiedades desde la cuenta del usuario.",
+              "Módulos avanzados como selector de idioma, cambio de divisa y temas (modo oscuro, etc.).",
+              "Integración con sistemas de pago y animaciones personalizadas para mejorar la UX."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características clave",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "Sliders dinámicos de propiedades y banners.",
+              "Sistema de búsqueda con múltiples filtros (tipo de propiedad, región, precio, etc.).",
+              "Mapas interactivos para mostrar ubicación exacta.",
+              "Vistas dinámicas que adaptan el layout según el tipo de contenido.",
+              "Paginación optimizada para catálogos largos de propiedades y agentes."
             ]
           }
         ]
@@ -278,11 +954,11 @@
           {
             "type": "list",
             "items": [
-              "<strong>React Router</strong> para la navegación entre vistas.",
-              "<strong>React Icons</strong> para iconografía moderna y personalizable.",
-              "Integración con el backend en <strong>Django + SQLite</strong>, con datos cifrados y lógica personalizada para autenticar y testear usuarios.",
-              "Bloques dinámicos de Django embebidos en el código React para imprimir contenido del servidor.",
-              "Herramientas y scripts para testing rápido con cuentas dummy proporcionadas por el backend developer."
+              "<strong>React Slick</strong> para sliders",
+              "<strong>API personalizada</strong> para propiedades, agentes y contenidos",
+              "<strong>React Icons</strong>",
+              "<strong>Librerías de modals y carouseles</strong>",
+              "Integración total con estructura backend ya existente"
             ]
           }
         ]
@@ -292,125 +968,18 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Cada archivo y componente está comentado y organizado bajo una estructura lógica basada en funcionalidades. La nomenclatura es consistente y clara, y el código está diseñado para que cualquier miembro del equipo —actual o futuro— pueda incorporarse rápidamente sin perder tiempo descifrando qué hace cada cosa."
+            "text": "Toda la documentación técnica fue organizada por secciones, incluyendo:"
           },
           {
-            "type": "paragraph",
-            "text": "Además, se documentaron las convenciones de estilo y la estructura del proyecto para asegurar una base sólida sobre la cual continuar construyendo."
+            "type": "list",
+            "items": [
+              "Estructura de carpetas (/custom para componentes propios).",
+              "Variables globales definidas por el diseño (colores, fuentes, breakpoints).",
+              "Estándares de desarrollo interno para mantener consistencia con el backend.",
+              "Convenciones para commits, pushes y entregas por contrato."
+            ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "work-3",
-    "name": "Trendsetter Threads",
-    "title": "E-Commerce de Moda Optimizado",
-    "image": "src/assets/images/placeholder-image.jpg",
-    "year": "2024",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
-    "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "github": "https://github.com/Gxbito/e-commerce",
-    "demo": "https://e-commerce-ashy-nine.vercel.app/",
-    "sections": [
-      {
-        "title": "Overview",
-        "content": "Este proyecto es el resultado de combinar creatividad y tecnología para resolver un problema real. Desde la etapa inicial, el enfoque estuvo en garantizar que cada elemento del diseño y funcionalidad reflejara las necesidades del usuario final.\nMás que un proyecto, esta solución representa un puente entre la innovación y la practicidad. Su desarrollo permitió aplicar metodologías ágiles para alcanzar un producto sólido y relevante para el mercado."
-      },
-      {
-        "title": "Tecnologías",
-        "content": "El stack tecnológico incluyó herramientas modernas como TypeScript para mejorar la robustez del código, junto con Tailwind CSS para estilos rápidos y consistentes. También se aprovechó GitHub Actions para implementar CI/CD, asegurando integraciones rápidas y efectivas.\nTecnologías como Firebase para la base de datos en tiempo real y Webpack para la optimización del bundle fueron clave en este proyecto, garantizando velocidad y escalabilidad. Cada elección tecnológica se realizó en base a las necesidades específicas de los usuarios y del entorno de desarrollo."
-      },
-      {
-        "title": "Desafíos",
-        "content": "El mayor desafío fue lograr una sincronización perfecta entre múltiples usuarios en tiempo real. Esto requirió no solo ajustes técnicos, sino también pruebas exhaustivas para garantizar estabilidad bajo altas cargas.\nEncontrar el balance entre un diseño visual atractivo y un rendimiento óptimo fue otro reto importante. Optimizamos cada componente para garantizar tiempos de carga rápidos, incluso en conexiones lentas."
-      },
-      {
-        "title": "Proceso",
-        "content": "Cada etapa del proceso fue documentada meticulosamente, desde los primeros bosquejos hasta el diseño interactivo en Figma. Esto permitió un flujo de trabajo transparente, donde cada iteración estuvo basada en el feedback de los usuarios.\nSe adoptó una metodología SCRUM con sprints semanales, asegurando que las tareas fueran priorizadas y entregadas en tiempo. Las reuniones de retrospectiva ayudaron a ajustar el enfoque en cada etapa."
-      },
-      {
-        "title": "Lecciones aprendidas",
-        "content": "Este proyecto reforzó la importancia de la comunicación clara con los stakeholders. Al mantener un flujo constante de feedback, se evitaron malentendidos y se lograron mejores resultados.\nLa experiencia subrayó la importancia de realizar pruebas exhaustivas en diferentes entornos. Esto ayudó a identificar y solucionar problemas de compatibilidad que inicialmente no se habían considerado."
-      },
-      {
-        "title": "Evolución futura",
-        "content": "Un paso lógico hacia el futuro sería la integración de inteligencia artificial para personalizar aún más la experiencia del usuario. Esto podría incluir recomendaciones basadas en patrones de uso.\nOtra área de evolución sería la expansión multilingüe del proyecto, permitiendo llegar a audiencias globales con interfaces adaptadas culturalmente."
-      },
-      {
-        "title": "Características clave",
-        "content": "Una de las principales características es la funcionalidad de búsqueda avanzada, que permite a los usuarios encontrar información específica en segundos gracias a filtros dinámicos y una interfaz de autocompletado.\nAdemás, incluye un sistema de notificaciones en tiempo real para mantener a los usuarios actualizados sin interrumpir su flujo de trabajo."
-      },
-      {
-        "title": "Integraciones",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
-      },
-      {
-        "title": "Documentación",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
-      }
-    ]
-  },
-  {
-    "id": "work-4",
-    "name": "Trendsetter Threads",
-    "title": "E-Commerce de Moda Optimizado",
-    "image": "src/assets/images/placeholder-image.jpg",
-    "year": "2024",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
-    "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
-    "github": "https://github.com/Gxbito/e-commerce",
-    "demo": "https://e-commerce-ashy-nine.vercel.app/",
-    "sections": [
-      {
-        "title": "Overview",
-        "content": "Este proyecto es el resultado de combinar creatividad y tecnología para resolver un problema real. Desde la etapa inicial, el enfoque estuvo en garantizar que cada elemento del diseño y funcionalidad reflejara las necesidades del usuario final.\nMás que un proyecto, esta solución representa un puente entre la innovación y la practicidad. Su desarrollo permitió aplicar metodologías ágiles para alcanzar un producto sólido y relevante para el mercado."
-      },
-      {
-        "title": "Tecnologías",
-        "content": "El stack tecnológico incluyó herramientas modernas como TypeScript para mejorar la robustez del código, junto con Tailwind CSS para estilos rápidos y consistentes. También se aprovechó GitHub Actions para implementar CI/CD, asegurando integraciones rápidas y efectivas.\nTecnologías como Firebase para la base de datos en tiempo real y Webpack para la optimización del bundle fueron clave en este proyecto, garantizando velocidad y escalabilidad. Cada elección tecnológica se realizó en base a las necesidades específicas de los usuarios y del entorno de desarrollo."
-      },
-      {
-        "title": "Desafíos",
-        "content": "El mayor desafío fue lograr una sincronización perfecta entre múltiples usuarios en tiempo real. Esto requirió no solo ajustes técnicos, sino también pruebas exhaustivas para garantizar estabilidad bajo altas cargas.\nEncontrar el balance entre un diseño visual atractivo y un rendimiento óptimo fue otro reto importante. Optimizamos cada componente para garantizar tiempos de carga rápidos, incluso en conexiones lentas."
-      },
-      {
-        "title": "Proceso",
-        "content": "Cada etapa del proceso fue documentada meticulosamente, desde los primeros bosquejos hasta el diseño interactivo en Figma. Esto permitió un flujo de trabajo transparente, donde cada iteración estuvo basada en el feedback de los usuarios.\nSe adoptó una metodología SCRUM con sprints semanales, asegurando que las tareas fueran priorizadas y entregadas en tiempo. Las reuniones de retrospectiva ayudaron a ajustar el enfoque en cada etapa."
-      },
-      {
-        "title": "Lecciones aprendidas",
-        "content": "Este proyecto reforzó la importancia de la comunicación clara con los stakeholders. Al mantener un flujo constante de feedback, se evitaron malentendidos y se lograron mejores resultados.\nLa experiencia subrayó la importancia de realizar pruebas exhaustivas en diferentes entornos. Esto ayudó a identificar y solucionar problemas de compatibilidad que inicialmente no se habían considerado."
-      },
-      {
-        "title": "Evolución futura",
-        "content": "Un paso lógico hacia el futuro sería la integración de inteligencia artificial para personalizar aún más la experiencia del usuario. Esto podría incluir recomendaciones basadas en patrones de uso.\nOtra área de evolución sería la expansión multilingüe del proyecto, permitiendo llegar a audiencias globales con interfaces adaptadas culturalmente."
-      },
-      {
-        "title": "Características clave",
-        "content": "Una de las principales características es la funcionalidad de búsqueda avanzada, que permite a los usuarios encontrar información específica en segundos gracias a filtros dinámicos y una interfaz de autocompletado.\nAdemás, incluye un sistema de notificaciones en tiempo real para mantener a los usuarios actualizados sin interrumpir su flujo de trabajo."
-      },
-      {
-        "title": "Integraciones",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
-      },
-      {
-        "title": "Documentación",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
       }
     ]
   }
