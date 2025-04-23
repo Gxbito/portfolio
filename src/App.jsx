@@ -11,26 +11,29 @@ import Services from "./pages/Services/Services";
 import Stack from "./pages/Stack/Stack";
 import Documentation from "./pages/Documentation/Documentation";
 import ScrollToTop from "./utils/scrollToTop";
+import { LenisProvider } from "./context/LenisContext";
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop/>
-      <GlobalStyles />
-      <MainWrapper>
-        <Menu />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/stack" element={<Stack />} />
-          <Route path="/documentation/:id" element={<Documentation />} />
-        </Routes>
-      </MainWrapper>
-    </Router>
+    <LenisProvider>
+      <Router>
+        <ScrollToTop />
+        <GlobalStyles />
+        <MainWrapper>
+          <Menu />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/works" element={<Works />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/stack" element={<Stack />} />
+            <Route path="/documentation/:id" element={<Documentation />} />
+          </Routes>
+        </MainWrapper>
+      </Router>
+    </LenisProvider>
   );
 }
 

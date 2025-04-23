@@ -17,11 +17,11 @@
       "React",
       "Context API",
       "Axios",
-      "Styled-components",
+      "Styled Components",
       "React router",
       "Yup",
       "Formik",
-      "React icons"
+      "Simple Icons"
     ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",

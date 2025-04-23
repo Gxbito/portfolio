@@ -8,8 +8,8 @@ export const ShowcaseCardStyled = styled(Link)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
-  padding: 48px 48px 0px 48px;
+  padding: 12px;
+  position: relative;
 
   box-shadow: var(--shadow-card);
   background-color: var(--color-bg-card);
@@ -32,14 +32,18 @@ export const ShowcaseCardStyled = styled(Link)`
     border: 1px solid var(--color-border-active);
   }
 
-  img {
+  &::before {
+    content: "";
+    position: absolute;
     width: 100%;
-    height: 400px;
-    border-radius: 16px 16px 0px 0px;
-
-    @media (max-width: ${breakpoints.mobile}) {
-      height: 210px;
-    }
+    height: 1px;
+    top: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      #d3d3d3 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -51,17 +55,33 @@ export const ShowcaseCardStyled = styled(Link)`
 export const ShowcaseDataContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 48px 60px 0px 60px;
+  gap: 60px;
 
-  @media (max-width: ${breakpoints.mobile}) {
-    & > a {
-      display: none;
+  background: ${({ gradientStart, gradientEnd }) =>
+    gradientStart && gradientEnd
+      ? `linear-gradient(180deg, ${gradientStart} 0%, ${gradientEnd} 100%)`
+      : "none"};
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 505px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0 0 20px 2px ${({ shadow }) => (shadow ? `${shadow}` : "none")};
+
+    @media (max-width: ${breakpoints.mobile}) {
+      height: 210px;
     }
   }
 `;
 
 export const DataTextContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,13 +92,13 @@ export const DataTextContainer = styled.div`
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-3);
-    color: var(--color-text-title);
+    color: ${({ text }) => (text ? `${text}` : "var(--color-text-title)")};
   }
 
   p {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-size: var(--font-size-large-paragraph);
-    color: var(--color-text-paragraph);
+    color: ${({ text }) => (text ? `${text}` : "var(--color-text-paragraph)")};
   }
 `;

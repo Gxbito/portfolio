@@ -3,15 +3,18 @@
     "id": "geomax",
     "name": "GEOMAX",
     "title": "Plataforma de Rankings de Geometry Dash",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "showcaseCard": "images/works/Geomax/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2023",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
     "description": "Sitio web que centraliza y visualiza los puntajes globales más altos en los niveles más desafiantes del videojuego Geometry Dash",
     "stack": [
       "React",
@@ -25,6 +28,12 @@
     ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#AFE0FF",
+      "shadow": "#026C9E",
+      "gradientStart": "#011E34",
+      "gradientEnd": "#009CFF"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -156,19 +165,28 @@
     "id": "nettv-magazine",
     "name": "NETTV MAGAZINE",
     "title": "Página informativa para marca internacional",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "showcaseCard": "images/works/NETTVMagazine/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2023",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
     "stack": ["React", "Tailwind", "Framer Motion"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#A0A0A0",
+      "shadow": "#1E1E1E",
+      "gradientStart": "#000000",
+      "gradientEnd": "#121212"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -317,19 +335,28 @@
     "id": "more-time",
     "name": "MORE TIME",
     "title": "Landing Page de producto en Shopify ",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "showcaseCard": "images/works/MoreTime/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
     "description": "Página de venta directa para un spray masculino, enfocada en la conversión rápida y efectiva.",
     "stack": ["React", "Tailwind", "Framer Motion"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "title": "#CBBEFF",
+      "shadow": "#271759",
+      "gradientStart": "#120D26",
+      "gradientEnd": "#372275"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -449,7 +476,7 @@
             "type": "list",
             "items": [
               "<strong>Shopify Payments & Mercado Pago:</strong> Integración de múltiples pasarelas para adaptarse tanto al mercado europeo como al latinoamericano, asegurando cobertura global y pagos instantáneos.",
-              "<strong>Google Analytics + Meta Pixel:</strong> Implementación de herramientas de seguimiento para medir el rendimiento de campañas publicitarias y optimizar la conversión en tiempo real.",
+              "<strong>Google Analytics + Meta Pixel:</strong> Implementación de herramientas de seguimiento para medir el rendimiento de campañas tarias y optimizar la conversión en tiempo real.",
               "<strong>Klaviyo:</strong> Sistema de email marketing para capturar leads y automatizar mensajes personalizados post-compra, con formularios embebidos y triggers según comportamiento del usuario.",
               "<strong>Hubspot Forms:</strong> Inserté un formulario de contacto avanzado en el hero del sitio, conectado a una base de datos externa para gestión de leads y seguimiento comercial.",
               "<strong>Vercel (para testing):</strong> Durante el desarrollo, monté una versión temporal en Vercel para revisión en tiempo real del cliente, permitiendo iteraciones rápidas y validación de cada cambio visual o funcional."
@@ -485,19 +512,28 @@
     "id": "advant",
     "name": "ADVANT",
     "title": "Agencia de Marketing en WordPress",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "src/assets/images/placeholder-image-mainCard.jpg",
+      "showcaseCard": "images/works/Advant/showcaseImage.jpg",
+      "documentation": [
+        "src/assets/images/placeholder-image-gallery1.jpg",
+        "src/assets/images/placeholder-image-gallery2.jpg",
+        "src/assets/images/placeholder-image-gallery3.jpg",
+        "src/assets/images/placeholder-image-gallery4.jpg",
+        "src/assets/images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
     "description": "Sitio web corporativo para una agencia de marketing digital con sede en EE.UU, enfocado en atraer nuevos clientes",
     "stack": ["React", "Tailwind", "Framer Motion"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#FFC9D8",
+      "shadow": "#A93E5E",
+      "gradientStart": "#38111C",
+      "gradientEnd": "#DA5980"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -647,19 +683,28 @@
     "id": "alpha-cycles",
     "name": "Alpha Cycles",
     "title": "Optimización comercial con agendamiento inteligente",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "showcaseCard": "images/works/AlphaCycles/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
     "description": "Sitio web de una concesionaria de motos en Miami que exhibe modelos y servicios",
     "stack": ["React", "Tailwind", "Framer Motion"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#FFD4B1",
+      "shadow": "#8C401F",
+      "gradientStart": "#2C1A11",
+      "gradientEnd": "#BF602F"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -815,19 +860,28 @@
     "id": "sellblink",
     "name": "Sellblink",
     "title": "Desarrollo de sitio web inmobiliario",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "src/assets/images/placeholder-image-mainCard.jpg",
+      "showcaseCard": "images/works/Sellblink/showcaseImage.png",
+      "documentation": [
+        "src/assets/images/placeholder-image-gallery1.jpg",
+        "src/assets/images/placeholder-image-gallery2.jpg",
+        "src/assets/images/placeholder-image-gallery3.jpg",
+        "src/assets/images/placeholder-image-gallery4.jpg",
+        "src/assets/images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg",
-      "/images/works/placeholder-image.jpg"
-    ],
     "description": "Sitio web inmobiliario que conecta compradores, vendedores y desarrolladores de proyectos en Perú.",
     "stack": ["React", "Tailwind", "Framer Motion"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#FFBABA",
+      "shadow": "#5C0000",
+      "gradientStart": "#2D0000",
+      "gradientEnd": "#940000"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -926,7 +980,7 @@
             "type": "list",
             "items": [
               "Implementación de login de usuarios y sistema de cuentas.",
-              "Funcionalidad para publicar propiedades desde la cuenta del usuario.",
+              "Funcionalidad para r propiedades desde la cuenta del usuario.",
               "Módulos avanzados como selector de idioma, cambio de divisa y temas (modo oscuro, etc.).",
               "Integración con sistemas de pago y animaciones personalizadas para mejorar la UX."
             ]

@@ -3,23 +3,25 @@ import {
   ShowcaseDataContainer,
   DataTextContainer,
 } from "./ShowcaseCard.styles";
-import { FiArrowRightCircle } from "react-icons/fi";
-import SecondaryButton from "../../UI/Buttons/SecondaryButton/SecondaryButton";
 
-function ShowcaseCard({ id, title, description, image, type }) {
+function ShowcaseCard({ id, title, description, images, colors }) {
+  const { text, shadow, gradientStart, gradientEnd } = colors;
+  const { showcaseCard } = images;
+
   return (
     <ShowcaseCardStyled to={`/documentation/${id}`} id={id}>
-      <ShowcaseDataContainer>
-        <DataTextContainer>
+      <ShowcaseDataContainer
+        image={showcaseCard}
+        gradientStart={gradientStart}
+        gradientEnd={gradientEnd}
+        shadow={shadow}
+      >
+        <DataTextContainer text={text}>
           <h3>{title}</h3>
           <p>{description}</p>
         </DataTextContainer>
-        <SecondaryButton to={`/documentation/${id}`}>
-          {type === "project" ? "View Project" : "View Work"}
-          <FiArrowRightCircle />
-        </SecondaryButton>
+        <img src={showcaseCard} alt={id} />
       </ShowcaseDataContainer>
-      <img src={image} alt="#" />
     </ShowcaseCardStyled>
   );
 }
