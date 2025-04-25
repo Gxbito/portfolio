@@ -10,6 +10,7 @@ export const WorkCardStyled = styled(Link)`
   align-items: center;
   gap: 24px;
   padding: 8px;
+  position: relative;
 
   background-color: var(--color-bg-card);
   box-shadow: var(--shadow-card);
@@ -31,6 +32,20 @@ export const WorkCardStyled = styled(Link)`
     background-color: var(--color-bg-card-active);
     border: 1px solid var(--color-border-active);
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      #d3d3d3 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
 `;
 
 export const ImageCardContainer = styled.div`
@@ -42,10 +57,66 @@ export const ImageCardContainer = styled.div`
   align-items: flex-end;
   padding: 16px;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
 
-  background-image: url(${(props) => props.image});
+  background-color: ${(props) => props.gradientStart};
   background-size: cover;
   background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 326px;
+    height: 326px;
+    top: -50%;
+    left: calc(100% / 2 - (326px / 2));
+    background-color: ${(props) => props.gradientEnd};
+    border-radius: 100%;
+    z-index: 1;
+    filter: blur(70px);
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    &::before {
+      filter: blur(80px);
+    }
+
+    & > img:first-child {
+      transform: translateX(5px) translateY(-5px);
+    }
+  }
+
+  & > div {
+    z-index: 2;
+  }
+
+  & > img:first-child {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transition: all 0.2s ease;
+  }
+`;
+
+export const LogoContainer = styled.div`
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: calc(442px / 2 - 60px);
+  left: calc(100% / 2 - 60px);
+
+  outline: 6px solid ${(props) => props.borderColor};
+  border-radius: 20px;
+  background-color: ${(props) => props.gradientStart};
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15),
+    0 27px 27px 0 rgba(0, 0, 0, 0.13), 0 61px 37px 0 rgba(0, 0, 0, 0.08),
+    0 109px 44px 0 rgba(0, 0, 0, 0.02), 0 170px 48px 0 rgba(0, 0, 0, 0);
 `;
 
 export const TextCardContainer = styled.div`

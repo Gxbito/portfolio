@@ -21,11 +21,14 @@ function Works() {
         </AnimatedWrapper>
       </TextWrapper>
       <WorksContainer>
-        {worksData.map((item, i) => (
-          <AnimatedWrapper key={i} style={{ width: "100%" }}>
-            <ShowcaseCard {...item} type="works" />
-          </AnimatedWrapper>
-        ))}
+        {worksData
+          .slice()
+          .reverse()
+          .map((item, i) => (
+            <AnimatedWrapper key={i} style={{ width: "100%" }}>
+              <ShowcaseCard {...item} type="works" />
+            </AnimatedWrapper>
+          ))}
       </WorksContainer>
     </PageWrapper>
   );

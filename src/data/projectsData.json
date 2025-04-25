@@ -1,18 +1,21 @@
 [
   {
-    "id": "project-1",
+    "id": "trendsetter-threads",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/projects/placeholder-image.jpg",
+      "showcaseCard": "images/projects/TrendsetterThreads/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg"
-    ],
-    "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
+    "description": "Una tienda online de ropa formal y semi-formal, pensada para ofrecer una experiencia fluida, moderna y con identidad propia.",
     "stack": [
       "React",
       "Context API",
@@ -21,46 +24,215 @@
       "React router",
       "Yup",
       "Formik",
-      "Simple Icons"
+      "Figma",
+      "Redux"
     ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#F0C9FF",
+      "shadow": "#7D22A4",
+      "gradientStart": "#250C32",
+      "gradientEnd": "#B130DE"
+    },
     "sections": [
       {
         "title": "Overview",
-        "content": "Este proyecto es el resultado de combinar creatividad y tecnología para resolver un problema real. Desde la etapa inicial, el enfoque estuvo en garantizar que cada elemento del diseño y funcionalidad reflejara las necesidades del usuario final.\nMás que un proyecto, esta solución representa un puente entre la innovación y la practicidad. Su desarrollo permitió aplicar metodologías ágiles para alcanzar un producto sólido y relevante para el mercado."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Trendsetter Threads es un e-commerce completamente funcional que diseñé y desarrollé de principio a fin. Representa mi proyecto más sólido hasta la fecha y es una muestra clara de mis habilidades tanto en diseño UI/UX como en desarrollo frontend profesional. La tienda simula un proceso completo de compra, incluyendo navegación entre categorías, visualización de productos, gestión de usuario, carrito persistente, formularios con validaciones y simulación de pago."
+          },
+          {
+            "type": "paragraph",
+            "text": "Este proyecto busca ofrecer una experiencia moderna e intuitiva sin sacrificar estructura ni escalabilidad, y fue pensado desde su concepción como una pieza central de mi portfolio."
+          }
+        ]
       },
       {
         "title": "Tecnologías",
-        "content": "El stack tecnológico incluyó herramientas modernas como TypeScript para mejorar la robustez del código, junto con Tailwind CSS para estilos rápidos y consistentes. También se aprovechó GitHub Actions para implementar CI/CD, asegurando integraciones rápidas y efectivas.\nTecnologías como Firebase para la base de datos en tiempo real y Webpack para la optimización del bundle fueron clave en este proyecto, garantizando velocidad y escalabilidad. Cada elección tecnológica se realizó en base a las necesidades específicas de los usuarios y del entorno de desarrollo."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Para la base del proyecto utilicé tecnologías web estándar y un framework moderno que me permitió trabajar de forma modular y eficiente:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>HTML & CSS:</strong> Estructura y estilos del sitio, con foco en la semántica y la responsividad.",
+              "<strong>JavaScript:</strong> Lógica de interacción, estados y dinamismo general.",
+              "<strong>React:</strong> Framework principal para estructurar la aplicación en componentes reutilizables, mejorando la mantenibilidad y escalabilidad del código.",
+              "<strong>Vite:</strong> Herramienta de build moderna que aceleró el desarrollo y la carga del sitio."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Estas herramientas sentaron las bases sobre las que integré otras soluciones más especializadas."
+          }
+        ]
       },
       {
         "title": "Desafíos",
-        "content": "El mayor desafío fue lograr una sincronización perfecta entre múltiples usuarios en tiempo real. Esto requirió no solo ajustes técnicos, sino también pruebas exhaustivas para garantizar estabilidad bajo altas cargas.\nEncontrar el balance entre un diseño visual atractivo y un rendimiento óptimo fue otro reto importante. Optimizamos cada componente para garantizar tiempos de carga rápidos, incluso en conexiones lentas."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El mayor reto de este proyecto fue enfrentar por primera vez el desarrollo completo de un comercio electrónico. No solo fue una experiencia técnica, sino también de aprendizaje en diseño, arquitectura de proyectos complejos y procesos reales de compra."
+          },
+          {
+            "type": "list",
+            "items": [
+              "El armado desde cero de un carrito funcional, con persistencia por usuario y actualizaciones dinámicas.",
+              "Implementar rutas protegidas y lógicas de autenticación simulada.",
+              "Diseñar un sistema de navegación fluido y moderno.",
+              "Validar formularios de forma robusta con librerías profesionales.",
+              "Aprender a integrar múltiples librerías sin romper la cohesión visual y funcional del sitio.",
+              "Diseñar una UI intuitiva sin comprometer la estética ni el rendimiento."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Fue un proceso exigente, pero invaluable para desarrollar experiencia real y herramientas prácticas que puedo aplicar en cualquier proyecto profesional."
+          }
+        ]
       },
       {
         "title": "Proceso",
-        "content": "Cada etapa del proceso fue documentada meticulosamente, desde los primeros bosquejos hasta el diseño interactivo en Figma. Esto permitió un flujo de trabajo transparente, donde cada iteración estuvo basada en el feedback de los usuarios.\nSe adoptó una metodología SCRUM con sprints semanales, asegurando que las tareas fueran priorizadas y entregadas en tiempo. Las reuniones de retrospectiva ayudaron a ajustar el enfoque en cada etapa."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Desde el principio enfoqué el desarrollo con mentalidad profesional. Inicié con una fase de investigación profunda, analizando decenas de tiendas virtuales —tanto hechas a medida como con CMS— para entender qué hace eficiente y atractivo a un e-commerce."
+          },
+          {
+            "type": "paragraph",
+            "text": "Una vez definido un criterio visual y funcional, diseñé sección por sección en Figma, trabajando sobre wireframes iniciales que luego evolucionaron hacia un diseño más refinado. Tras varias iteraciones, pasé al desarrollo utilizando React y una arquitectura de carpetas limpia, separando vistas, componentes, assets y estilos de forma clara."
+          },
+          {
+            "type": "paragraph",
+            "text": "Durante el desarrollo enfrenté muchos obstáculos técnicos, por lo que recurrí a:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Documentación oficial.",
+              "Videos y tutoriales específicos.",
+              "Foros de Discord.",
+              "Herramientas de IA para resolver errores y optimizar código."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Gracias a este enfoque, logré un producto final prolijo, funcional y con buenas prácticas tanto en código como en experiencia de usuario."
+          }
+        ]
       },
       {
         "title": "Lecciones aprendidas",
-        "content": "Este proyecto reforzó la importancia de la comunicación clara con los stakeholders. Al mantener un flujo constante de feedback, se evitaron malentendidos y se lograron mejores resultados.\nLa experiencia subrayó la importancia de realizar pruebas exhaustivas en diferentes entornos. Esto ayudó a identificar y solucionar problemas de compatibilidad que inicialmente no se habían considerado."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Este proyecto fue una masterclass práctica en múltiples áreas. Algunas de las cosas que más aprendí fueron:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Diseño UI/UX funcional:</strong> Cómo componer una interfaz atractiva y centrada en el usuario, especialmente para comercio electrónico.",
+              "<strong>Organización de proyectos grandes:</strong> Separar lógica, vistas, estilos y estados para facilitar el mantenimiento.",
+              "<strong>Uso de librerías modernas:</strong> Integrar herramientas como Redux, Formik o Swiper sin comprometer la coherencia del proyecto.",
+              "<strong>Validaciones y feedback:</strong> Proveer respuestas visuales al usuario ante errores o acciones exitosas.",
+              "<strong>Optimización del flujo de navegación:</strong> Minimizar pasos innecesarios y maximizar la claridad de la interfaz.",
+              "<strong>Sistemas escalables:</strong> Pensar desde el inicio en que el proyecto pueda crecer, tanto en productos como en funcionalidades."
+            ]
+          }
+        ]
       },
       {
         "title": "Evolución futura",
-        "content": "Un paso lógico hacia el futuro sería la integración de inteligencia artificial para personalizar aún más la experiencia del usuario. Esto podría incluir recomendaciones basadas en patrones de uso.\nOtra área de evolución sería la expansión multilingüe del proyecto, permitiendo llegar a audiencias globales con interfaces adaptadas culturalmente."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Si bien el sitio ya está pulido, tengo varias ideas para seguir mejorándolo:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Conectar el sistema con una base de datos o API más robusta que permita gestionar cientos de productos dinámicamente.",
+              "Integrar una pasarela de pago real para habilitar ventas efectivas.",
+              "Añadir sistemas de login con Google o Apple para simplificar el acceso.",
+              "Mejorar la experiencia de usuario con animaciones suaves, efectos de scroll y feedback más claro.",
+              "Incluir filtros más complejos, historial de compra y dashboards para usuarios registrados."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "La base ya está armada y preparada para escalar, por eso este proyecto sigue teniendo mucho potencial de desarrollo."
+          }
+        ]
       },
       {
         "title": "Características clave",
-        "content": "Una de las principales características es la funcionalidad de búsqueda avanzada, que permite a los usuarios encontrar información específica en segundos gracias a filtros dinámicos y una interfaz de autocompletado.\nAdemás, incluye un sistema de notificaciones en tiempo real para mantener a los usuarios actualizados sin interrumpir su flujo de trabajo."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Trendsetter Threads ofrece una experiencia de usuario completa simulando una tienda real:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sistema de carrito con persistencia en caché.",
+              "Formularios de contacto y registro totalmente funcionales.",
+              "Simulación de pasarela de pagos y validación de datos.",
+              "Sistema de login y registro simulado con feedback.",
+              "Interfaz moderna, responsiva y adaptada a múltiples dispositivos.",
+              "Navegación fluida y estructura modular de componentes reutilizables."
+            ]
+          }
+        ]
       },
       {
         "title": "Integraciones",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Una vez establecida la arquitectura base, incorporé varias librerías que potenciaron la funcionalidad del proyecto:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Redux:</strong> Para la gestión del estado global del carrito y la sesión de usuario.",
+              "<strong>React Router:</strong> Navegación entre rutas, incluyendo rutas protegidas para simulación de autenticación.",
+              "<strong>Styled-components:</strong> Manejo de estilos con CSS-in-JS, ideal para mantener los estilos encapsulados por componente.",
+              "<strong>Formik & Yup:</strong> Para formularios con validaciones complejas y robustas.",
+              "<strong>Axios:</strong> Peticiones HTTP simuladas, como parte de una arquitectura realista y escalable.",
+              "<strong>Swiper:</strong> Implementación de sliders modernos para mostrar productos destacados.",
+              "<strong>React Icons:</strong> Colección de íconos escalables y livianos, integrados visualmente con el diseño general."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Cada una de estas librerías fue seleccionada y aplicada de forma estratégica para mejorar tanto la experiencia del usuario como el desarrollo del código."
+          }
+        ]
       },
       {
         "title": "Documentación",
-        "content": "Entre las integraciones más relevantes se encuentra Stripe, utilizada para habilitar un sistema de pagos seguro y flexible, ideal para manejar suscripciones y transacciones únicas.\nTambién se integró Algolia para la búsqueda en tiempo real, mejorando significativamente la velocidad y precisión de las consultas de los usuarios."
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Toda la estructura del proyecto está documentada a nivel de código con comentarios claros por componente y lógica."
+          },
+          {
+            "type": "paragraph",
+            "text": "Además, se siguió una convención de carpetas basada en atomic design, organizando los componentes por tipo y reutilización. Las rutas, formularios, estilos y hooks personalizados están separados, lo que facilita futuras modificaciones o escalabilidad del sistema."
+          },
+          {
+            "type": "paragraph",
+            "text": "El diseño original y las variantes de color están disponibles en el archivo de Figma, con sus correspondientes guías de estilo y tokens visuales."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cada parte del proceso fue pensada, ejecutada y documentada con profesionalismo, haciendo de este proyecto no solo una demo visual, sino un producto sólido que representa mi perfil como frontend developer."
+          }
+        ]
       }
     ]
   },
@@ -68,15 +240,18 @@
     "id": "project-2",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/projects/placeholder-image.jpg",
+      "showcaseCard": "images/works/Geomax/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg"
-    ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
     "stack": [
       "React",
@@ -90,6 +265,12 @@
     ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#AFE0FF",
+      "shadow": "#026C9E",
+      "gradientStart": "#011E34",
+      "gradientEnd": "#009CFF"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -133,15 +314,18 @@
     "id": "project-3",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/projects/placeholder-image.jpg",
+      "showcaseCard": "images/works/Geomax/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg"
-    ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
     "stack": [
       "React",
@@ -155,6 +339,12 @@
     ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#AFE0FF",
+      "shadow": "#026C9E",
+      "gradientStart": "#011E34",
+      "gradientEnd": "#009CFF"
+    },
     "sections": [
       {
         "title": "Overview",
@@ -198,15 +388,18 @@
     "id": "project-4",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
-    "image": "src/assets/images/placeholder-image.jpg",
+    "images": {
+      "mainCard": "images/projects/placeholder-image.jpg",
+      "showcaseCard": "images/works/Geomax/showcaseImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
     "year": "2024",
-    "gallery": [
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg",
-      "/images/projects/placeholder-image.jpg"
-    ],
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
     "stack": [
       "React",
@@ -220,6 +413,12 @@
     ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#AFE0FF",
+      "shadow": "#026C9E",
+      "gradientStart": "#011E34",
+      "gradientEnd": "#009CFF"
+    },
     "sections": [
       {
         "title": "Overview",

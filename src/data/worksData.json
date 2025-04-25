@@ -3,9 +3,12 @@
     "id": "geomax",
     "name": "GEOMAX",
     "title": "Plataforma de Rankings de Geometry Dash",
+    "logo": "images/works/Geomax/logo.svg",
     "images": {
-      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "mainCard": "images/works/placeholder-image.jpg",
       "showcaseCard": "images/works/Geomax/showcaseImage.jpg",
+      "desktopHome": "images/works/Geomax/desktopHomeImage.jpg",
+      "mobileHome": "images/works/Geomax/mobileHomeImage.jpg",
       "documentation": [
         "images/placeholder-image-gallery1.jpg",
         "images/placeholder-image-gallery2.jpg",
@@ -165,9 +168,12 @@
     "id": "nettv-magazine",
     "name": "NETTV MAGAZINE",
     "title": "Página informativa para marca internacional",
+    "logo": "images/works/NETTVMagazine/logo.svg",
     "images": {
-      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "mainCard": "images/works/placeholder-image.jpg",
       "showcaseCard": "images/works/NETTVMagazine/showcaseImage.jpg",
+      "desktopHome": "images/works/NETTVMagazine/desktopHomeImage.jpg",
+      "mobileHome": "images/works/NETTVMagazine/mobileHomeImage.jpg",
       "documentation": [
         "images/placeholder-image-gallery1.jpg",
         "images/placeholder-image-gallery2.jpg",
@@ -185,7 +191,7 @@
       "text": "#A0A0A0",
       "shadow": "#1E1E1E",
       "gradientStart": "#000000",
-      "gradientEnd": "#121212"
+      "gradientEnd": "#2C2C2C"
     },
     "sections": [
       {
@@ -335,9 +341,12 @@
     "id": "more-time",
     "name": "MORE TIME",
     "title": "Landing Page de producto en Shopify ",
+    "logo": "images/works/MoreTime/logo.svg",
     "images": {
-      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "mainCard": "images/works/placeholder-image.jpg",
       "showcaseCard": "images/works/MoreTime/showcaseImage.jpg",
+      "desktopHome": "images/works/MoreTime/desktopHomeImage.jpg",
+      "mobileHome": "images/works/MoreTime/mobileHomeImage.jpg",
       "documentation": [
         "images/placeholder-image-gallery1.jpg",
         "images/placeholder-image-gallery2.jpg",
@@ -352,7 +361,7 @@
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {
-      "title": "#CBBEFF",
+      "text": "#CBBEFF",
       "shadow": "#271759",
       "gradientStart": "#120D26",
       "gradientEnd": "#372275"
@@ -512,9 +521,12 @@
     "id": "advant",
     "name": "ADVANT",
     "title": "Agencia de Marketing en WordPress",
+    "logo": "images/works/Advant/logo.svg",
     "images": {
-      "mainCard": "src/assets/images/placeholder-image-mainCard.jpg",
+      "mainCard": "images/works/placeholder-image.jpg",
       "showcaseCard": "images/works/Advant/showcaseImage.jpg",
+      "desktopHome": "images/works/Advant/desktopHomeImage.jpg",
+      "mobileHome": "images/works/Advant/mobileHomeImage.jpg",
       "documentation": [
         "src/assets/images/placeholder-image-gallery1.jpg",
         "src/assets/images/placeholder-image-gallery2.jpg",
@@ -683,9 +695,12 @@
     "id": "alpha-cycles",
     "name": "Alpha Cycles",
     "title": "Optimización comercial con agendamiento inteligente",
+    "logo": "images/works/AlphaCycles/logo.svg",
     "images": {
-      "mainCard": "images/placeholder-image-mainCard.jpg",
+      "mainCard": "images/works/placeholder-image.jpg",
       "showcaseCard": "images/works/AlphaCycles/showcaseImage.jpg",
+      "desktopHome": "images/works/AlphaCycles/desktopHomeImage.jpg",
+      "mobileHome": "images/works/AlphaCycles/mobileHomeImage.jpg",
       "documentation": [
         "images/placeholder-image-gallery1.jpg",
         "images/placeholder-image-gallery2.jpg",
@@ -860,9 +875,12 @@
     "id": "sellblink",
     "name": "Sellblink",
     "title": "Desarrollo de sitio web inmobiliario",
+    "logo": "images/works/Sellblink/logo.svg",
     "images": {
-      "mainCard": "src/assets/images/placeholder-image-mainCard.jpg",
-      "showcaseCard": "images/works/Sellblink/showcaseImage.png",
+      "mainCard": "images/works/placeholder-image.jpg",
+      "showcaseCard": "images/works/Sellblink/showcaseImage.jpg",
+      "desktopHome": "images/works/Sellblink/desktopHomeImage.jpg",
+      "mobileHome": "images/works/Sellblink/mobileHomeImage.jpg",
       "documentation": [
         "src/assets/images/placeholder-image-gallery1.jpg",
         "src/assets/images/placeholder-image-gallery2.jpg",
@@ -1032,6 +1050,175 @@
               "Estándares de desarrollo interno para mantener consistencia con el backend.",
               "Convenciones para commits, pushes y entregas por contrato."
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "edvance",
+    "name": "Edvance",
+    "title": "Desarrollo de landing page para empresa de capacitación",
+    "logo": "images/works/Edvance/logo.svg",
+    "images": {
+      "mainCard": "images/works/placeholder-image.jpg",
+      "showcaseCard": "images/works/Edvance/showcaseImage.jpg",
+      "desktopHome": "images/works/Edvance/desktopHomeImage.jpg",
+      "mobileHome": "images/works/Edvance/mobileHomeImage.jpg",
+      "documentation": [
+        "images/placeholder-image-gallery1.jpg",
+        "images/placeholder-image-gallery2.jpg",
+        "images/placeholder-image-gallery3.jpg",
+        "images/placeholder-image-gallery4.jpg",
+        "images/placeholder-image-gallery5.jpg"
+      ]
+    },
+    "year": "2024",
+    "description": "Landing page moderna y funcional para una empresa chilena que ofrece cursos de capacitación empresarial.",
+    "stack": ["React", "Tailwind", "Framer Motion"],
+    "github": "https://github.com/Gxbito/e-commerce",
+    "demo": "https://e-commerce-ashy-nine.vercel.app/",
+    "colors": {
+      "text": "#D5CDFF",
+      "shadow": "#4B38A3",
+      "gradientStart": "#1E153A",
+      "gradientEnd": "#7F64F3"
+    },
+    "sections": [
+      {
+        "title": "Overview",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Edvance es una empresa de Chile dedicada a la venta de cursos de capacitación para personal corporativo. Fui contactado por el cliente a través de Fiverr con el objetivo de diseñar y desarrollar una landing page institucional."
+          },
+          {
+            "type": "paragraph",
+            "text": "El objetivo principal del sitio fue transmitir profesionalismo, claridad y confianza, generando conversiones a través de un formulario de contacto, mientras la plataforma donde se visualizarán los cursos se encuentra aún en desarrollo."
+          }
+        ]
+      },
+      {
+        "title": "Tecnologías",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El stack utilizado combinó herramientas clásicas con buenas prácticas modernas:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>HTML, CSS y JavaScript:</strong>, para el esqueleto y estilo del sitio.",
+              "<strong>React:</strong>, utilizado para una estructura más ordenada y reutilizable gracias al enfoque por componentes.",
+              "<strong>Vite:</strong>, para iniciar el proyecto con rapidez y optimización.",
+              "<strong>React Icons y React Slick:</strong>, usados para iconografía y carruseles."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Desafíos",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El desarrollo fue muy fluido y no presentó desafíos técnicos significativos. Tanto las tecnologías como el tipo de implementación estaban dentro de mi dominio profesional. La colaboración con el backend developer fue puntual y sencilla, enfocada en el envío de formularios."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tampoco representó un reto el trabajo conjunto con la diseñadora, ya que su rol fue exclusivo en el área de branding."
+          }
+        ]
+      },
+      {
+        "title": "Proceso",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El cliente me brindó una referencia visual concreta para el hero (sección principal), y un boceto hecho a mano que detallaba las cuatro secciones que debía tener el sitio."
+          },
+          {
+            "type": "paragraph",
+            "text": "A partir de esto, comencé diseñando cada sección, respetando la jerarquía visual y la identidad que propuso la diseñadora. Una vez terminado el diseño, propuse tres versiones distintas aplicando el color de marca de formas diferentes, más una versión neutra."
+          },
+          {
+            "type": "paragraph",
+            "text": "El cliente optó por esta última, y desde ahí comencé con el desarrollo del sitio. La programación se realizó sección por sección, cuidando la fidelidad con el diseño aprobado, la adaptabilidad a distintos dispositivos y una estructura limpia. Finalizado el desarrollo, se integró el formulario con backend utilizando un sencillo try/catch."
+          }
+        ]
+      },
+      {
+        "title": "Lecciones aprendidas",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Aunque fue un proyecto directo, rescaté el valor de:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Integrar un backend de forma práctica para una funcionalidad puntual como el formulario.",
+              "Adaptarme a referencias visuales simples y traducirlas en soluciones claras y profesionales.",
+              "Presentar variantes de diseño para lograr consenso visual con el cliente y su equipo."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Evolución futura",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Entre las mejoras que podrían implementarse en futuras iteraciones:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Animaciones suaves de aparición para las secciones y cards.",
+              "Mejoras en la experiencia del formulario con feedback visual al usuario.",
+              "Incorporación de la plataforma de cursos (una vez esté finalizada) como parte integral del sitio."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características clave",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "Hero con slider visual.",
+              "Formulario de contacto funcional.",
+              "Secciones claras y bien diferenciadas.",
+              "Diseño limpio, profesional y adaptable.",
+              "Experiencia fluida en mobile y desktop.",
+              "Slider de texto moderno con enfoque institucional."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Integraciones",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>React Slick</strong> para los sliders",
+              "<strong>React Icons</strong> para enriquecer visualmente el contenido.",
+              "<strong>Try/catch</strong> con backend para manejar el formulario."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Documentación",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Todo el proyecto está organizado con una estructura clara de componentes reutilizables. El código sigue una lógica de carpetas separando secciones, assets e íconos, y está comentado para facilitar futuras ampliaciones."
+          },
+          {
+            "type": "paragraph",
+            "text": "El formulario está desacoplado para permitir su integración a cualquier API o backend externo. El diseño fue trabajado con criterios de accesibilidad, escalabilidad y adaptabilidad, facilitando una futura evolución tanto visual como funcional."
           }
         ]
       }

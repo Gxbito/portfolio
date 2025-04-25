@@ -34,7 +34,6 @@ const navItems = [
 
 function Menu() {
   const location = useLocation();
-  console.log(location.pathname);
 
   return (
     <MenuContainer>

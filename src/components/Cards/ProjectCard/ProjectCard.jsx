@@ -4,13 +4,14 @@ import {
   TextCardContainer,
   TagCardContainer,
 } from "./ProjectCard.styles";
-
 import Tag from "@/components/UI/Tag/Tag";
 
-function ProjectCard({ id, title, name, image, year, stack }) {
+function ProjectCard({ id, title, name, images, stack, year }) {
+  const { mainCard } = images;
+
   return (
     <ProjectCardStyled to={`/documentation/${id}`} id={id}>
-      <ImageCardContainer image={image}>
+      <ImageCardContainer image={mainCard}>
         <Tag>{year}</Tag>
       </ImageCardContainer>
       <TextCardContainer>

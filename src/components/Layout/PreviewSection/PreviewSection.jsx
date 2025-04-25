@@ -28,7 +28,7 @@ function PreviewSection({ sectionType }) {
     if (sectionType === "works") {
       return (
         <>
-          {worksData.slice(0, 3).map((item, i) => (
+          {worksData.slice(-3).reverse().map((item, i) => (
             <AnimatedWrapper key={i} delay={i * 0.1}>
               <WorkCard {...item} />
             </AnimatedWrapper>

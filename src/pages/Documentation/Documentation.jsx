@@ -66,7 +66,7 @@ function Documentation() {
           </TitleContainer>
 
           <AnimatedWrapper>
-            <img src={project.gallery[0]} alt="project" />
+            <img src={project.images.documentation[0]} alt="project" />
           </AnimatedWrapper>
 
           {project.sections.slice(0, 2).map((item, i) => {
@@ -113,13 +113,13 @@ function Documentation() {
 
           <GalleryContainer>
             <AnimatedWrapper style={{ gridColumn: "span 2" }}>
-              <img src={project.gallery[1]} alt="project" />
+              <img src={project.images.documentation[1]} alt="project" />
             </AnimatedWrapper>
             <AnimatedWrapper delay={0.1}>
-              <img src={project.gallery[2]} alt="project" />
+              <img src={project.images.documentation[2]} alt="project" />
             </AnimatedWrapper>
             <AnimatedWrapper delay={0.2}>
-              <img src={project.gallery[3]} alt="project" />
+              <img src={project.images.documentation[3]} alt="project" />
             </AnimatedWrapper>
           </GalleryContainer>
 
@@ -204,7 +204,7 @@ function Documentation() {
           })}
 
           <AnimatedWrapper style={{ width: "100%" }}>
-            <img src={project.gallery[4]} alt="project" />
+            <img src={project.images.documentation[4]} alt="project" />
           </AnimatedWrapper>
 
           {project.sections.slice(6, 10).map((item, i) => {
