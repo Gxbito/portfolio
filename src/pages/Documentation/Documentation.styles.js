@@ -33,28 +33,8 @@ export const DocumentationDataContainer = styled.div`
   align-items: center;
   gap: 80px;
 
-  img {
-    display: block;
-    padding: 12px;
-    border-radius: 16px;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-bg-card);
+  div {
     width: 100%;
-    height: 416px;
-
-    @media (max-width: ${breakpoints.mobile}) {
-      height: 224px;
-    }
-  }
-
-  & > div:nth-child(2),
-  & > div:nth-child(2) > img {
-    width: 100%;
-    height: 612px;
-
-    @media (max-width: ${breakpoints.mobile}) {
-      height: 306px;
-    }
   }
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -124,6 +104,7 @@ export const TitleContainer = styled.div`
     color: var(--color-text-paragraph);
     line-height: 140%;
     max-width: 60ch;
+    margin: 0 auto;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -133,27 +114,108 @@ export const TitleContainer = styled.div`
   }
 `;
 
+export const MainImageContainer = styled.div`
+  width: 100%;
+  height: 675px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+
+  border-radius: 16px;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 60px;
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 8px;
+    background: ${({ gradientStart, gradientEnd }) =>
+      `linear-gradient(180deg, ${gradientStart} 0%, ${gradientEnd} 100%)`};
+
+    img {
+      transform: translateY(180px);
+      border-radius: 8px;
+      box-shadow: 0 0 20px 2px ${({ shadow }) => shadow};
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 306px;
+  }
+`;
+
+export const LastImageContainer = styled(MainImageContainer)`
+  height: 420px;
+
+  & > div > img {
+    transform: translate(0px);
+    border-radius: 8px 8px 0px 0px;
+  }
+`;
+
 export const GalleryContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
 
-  img {
-    display: block;
+  & > div {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 12px;
-    border-radius: 16px;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-bg-card);
-    width: 100%;
-    height: 416px;
 
-    @media (max-width: ${breakpoints.mobile}) {
-      height: 224px;
+    border-radius: 16px;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+
+    & > div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      overflow: hidden;
+      position: relative;
+
+      border-radius: 8px;
+      background: ${({ gradientStart, gradientEnd }) =>
+        `linear-gradient(180deg, ${gradientStart} 0%, ${gradientEnd} 100%)`};
+
+      img {
+        box-shadow: 0 35px 75px 0 rgba(0, 0, 0, 0.39),
+          0 135px 135px 0 rgba(0, 0, 0, 0.34),
+          0 300px 180px 0 rgba(0, 0, 0, 0.2),
+          0 535px 215px 0 rgba(0, 0, 0, 0.06),
+          0 835px 235px 0 rgba(0, 0, 0, 0.01);
+      }
     }
   }
 
-  & > img:first-child {
+  & > div:nth-child(1) > div {
+    align-items: flex-end;
+  }
+
+  & > div:nth-child(1) > div > img {
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  & > div:nth-child(2) > div > img,
+  & > div:nth-child(3) > div > img {
+    width: 100%;
+  }
+
+  & > div:first-child {
     grid-column: span 2;
   }
 

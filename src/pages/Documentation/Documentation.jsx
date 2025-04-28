@@ -6,9 +6,11 @@ import {
   DocumentationTitle,
   DocumentationTitltesContainer,
   GalleryContainer,
+  MainImageContainer,
   Separator,
   TextContainer,
   TitleContainer,
+  LastImageContainer,
 } from "./Documentation.styles";
 import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
 import HiddenWrapper from "@/components/Layout/HiddenWrapper/HiddenWrapper";
@@ -45,6 +47,8 @@ function Documentation() {
     }
   };
 
+  console.log(project);
+
   return (
     <PageWrapper page="documentation">
       <DocumentationContainer>
@@ -66,7 +70,16 @@ function Documentation() {
           </TitleContainer>
 
           <AnimatedWrapper>
-            <img src={project.images.documentation[0]} alt="project" />
+            <MainImageContainer
+              shadow={project.colors.shadow}
+              gradientStart={project.colors.gradientStart}
+              gradientEnd={project.colors.gradientEnd}
+            >
+              <div>
+                <img src={project.images.desktopHome} alt="project" />
+                <img src={project.images.mobileHome} alt="project" />
+              </div>
+            </MainImageContainer>
           </AnimatedWrapper>
 
           {project.sections.slice(0, 2).map((item, i) => {
@@ -111,15 +124,25 @@ function Documentation() {
             );
           })}
 
-          <GalleryContainer>
+          <GalleryContainer
+            shadow={project.colors.shadow}
+            gradientStart={project.colors.gradientStart}
+            gradientEnd={project.colors.gradientEnd}
+          >
             <AnimatedWrapper style={{ gridColumn: "span 2" }}>
-              <img src={project.images.documentation[1]} alt="project" />
+              <div>
+                <img src={project.images.documentation[0]} alt="project" />
+              </div>
             </AnimatedWrapper>
             <AnimatedWrapper delay={0.1}>
-              <img src={project.images.documentation[2]} alt="project" />
+              <div>
+                <img src={project.images.documentation[1]} alt="project" />
+              </div>
             </AnimatedWrapper>
             <AnimatedWrapper delay={0.2}>
-              <img src={project.images.documentation[3]} alt="project" />
+              <div>
+                <img src={project.images.documentation[2]} alt="project" />
+              </div>
             </AnimatedWrapper>
           </GalleryContainer>
 
@@ -202,9 +225,15 @@ function Documentation() {
               </AnimatedWrapper>
             );
           })}
-
           <AnimatedWrapper style={{ width: "100%" }}>
-            <img src={project.images.documentation[4]} alt="project" />
+            <LastImageContainer
+              gradientStart={project.colors.gradientStart}
+              gradientEnd={project.colors.gradientEnd}
+            >
+              <div>
+                <img src={project.images.documentation[3]} alt="project" />
+              </div>
+            </LastImageContainer>
           </AnimatedWrapper>
 
           {project.sections.slice(6, 10).map((item, i) => {

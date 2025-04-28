@@ -5,16 +5,15 @@
     "title": "Plataforma de Rankings de Geometry Dash",
     "logo": "images/works/Geomax/logo.svg",
     "images": {
-      "mainCard": "images/works/placeholder-image.jpg",
-      "showcaseCard": "images/works/Geomax/showcaseImage.jpg",
-      "desktopHome": "images/works/Geomax/desktopHomeImage.jpg",
-      "mobileHome": "images/works/Geomax/mobileHomeImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/Geomax/showcaseImage.jpg",
+      "desktopHome": "/images/works/Geomax/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/Geomax/mobileHomeImage.jpg",
       "documentation": [
-        "images/placeholder-image-gallery1.jpg",
-        "images/placeholder-image-gallery2.jpg",
-        "images/placeholder-image-gallery3.jpg",
-        "images/placeholder-image-gallery4.jpg",
-        "images/placeholder-image-gallery5.jpg"
+        "/images/works/Geomax/wide-image.jpg",
+        "/images/works/Geomax/square-image.jpg",
+        "/images/works/Geomax/square-image-2.jpg",
+        "/images/works/Geomax/wide-image-2.jpg"
       ]
     },
     "year": "2023",
@@ -170,16 +169,15 @@
     "title": "Página informativa para marca internacional",
     "logo": "images/works/NETTVMagazine/logo.svg",
     "images": {
-      "mainCard": "images/works/placeholder-image.jpg",
-      "showcaseCard": "images/works/NETTVMagazine/showcaseImage.jpg",
-      "desktopHome": "images/works/NETTVMagazine/desktopHomeImage.jpg",
-      "mobileHome": "images/works/NETTVMagazine/mobileHomeImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/NETTVMagazine/showcaseImage.jpg",
+      "desktopHome": "/images/works/NETTVMagazine/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/NETTVMagazine/mobileHomeImage.jpg",
       "documentation": [
-        "images/placeholder-image-gallery1.jpg",
-        "images/placeholder-image-gallery2.jpg",
-        "images/placeholder-image-gallery3.jpg",
-        "images/placeholder-image-gallery4.jpg",
-        "images/placeholder-image-gallery5.jpg"
+        "/images/works/NETTVMagazine/wide-image.jpg",
+        "/images/works/NETTVMagazine/square-image.jpg",
+        "/images/works/NETTVMagazine/square-image-2.jpg",
+        "/images/works/NETTVMagazine/wide-image-2.jpg"
       ]
     },
     "year": "2023",
@@ -343,16 +341,15 @@
     "title": "Landing Page de producto en Shopify ",
     "logo": "images/works/MoreTime/logo.svg",
     "images": {
-      "mainCard": "images/works/placeholder-image.jpg",
-      "showcaseCard": "images/works/MoreTime/showcaseImage.jpg",
-      "desktopHome": "images/works/MoreTime/desktopHomeImage.jpg",
-      "mobileHome": "images/works/MoreTime/mobileHomeImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/MoreTime/showcaseImage.jpg",
+      "desktopHome": "/images/works/MoreTime/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/MoreTime/mobileHomeImage.jpg",
       "documentation": [
-        "images/placeholder-image-gallery1.jpg",
-        "images/placeholder-image-gallery2.jpg",
-        "images/placeholder-image-gallery3.jpg",
-        "images/placeholder-image-gallery4.jpg",
-        "images/placeholder-image-gallery5.jpg"
+        "/images/works/MoreTime/wide-image.jpg",
+        "/images/works/MoreTime/square-image.jpg",
+        "/images/works/MoreTime/square-image-2.jpg",
+        "/images/works/MoreTime/wide-image-2.jpg"
       ]
     },
     "year": "2024",
@@ -523,16 +520,15 @@
     "title": "Agencia de Marketing en WordPress",
     "logo": "images/works/Advant/logo.svg",
     "images": {
-      "mainCard": "images/works/placeholder-image.jpg",
-      "showcaseCard": "images/works/Advant/showcaseImage.jpg",
-      "desktopHome": "images/works/Advant/desktopHomeImage.jpg",
-      "mobileHome": "images/works/Advant/mobileHomeImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/Advant/showcaseImage.jpg",
+      "desktopHome": "/images/works/Advant/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/Advant/mobileHomeImage.jpg",
       "documentation": [
-        "src/assets/images/placeholder-image-gallery1.jpg",
-        "src/assets/images/placeholder-image-gallery2.jpg",
-        "src/assets/images/placeholder-image-gallery3.jpg",
-        "src/assets/images/placeholder-image-gallery4.jpg",
-        "src/assets/images/placeholder-image-gallery5.jpg"
+        "/images/works/Advant/wide-image.jpg",
+        "/images/works/Advant/square-image.jpg",
+        "/images/works/Advant/square-image-2.jpg",
+        "/images/works/Advant/wide-image-2.jpg"
       ]
     },
     "year": "2024",
@@ -697,16 +693,15 @@
     "title": "Optimización comercial con agendamiento inteligente",
     "logo": "images/works/AlphaCycles/logo.svg",
     "images": {
-      "mainCard": "images/works/placeholder-image.jpg",
-      "showcaseCard": "images/works/AlphaCycles/showcaseImage.jpg",
-      "desktopHome": "images/works/AlphaCycles/desktopHomeImage.jpg",
-      "mobileHome": "images/works/AlphaCycles/mobileHomeImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/AlphaCycles/showcaseImage.jpg",
+      "desktopHome": "/images/works/AlphaCycles/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/AlphaCycles/mobileHomeImage.jpg",
       "documentation": [
-        "images/placeholder-image-gallery1.jpg",
-        "images/placeholder-image-gallery2.jpg",
-        "images/placeholder-image-gallery3.jpg",
-        "images/placeholder-image-gallery4.jpg",
-        "images/placeholder-image-gallery5.jpg"
+        "/images/works/AlphaCycles/wide-image.jpg",
+        "/images/works/AlphaCycles/square-image.jpg",
+        "/images/works/AlphaCycles/square-image-2.jpg",
+        "/images/works/AlphaCycles/wide-image-2.jpg"
       ]
     },
     "year": "2024",
@@ -877,16 +872,15 @@
     "title": "Desarrollo de sitio web inmobiliario",
     "logo": "images/works/Sellblink/logo.svg",
     "images": {
-      "mainCard": "images/works/placeholder-image.jpg",
-      "showcaseCard": "images/works/Sellblink/showcaseImage.jpg",
-      "desktopHome": "images/works/Sellblink/desktopHomeImage.jpg",
-      "mobileHome": "images/works/Sellblink/mobileHomeImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/Sellblink/showcaseImage.jpg",
+      "desktopHome": "/images/works/Sellblink/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/Sellblink/mobileHomeImage.jpg",
       "documentation": [
-        "src/assets/images/placeholder-image-gallery1.jpg",
-        "src/assets/images/placeholder-image-gallery2.jpg",
-        "src/assets/images/placeholder-image-gallery3.jpg",
-        "src/assets/images/placeholder-image-gallery4.jpg",
-        "src/assets/images/placeholder-image-gallery5.jpg"
+        "/images/works/Sellblink/wide-image.jpg",
+        "/images/works/Sellblink/square-image.jpg",
+        "/images/works/Sellblink/square-image-2.jpg",
+        "/images/works/Sellblink/wide-image-2.jpg"
       ]
     },
     "year": "2024",
@@ -1061,16 +1055,15 @@
     "title": "Desarrollo de landing page para empresa de capacitación",
     "logo": "images/works/Edvance/logo.svg",
     "images": {
-      "mainCard": "images/works/placeholder-image.jpg",
-      "showcaseCard": "images/works/Edvance/showcaseImage.jpg",
-      "desktopHome": "images/works/Edvance/desktopHomeImage.jpg",
-      "mobileHome": "images/works/Edvance/mobileHomeImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/Edvance/showcaseImage.jpg",
+      "desktopHome": "/images/works/Edvance/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/Edvance/mobileHomeImage.jpg",
       "documentation": [
-        "images/placeholder-image-gallery1.jpg",
-        "images/placeholder-image-gallery2.jpg",
-        "images/placeholder-image-gallery3.jpg",
-        "images/placeholder-image-gallery4.jpg",
-        "images/placeholder-image-gallery5.jpg"
+        "/images/works/Edvance/wide-image.jpg",
+        "/images/works/Edvance/square-image.jpg",
+        "/images/works/Edvance/square-image-2.jpg",
+        "/images/works/Edvance/wide-image-2.jpg"
       ]
     },
     "year": "2024",
@@ -1108,10 +1101,10 @@
           {
             "type": "list",
             "items": [
-              "<strong>HTML, CSS y JavaScript:</strong>, para el esqueleto y estilo del sitio.",
-              "<strong>React:</strong>, utilizado para una estructura más ordenada y reutilizable gracias al enfoque por componentes.",
-              "<strong>Vite:</strong>, para iniciar el proyecto con rapidez y optimización.",
-              "<strong>React Icons y React Slick:</strong>, usados para iconografía y carruseles."
+              "<strong>HTML, CSS y JavaScript:</strong> para el esqueleto y estilo del sitio.",
+              "<strong>React:</strong> utilizado para una estructura más ordenada y reutilizable gracias al enfoque por componentes.",
+              "<strong>Vite:</strong> para iniciar el proyecto con rapidez y optimización.",
+              "<strong>React Icons y React Slick:</strong> usados para iconografía y carruseles."
             ]
           }
         ]

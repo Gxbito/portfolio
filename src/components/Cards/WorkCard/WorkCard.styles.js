@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { breakpoints } from "@/styles/theme";
 
 export const WorkCardStyled = styled(Link)`
-  height: 460px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@ export const ImageCardContainer = styled.div`
   position: relative;
   overflow: hidden;
 
-  background-color: ${(props) => props.gradientStart};
+  background-color: ${({gradientStart}) => gradientStart};
   background-size: cover;
   background-position: center;
 
@@ -71,7 +71,7 @@ export const ImageCardContainer = styled.div`
     height: 326px;
     top: -50%;
     left: calc(100% / 2 - (326px / 2));
-    background-color: ${(props) => props.gradientEnd};
+    background-color: ${({gradientEnd}) => gradientEnd};
     border-radius: 100%;
     z-index: 1;
     filter: blur(70px);
@@ -108,12 +108,12 @@ export const LogoContainer = styled.div`
   align-items: center;
 
   position: absolute;
-  top: calc(442px / 2 - 60px);
+  top: calc(100% / 2 - 60px);
   left: calc(100% / 2 - 60px);
 
-  outline: 6px solid ${(props) => props.borderColor};
+  outline: 6px solid ${({borderColor}) => borderColor};
   border-radius: 20px;
-  background-color: ${(props) => props.gradientStart};
+  background-color: ${({gradientStart}) => gradientStart};
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15),
     0 27px 27px 0 rgba(0, 0, 0, 0.13), 0 61px 37px 0 rgba(0, 0, 0, 0.08),
     0 109px 44px 0 rgba(0, 0, 0, 0.02), 0 170px 48px 0 rgba(0, 0, 0, 0);
