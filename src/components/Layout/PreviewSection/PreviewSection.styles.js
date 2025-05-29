@@ -42,6 +42,7 @@ export const DataContainer = styled.div`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
+    justify-content: flex-start;
     gap: 0px;
   }
 `;

@@ -12,6 +12,7 @@ export const PageWrapperStyled = styled.div`
   box-shadow: var(--shadow-page);
   border-radius: 24px;
   position: relative;
+  z-index: ${({ page }) => (page === "documentation" ? "10" : "0")};
 
   & > div:first-child {
     width: 100%;
@@ -125,7 +126,7 @@ export const PageContent = styled.div`
   width: 100%;
   height: 100%;
   padding: ${({ page }) =>
-    page === "documentation" ? "60px 54px" : "145px 145px"};
+    page === "documentation" ? "0px" : "145px 145px"};
 
   & > div:first-child {
     margin: 0 auto;
@@ -135,7 +136,7 @@ export const PageContent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: ${({ page }) => (page === "documentation" ? "60px" : "145px")};
+    gap: ${({ page }) => (page === "documentation" ? "0px" : "145px")};
     z-index: 3;
 
     @media (max-width: ${breakpoints.mobile}) {
@@ -144,6 +145,7 @@ export const PageContent = styled.div`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
+    width: 100vw;
     padding: 24px;
   }
 `;

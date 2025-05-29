@@ -47,9 +47,11 @@ function PageWrapper({ children, page }) {
         </div>
       </div>
 
-      {page === "documentation" ? <Header /> : null}
       <PageContent page={page}>
-        <div>{children}</div>
+        <div>
+          {page === "documentation" ? <Header /> : null}
+          {children}
+        </div>
       </PageContent>
       <Footer />
     </PageWrapperStyled>

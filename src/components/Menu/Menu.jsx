@@ -1,10 +1,12 @@
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 import {
   MenuContainer,
   OwnerDataContainer,
   OwnerDataTextContainer,
   NavLinksContainer,
   NavItem,
+  Overlay,
 } from "./Menu.styles";
 import {
   FiHome,
@@ -19,7 +21,7 @@ import BadgeIcon from "@/assets/icons/web/Badge.svg";
 import { Link } from "react-router-dom";
 import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
 import IconButton from "@/components/UI/Buttons/IconButton/IconButton";
-import MenuIcon from "../../assets/icons/web/menu-icon.svg";
+import MenuIcon from "@/assets/icons/web/menu-icon.svg";
 import HiddenWrapper from "@/components/Layout/HiddenWrapper/HiddenWrapper";
 
 const navItems = [
@@ -34,6 +36,11 @@ const navItems = [
 
 function Menu() {
   const location = useLocation();
+  const [isActive, setIsActive] = useState(false);
+
+  const handleMenuActive = () => {
+    setIsActive((prev) => !prev);
+  };
 
   return (
     <MenuContainer>
@@ -52,7 +59,7 @@ function Menu() {
         </OwnerDataTextContainer>
       </OwnerDataContainer>
 
-      <NavLinksContainer>
+      <NavLinksContainer active={isActive}>
         {navItems.map((item, i) => {
           console.log(location.pathname === item.to);
           return (
@@ -63,7 +70,7 @@ function Menu() {
               y={0}
               style={{ width: "100%" }}
             >
-              <NavItem active={location.pathname === item.to}>
+              <NavItem active={location.pathname === item.to} onClick={handleMenuActive}>
                 <Link to={item.to}>
                   {item.icon}
                   {item.label}
@@ -75,10 +82,12 @@ function Menu() {
       </NavLinksContainer>
 
       <HiddenWrapper hideOn="desktop">
-        <IconButton>
-          <img src={MenuIcon} alt="" />
+        <IconButton onClick={handleMenuActive}>
+          <img src={MenuIcon} alt="menu-icon" />
         </IconButton>
       </HiddenWrapper>
+
+      <Overlay active={isActive}/>
     </MenuContainer>
   );
 }

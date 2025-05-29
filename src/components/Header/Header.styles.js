@@ -27,8 +27,9 @@ export const HeaderContainer = styled.div`
     grid-template-columns: auto 1fr auto;
     padding: 16px;
     border-radius: 0px;
-    position: absolute;
-    top: -77px;
+    position: fixed;
+    top: 0;
+    z-index: 12;
   }
 `;
 

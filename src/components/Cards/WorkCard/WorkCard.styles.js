@@ -46,6 +46,10 @@ export const WorkCardStyled = styled(Link)`
       rgba(255, 255, 255, 0) 100%
     );
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 420px;
+  }
 `;
 
 export const ImageCardContainer = styled.div`
@@ -60,7 +64,7 @@ export const ImageCardContainer = styled.div`
   position: relative;
   overflow: hidden;
 
-  background-color: ${({gradientStart}) => gradientStart};
+  background-color: ${({ gradientStart }) => gradientStart};
   background-size: cover;
   background-position: center;
 
@@ -71,7 +75,7 @@ export const ImageCardContainer = styled.div`
     height: 326px;
     top: -50%;
     left: calc(100% / 2 - (326px / 2));
-    background-color: ${({gradientEnd}) => gradientEnd};
+    background-color: ${({ gradientEnd }) => gradientEnd};
     border-radius: 100%;
     z-index: 1;
     filter: blur(70px);
@@ -111,9 +115,9 @@ export const LogoContainer = styled.div`
   top: calc(100% / 2 - 60px);
   left: calc(100% / 2 - 60px);
 
-  outline: 6px solid ${({borderColor}) => borderColor};
+  outline: 6px solid ${({ borderColor }) => borderColor};
   border-radius: 20px;
-  background-color: ${({gradientStart}) => gradientStart};
+  background-color: ${({ gradientStart }) => gradientStart};
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15),
     0 27px 27px 0 rgba(0, 0, 0, 0.13), 0 61px 37px 0 rgba(0, 0, 0, 0.08),
     0 109px 44px 0 rgba(0, 0, 0, 0.02), 0 170px 48px 0 rgba(0, 0, 0, 0);
@@ -140,9 +144,5 @@ export const TextCardContainer = styled.div`
     font-weight: 600;
     font-size: var(--font-size-header-4);
     color: var(--color-text-title);
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 8px;
   }
 `;

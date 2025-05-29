@@ -18,16 +18,7 @@
     },
     "year": "2023",
     "description": "Sitio web que centraliza y visualiza los puntajes globales más altos en los niveles más desafiantes del videojuego Geometry Dash",
-    "stack": [
-      "React",
-      "Context API",
-      "Axios",
-      "Styled-components",
-      "React router",
-      "Yup",
-      "Formik",
-      "React icons"
-    ],
+    "stack": ["HTML5", "CSS3", "Javascript", "React", "Webpack", "Python", "Django", "Figma"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {
@@ -182,7 +173,7 @@
     },
     "year": "2023",
     "description": "Una plataforma innovadora para transformar la experiencia de compra online.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": ["HTML5", "CSS3", "Javascript", "Hubspot", "Figma"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {
@@ -354,7 +345,7 @@
     },
     "year": "2024",
     "description": "Página de venta directa para un spray masculino, enfocada en la conversión rápida y efectiva.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": ["Shopify", "HTML5", "CSS3", "Javascript", "PHP", "Figma"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {
@@ -533,7 +524,7 @@
     },
     "year": "2024",
     "description": "Sitio web corporativo para una agencia de marketing digital con sede en EE.UU, enfocado en atraer nuevos clientes",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": ["WordPress", "WPForms", "Yoast", "Jetpack", "CSS3", "Figma"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {
@@ -706,7 +697,7 @@
     },
     "year": "2024",
     "description": "Sitio web de una concesionaria de motos en Miami que exhibe modelos y servicios",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": ["WordPress", "Styled Components", "CSS3", "WooCommerce", "Elementor", "Yoast", "React", "PhotoSwipe", "WP Engine"],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {
@@ -885,7 +876,19 @@
     },
     "year": "2024",
     "description": "Sitio web inmobiliario que conecta compradores, vendedores y desarrolladores de proyectos en Perú.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "React",
+      "Swiper",
+      "Vite",
+      "React Router",
+      "Figma",
+      "Font Awesome",
+      "Leaflet",
+      "PWA"
+    ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {
@@ -1068,7 +1071,16 @@
     },
     "year": "2024",
     "description": "Landing page moderna y funcional para una empresa chilena que ofrece cursos de capacitación empresarial.",
-    "stack": ["React", "Tailwind", "Framer Motion"],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "React",
+      "Styled Components",
+      "Swiper",
+      "Vite",
+      "Figma"
+    ],
     "github": "https://github.com/Gxbito/e-commerce",
     "demo": "https://e-commerce-ashy-nine.vercel.app/",
     "colors": {

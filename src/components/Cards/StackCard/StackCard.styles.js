@@ -54,6 +54,10 @@ export const StackContainer = styled.div`
   & > a:last-child {
     grid-column: span 2;
     margin-top: 24px;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      margin-top: 0px;
+    }
   }
 
   @media (max-width: ${breakpoints.mobile}) {

@@ -4,19 +4,21 @@ import {
   DocumentationContainer,
   DocumentationDataContainer,
   DocumentationTitle,
-  DocumentationTitltesContainer,
+  DocumentationContentsContainer,
   GalleryContainer,
   MainImageContainer,
   Separator,
   TextContainer,
   TitleContainer,
   LastImageContainer,
+  DocumentationTagsContainer,
 } from "./Documentation.styles";
 import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
 import HiddenWrapper from "@/components/Layout/HiddenWrapper/HiddenWrapper";
 import worksData from "@/data/worksData";
 import projectsData from "@/data/projectsData";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import Tag from "@/components/UI/Tag/Tag";
 
 const documentationItems = [
   { title: "Overview" },
@@ -227,6 +229,7 @@ function Documentation() {
           })}
           <AnimatedWrapper style={{ width: "100%" }}>
             <LastImageContainer
+              shadow={project.colors.shadow}
               gradientStart={project.colors.gradientStart}
               gradientEnd={project.colors.gradientEnd}
             >
@@ -277,7 +280,8 @@ function Documentation() {
           })}
         </DocumentationDataContainer>
         <div>
-          <DocumentationTitltesContainer>
+          <DocumentationContentsContainer>
+            <h6>CONTENTS</h6>
             {documentationItems.map((item, i) => (
               <AnimatedWrapper key={i} delay={i * 0.1} x={40} y={0}>
                 <DocumentationTitle
@@ -288,7 +292,13 @@ function Documentation() {
                 </DocumentationTitle>
               </AnimatedWrapper>
             ))}
-          </DocumentationTitltesContainer>
+          </DocumentationContentsContainer>
+          <DocumentationTagsContainer>
+            <h6>STACK</h6>
+            {project.stack.map((tag, i) => (
+              <Tag data={tag} key={i} />
+            ))}
+          </DocumentationTagsContainer>
         </div>
       </DocumentationContainer>
     </PageWrapper>

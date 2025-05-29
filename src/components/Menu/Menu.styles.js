@@ -12,10 +12,12 @@ export const MenuContainer = styled.nav`
   gap: 60px;
   top: 30px;
   position: sticky;
+  z-index: 10;
 
   @media (max-width: ${breakpoints.mobile}) {
     max-width: 100%;
-    position: initial;
+    top: 0;
+    background-color: var(--color-bg-main);
     width: 100%;
     padding: 16px;
     flex-direction: row;
@@ -84,7 +86,33 @@ export const NavLinksContainer = styled.ul`
   list-style: none;
 
   @media (max-width: ${breakpoints.mobile}) {
-    display: none;
+    max-width: 100vw;
+    height: ${({ active }) => (active ? "423px" : "0px")};
+    overflow: hidden;
+    flex-direction: column;
+    border-bottom: ${({ active }) => (active ? "1px solid var(--color-border)" : "0px")};
+
+    position: absolute;
+    left: 0;
+    top: 71px;
+
+    background-color: var(--color-bg-main);
+    z-index: 10;
+    transition: height 0.3s ease, padding 0.1s ease;
+
+    & > div {
+      padding: 0px 16px;
+    }
+
+    li > a {
+      white-space: nowrap;
+      transition: all 0.3s ease;
+
+      svg {
+        display: block;
+        min-width: 14.08px;
+      }
+    }
   }
 `;
 
@@ -123,4 +151,35 @@ export const NavItem = styled.li`
   a:active {
     transform: scale(0.98);
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+
+    li,
+    a {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+`;
+
+export const MenuLinksContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+`;
+
+export const Overlay = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.52);
+  z-index: 0;
+  opacity: ${({ active }) => (active ? 1 : 0)};
+  transition: opacity 0.3s ease;
+  pointer-events: ${({ active }) => (active ? "all" : "none")};
 `;

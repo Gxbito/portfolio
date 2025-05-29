@@ -21,7 +21,7 @@ function StackCard() {
   );
 
   return (
-    <AnimatedWrapper style={{ width: "100%" }}>
+    <AnimatedWrapper>
       <StackCardStyled>
         <StackTextContainer>
           <h4>Tech Stack</h4>

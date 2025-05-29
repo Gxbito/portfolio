@@ -47,8 +47,7 @@ export const ShowcaseCardStyled = styled(Link)`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 16px 16px 0px 16px;
-    gap: 24px;
+    padding: 8px 8px 0px 8px;
   }
 `;
 
@@ -75,8 +74,13 @@ export const ShowcaseDataContainer = styled.div`
     box-shadow: 0 0 20px 2px ${({ shadow }) => (shadow ? `${shadow}` : "none")};
 
     @media (max-width: ${breakpoints.mobile}) {
-      height: 210px;
+      height: 160px;
     }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 16px 16px 0px 16px;
+    gap: 24px;
   }
 `;
 

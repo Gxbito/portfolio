@@ -81,7 +81,6 @@ export const TextContainer = styled.div`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    gap: 4px;
     padding: 0px;
   }
 `;

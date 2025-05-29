@@ -22,7 +22,7 @@ function ServiceCard({ title, description, image, features }) {
         ))}
       </ListContainer>
       <ButtonsContainer>
-        <PrimaryButton>Get started now</PrimaryButton>
+        <PrimaryButton to="/contact">Get started now</PrimaryButton>
         <SecondaryButton>
           E-mail
           <FiArrowRightCircle />

@@ -1,9 +1,9 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-function AnimatedWrapper({ children, delay = 0, style, y = 40, x = 0 }) {
+function AnimatedWrapper({ children, delay = 0, style, y = 40, x = 0, triggerOnce = true }) {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: triggerOnce,
     threshold: 0.2,
   });
 

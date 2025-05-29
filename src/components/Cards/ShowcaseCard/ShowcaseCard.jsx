@@ -14,12 +14,12 @@ function ShowcaseCard({ id, title, description, images, colors }) {
         image={showcaseCard}
         gradientStart={gradientStart}
         gradientEnd={gradientEnd}
-        shadow={shadow}
       >
         <DataTextContainer text={text}>
           <h3>{title}</h3>
           <p>{description}</p>
         </DataTextContainer>
+
         <img src={showcaseCard} alt={id} />
       </ShowcaseDataContainer>
     </ShowcaseCardStyled>
