@@ -1,16 +1,16 @@
 import { PrimaryButtonStyled } from "./PrimaryButton.styles";
 import { Link } from "react-router-dom";
 
-function PrimaryButton({ children, to }) {
+function PrimaryButton({ children, to, as = Link, ...props }) {
   if (to) {
     return (
-      <PrimaryButtonStyled as={Link} to={to}>
+      <PrimaryButtonStyled as={as} to={to} {...props}>
         {children}
       </PrimaryButtonStyled>
     );
   }
 
-  return <PrimaryButtonStyled>{children}</PrimaryButtonStyled>;
+  return <PrimaryButtonStyled {...props}>{children}</PrimaryButtonStyled>;
 }
 
 export default PrimaryButton;

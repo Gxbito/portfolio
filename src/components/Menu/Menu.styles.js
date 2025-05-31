@@ -90,7 +90,8 @@ export const NavLinksContainer = styled.ul`
     height: ${({ active }) => (active ? "423px" : "0px")};
     overflow: hidden;
     flex-direction: column;
-    border-bottom: ${({ active }) => (active ? "1px solid var(--color-border)" : "0px")};
+    border-bottom: ${({ active }) =>
+      active ? "1px solid var(--color-border)" : "0px"};
 
     position: absolute;
     left: 0;
@@ -182,4 +183,8 @@ export const Overlay = styled.div`
   opacity: ${({ active }) => (active ? 1 : 0)};
   transition: opacity 0.3s ease;
   pointer-events: ${({ active }) => (active ? "all" : "none")};
+
+  @media (min-width: ${breakpoints.mobile}) {
+    display: none;
+  }
 `;

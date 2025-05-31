@@ -1,9 +1,9 @@
 import { InputContainer, InputStyled } from "./Input.styles";
 
-function Input({placeholder}) {
+function Input({placeholder, ...props}) {
   return (
     <InputContainer>
-      <InputStyled placeholder={placeholder}/>
+      <InputStyled placeholder={placeholder} {...props}/>
     </InputContainer>
   );
 }

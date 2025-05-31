@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { breakpoints } from "@/styles/theme";
 
 export const FormStyled = styled.form`
+  position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -13,6 +14,21 @@ export const FormStyled = styled.form`
   box-shadow: var(--shadow-card);
   border: 1px solid var(--color-border);
   border-radius: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: ${({ submitted }) => (submitted ? 1 : 0)};
+    pointer-events: ${({ submitted }) => (submitted ? "auto" : "none")};
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.6s ease-in-out;
+    z-index: 2;
+  }
 
   h4 {
     font-family: var(--font-primary);
@@ -35,5 +51,52 @@ export const FormStyled = styled.form`
     gap: 16px;
     display: flex;
     flex-direction: column;
+  }
+`;
+
+const slideDownFadeIn = keyframes`
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
+export const SuccessMessageContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  h2,
+  p {
+    animation: ${slideDownFadeIn} 0.6s ease-in-out forwards;
+    text-align: center;
+    cursor: default;
+  }
+
+  h2 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: var(--font-size-header-2);
+    color: var(--color-text-title);
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: var(--font-size-header-5);
+    line-height: 140%;
+    color: var(--color-text-paragraph);
+    max-width: 50ch;
   }
 `;
