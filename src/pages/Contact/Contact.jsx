@@ -26,7 +26,7 @@ function Contact() {
             <PrimaryButton to="/projects">View all projects</PrimaryButton>
           </AnimatedWrapper>
           <AnimatedWrapper delay={0.1}>
-            <SecondaryButton to="/contact">Contáctame</SecondaryButton>
+            <SecondaryButton to="/contact">Services</SecondaryButton>
           </AnimatedWrapper>
         </ButtonsContainer>
       </TextWrapper>

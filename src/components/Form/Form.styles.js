@@ -39,7 +39,9 @@ export const FormStyled = styled.form`
   }
 
   button {
+    position: relative;
     grid-column: span 2;
+    overflow: hidden;
 
     @media (max-width: ${breakpoints.mobile}) {
       width: 100%;
@@ -94,9 +96,43 @@ export const SuccessMessageContainer = styled.div`
   p {
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: var(--font-size-header-5);
+    font-size: var(--font-size-large-paragraph);
     line-height: 140%;
     color: var(--color-text-paragraph);
     max-width: 50ch;
   }
+`;
+
+const spin = keyframes`
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+const fill = keyframes`
+  100% {
+    width: 100%;
+  }
+`;
+
+export const Spinner = styled.div`
+  width: 1.6em;
+  height: 1.6em;
+  border: 3px solid #fff;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: ${spin} 0.6s linear infinite;
+  z-index: 2;
+`;
+
+export const FillBar = styled.div`
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.44);
+  z-index: 1;
+  animation: ${fill} 1s ease-in-out forwards;
 `;
