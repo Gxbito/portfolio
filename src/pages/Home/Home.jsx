@@ -52,7 +52,9 @@ function Home() {
           <ShortcutCard cardType="about" />
         </AnimatedWrapper>
       </ShorcutCardsContainer>
-      <StackCard />
+      <AnimatedWrapper style={{ width: "100%" }}>
+        <StackCard />
+      </AnimatedWrapper>
     </PageWrapper>
   );
 }

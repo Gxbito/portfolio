@@ -3,105 +3,126 @@
     "id": 1,
     "icon": "/src/assets/icons/stack/html.svg",
     "title": "HTML",
-    "description": "Foundational language for building web pages.",
+    "description": "Markup Language",
     "category": "Web Development"
   },
   {
     "id": 2,
     "icon": "/src/assets/icons/stack/css.svg",
     "title": "CSS",
-    "description": "Styling language for designing and structuring visual elements.",
+    "description": "Style Sheet Language",
     "category": "Web Development"
   },
   {
     "id": 3,
     "icon": "/src/assets/icons/stack/js.svg",
     "title": "JavaScript",
-    "description": "Programming language used to add interactivity to websites.",
+    "description": "Programming Language",
     "category": "Web Development"
   },
   {
     "id": 4,
     "icon": "/src/assets/icons/stack/reactjs.svg",
     "title": "React",
-    "description": "Library for building dynamic user interfaces.",
+    "description": "UI Library",
     "category": "Frameworks"
   },
   {
     "id": 5,
     "icon": "/src/assets/icons/stack/materialui.svg",
     "title": "Material UI",
-    "description": "Styling framework based on Google's Material Design.",
+    "description": "UI Framework",
     "category": "Frameworks"
   },
   {
     "id": 6,
     "icon": "/src/assets/icons/stack/sass.svg",
     "title": "SASS",
-    "description": "CSS preprocessor that enables more advanced styling.",
+    "description": "CSS Preprocessor",
     "category": "Frameworks"
   },
   {
     "id": 7,
     "icon": "/src/assets/icons/stack/tailwindcss.svg",
     "title": "Tailwind CSS",
-    "description": "Utility-first framework for fast and modular styling.",
+    "description": "Utility Framework",
     "category": "Frameworks"
   },
   {
     "id": 8,
     "icon": "/src/assets/icons/stack/figma.svg",
     "title": "Figma",
-    "description": "Tool for UI/UX design and prototyping.",
+    "description": "Design Tool",
     "category": "Design Tools"
   },
   {
     "id": 9,
     "icon": "/src/assets/icons/stack/ps.svg",
     "title": "Photoshop",
-    "description": "Software for image editing and graphic design.",
+    "description": "Design Software",
     "category": "Design Tools"
   },
   {
     "id": 10,
     "icon": "/src/assets/icons/stack/npm.svg",
     "title": "NPM",
-    "description": "Package manager for JavaScript projects.",
+    "description": "Package Manager",
     "category": "Package Management"
   },
   {
     "id": 11,
     "icon": "/src/assets/icons/stack/github.svg",
     "title": "GitHub",
-    "description": "Platform for version control and team collaboration.",
+    "description": "Code Hosting",
     "category": "Package Management"
   },
   {
     "id": 12,
     "icon": "/src/assets/icons/stack/git.svg",
     "title": "Git",
-    "description": "Distributed version control system.",
+    "description": "Version Control",
     "category": "Package Management"
   },
   {
     "id": 13,
-    "icon": "/src/assets/icons/stack/webpack.svg",
-    "title": "Webpack",
-    "description": "Module bundler for JavaScript projects.",
-    "category": "Building and Optimizing"
+    "icon": "/src/assets/icons/stack/wordpress.svg",
+    "title": "WordPress",
+    "description": "CMS",
+    "category": "Content Management System"
   },
   {
     "id": 14,
-    "icon": "/src/assets/icons/stack/vitejs.svg",
-    "title": "Vite",
-    "description": "Fast development tool for modern web applications.",
-    "category": "Building and Optimizing"
+    "icon": "/src/assets/icons/stack/xd.svg",
+    "title": "Adobe XD",
+    "description": "Design Tool",
+    "category": "Design Tools"
   },
   {
     "id": 15,
-    "icon": "/src/assets/icons/stack/wordpress.svg",
-    "title": "WordPress",
-    "description": "Popular CMS for building websites.",
+    "icon": "/src/assets/icons/stack/elementor.svg",
+    "title": "Elementor",
+    "description": "Page Builder",
     "category": "Content Management System"
+  },
+  {
+    "id": 16,
+    "icon": "/src/assets/icons/stack/shopify.svg",
+    "title": "Shopify",
+    "description": "E-commerce CMS",
+    "category": "Content Management System"
+  },
+  {
+    "id": 17,
+    "icon": "/src/assets/icons/stack/webpack.svg",
+    "title": "Webpack",
+    "description": "Module Bundler",
+    "category": "Building and Optimizing"
+  },
+  {
+    "id": 18,
+    "icon": "/src/assets/icons/stack/vitejs.svg",
+    "title": "Vite",
+    "description": "Build Tool",
+    "category": "Building and Optimizing"
   }
 ]

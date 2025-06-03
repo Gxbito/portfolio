@@ -8,8 +8,9 @@ export const TechnologyStyled = styled.div`
   gap: 16px;
 
   img {
-    width: 64px;
+    width: 56px;
     height: auto;
+    border-radius: 8px;
 
     @media (max-width: ${breakpoints.mobile}) {
       width: 44px;
@@ -38,7 +39,7 @@ export const TechnologyDataContainer = styled.div`
   p {
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: var(--font-size-small-paragraph);
+    font-size: var(--font-size-large-paragraph);
     color: var(--color-text-paragraph);
   }
 `;

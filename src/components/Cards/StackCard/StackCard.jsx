@@ -26,9 +26,7 @@ function StackCard() {
         <StackTextContainer>
           <h4>Tech Stack</h4>
           <p>
-            A selection of key tools and technologies I regularly use. Each one
-            plays a part in how I build fast, responsive, and modern web
-            experiences
+            Software and resources I use on a regular basis.
           </p>
         </StackTextContainer>
 
