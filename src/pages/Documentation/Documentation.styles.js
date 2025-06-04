@@ -139,7 +139,7 @@ export const MainImageContainer = styled.div`
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
 
-  div {
+  a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -152,6 +152,49 @@ export const MainImageContainer = styled.div`
     border-radius: 8px;
     background: ${({ gradientStart, gradientEnd }) =>
       `linear-gradient(180deg, ${gradientStart} 0%, ${gradientEnd} 100%)`};
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    h4 {
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(50px);
+      transition: all 0.2s ease-in-out;
+      z-index: 3;
+
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: var(--font-size-header-4);
+      color: var(--color-text-title);
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &:hover h4 {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    &:active h4 {
+      scale: 0.85;
+    }
 
     img {
       transform: translateY(180px);
@@ -166,6 +209,10 @@ export const MainImageContainer = styled.div`
     }
 
     @media (max-width: ${breakpoints.mobile}) {
+      & > img:nth-child(1) {
+        transform: translateY(260px);
+      }
+
       & > img:nth-child(2) {
         display: none;
       }
@@ -179,6 +226,18 @@ export const MainImageContainer = styled.div`
 
 export const LastImageContainer = styled(MainImageContainer)`
   height: 420px;
+
+  & > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ${({ gradientStart, gradientEnd }) =>
+      `linear-gradient(180deg, ${gradientStart} 0%, ${gradientEnd} 100%)`};
+  }
 
   & > div > img {
     transform: translate(0px);

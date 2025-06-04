@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakpoints } from "@/styles/theme";
+import { Link } from "react-router-dom";
 
 export const MenuContainer = styled.nav`
   width: 100%;
@@ -27,16 +28,18 @@ export const MenuContainer = styled.nav`
   }
 `;
 
-export const OwnerDataContainer = styled.div`
+export const OwnerDataContainer = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  text-decoration: none;
 
   img {
     width: 56px;
     height: auto;
     display: block;
+    border-radius: 8px;
 
     @media (max-width: ${breakpoints.mobile}) {
       width: 44px;

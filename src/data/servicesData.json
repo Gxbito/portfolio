@@ -2,49 +2,49 @@
   {
     "id": 1,
     "title": "Frontend Developer",
-    "description": "Desarrollo aplicaciones web rápidas y responsivas con React y Material UI.",
+    "description": "I build fast and responsive web applications using React and Material UI.",
     "features": [
-      "Diseño Responsivo",
-      "Optimización de Rendimiento",
-      "Experiencia en React",
-      "Integración con APIs"
+      "Responsive Design",
+      "Performance Optimization",
+      "React Expertise",
+      "API Integration"
     ],
-    "image": "/src/assets/icons/web/Bulb.svg"
+    "image": "/src/assets/icons/web/Mouse.svg"
   },
   {
     "id": 2,
-    "title": "Backend Developer",
-    "description": "Construcción de APIs escalables y seguras con Node.js y Express.",
+    "title": "UI Designer",
+    "description": "I design modern, accessible interfaces focused on user experience.",
     "features": [
-      "Arquitectura escalable",
-      "Autenticación segura",
-      "Integración con bases de datos",
-      "Despliegue en servidores"
+      "Attractive and functional designs",
+      "Prototypes in Figma",
+      "Mobile-friendly layouts",
+      "Collaboration with developers"
+    ],
+    "image": "/src/assets/icons/web/Pen.svg"
+  },
+  {
+    "id": 3,
+    "title": "CMS Developer",
+    "description": "I implement and customize websites using WordPress, Webflow, and other CMS platforms.",
+    "features": [
+      "Easy-to-manage websites",
+      "Custom design solutions",
+      "Tailored plugins and features",
+      "Basic SEO optimization"
     ],
     "image": "/src/assets/icons/web/User.svg"
   },
   {
-    "id": 3,
-    "title": "Backend Developer",
-    "description": "Construcción de APIs escalables y seguras con Node.js y Express.",
-    "features": [
-      "Arquitectura escalable",
-      "Autenticación segura",
-      "Integración con bases de datos",
-      "Despliegue en servidores"
-    ],
-    "image": "/src/assets/icons/web/Flash.svg"
-  },
-  {
     "id": 4,
-    "title": "Backend Developer",
-    "description": "Construcción de APIs escalables y seguras con Node.js y Express.",
+    "title": "Custom Plan",
+    "description": "I help you define and develop the ideal solution for your digital project.",
     "features": [
-      "Arquitectura escalable",
-      "Autenticación segura",
-      "Integración con bases de datos",
-      "Despliegue en servidores"
+      "Needs assessment",
+      "Tailored technical proposal",
+      "Combined design and development",
+      "Ongoing support"
     ],
-    "image": "/src/assets/icons/web/Crown.svg"
+    "image": "/src/assets/icons/web/Settings.svg"
   }
 ]

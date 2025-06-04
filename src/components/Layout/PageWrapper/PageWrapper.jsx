@@ -49,7 +49,6 @@ function PageWrapper({ children, page }) {
 
       <PageContent page={page}>
         <div>
-          {page === "documentation" ? <Header /> : null}
           {children}
         </div>
       </PageContent>

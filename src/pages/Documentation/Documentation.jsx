@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import PageWrapper from "@/components/Layout/PageWrapper/PageWrapper";
 import {
   DocumentationContainer,
@@ -19,6 +19,8 @@ import worksData from "@/data/worksData";
 import projectsData from "@/data/projectsData";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import Tag from "@/components/UI/Tag/Tag";
+import { FiExternalLink } from "react-icons/fi";
+import Header from "@/components/Header/Header";
 
 const documentationItems = [
   { title: "Overview" },
@@ -49,16 +51,15 @@ function Documentation() {
     }
   };
 
-  console.log(project);
-
   return (
     <PageWrapper page="documentation">
+      <Header name={project.name} demo={project.demo} />
       <DocumentationContainer>
         <DocumentationDataContainer>
           <TitleContainer>
             <HiddenWrapper hideOn="mobile">
               <AnimatedWrapper>
-                <h5>Frontend Developer – November {project.year}</h5>
+                <h5>Frontend Developer – {project.year}</h5>
               </AnimatedWrapper>
             </HiddenWrapper>
 
@@ -77,10 +78,14 @@ function Documentation() {
               gradientStart={project.colors.gradientStart}
               gradientEnd={project.colors.gradientEnd}
             >
-              <div>
+              <Link
+                to={project.demo}>
                 <img src={project.images.desktopHome} alt="project" />
                 <img src={project.images.mobileHome} alt="project" />
-              </div>
+                <h4>
+                  View project <FiExternalLink />
+                </h4>
+              </Link>
             </MainImageContainer>
           </AnimatedWrapper>
 

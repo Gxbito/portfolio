@@ -38,7 +38,7 @@ export const TimelineContainer = styled.div`
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: auto 16px auto;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: flex-start;
   gap: 80px;
@@ -56,10 +56,6 @@ export const TimelineContainer = styled.div`
     & > :first-child {
       position: initial;
       top: auto;
-    }
-
-    & > div:nth-child(2) {
-      display: none;
     }
   }
 `;

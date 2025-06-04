@@ -1,35 +1,58 @@
 import styled from "styled-components";
+import { breakpoints } from "@/styles/theme";
 
-// Contenedor principal
 export const TimelineContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 40px 1fr;
   align-items: center;
   position: relative;
-  height: 100%; /* Ajustar según el contenido */
-`;
-
-// Línea vertical rellenable
-export const VerticalLine = styled.div`
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 16px;
   height: 100%;
-  background: var(--color-card-button); /* Negro a azul */
-  transform: translateX(-50%);
-  border-radius: 100px;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: ${({ progress }) => `${progress}%`}; /* Rellenado dinámico */
-    max-height: 100%;
-    background: #3b82f6; /* Azul brillante */
-    transition: height 0.2s ease-out;
-    border-radius: 100px;
+  gap: 40px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
   }
 `;
 
+export const VerticalLine = styled.div`
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-border);
+  border-radius: 100px;
+`;
+
+export const Dot = styled.div`
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--color-border);
+  border-radius: 100%;
+  background-color: var(--color-primary);
+`;
+
+export const LineContainer = styled.div`
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  gap: 16px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
+  }
+`;
+
+export const Card = styled.div`
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 24px;
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+`;

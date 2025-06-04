@@ -14,17 +14,22 @@ export const HeaderContainer = styled.div`
   position: relative;
   z-index: 2;
 
-  h6 {
+  h4 {
     font-weight: 500;
-    font-size: var(--font-size-header-6);
-    color: var(--color-text-paragraph);
+    font-size: var(--font-size-header-4);
+    color: var(--color-text-title);
     font-family: var(--font-primary);
     text-align: center;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      display: none;
+    }
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     height: 77px;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    justify-content: space-between;
     padding: 16px;
     border-radius: 0px;
     position: fixed;

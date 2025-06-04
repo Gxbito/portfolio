@@ -29,7 +29,7 @@ function Home() {
 
         <ButtonsContainer>
           <AnimatedWrapper>
-            <PrimaryButton to="/projects">View all projects</PrimaryButton>
+            <PrimaryButton to="/works">View all works</PrimaryButton>
           </AnimatedWrapper>
           <AnimatedWrapper delay={0.1}>
             <SecondaryButton to="/contact">
@@ -41,8 +41,8 @@ function Home() {
       </TextContainer>
 
       <PreviewSection sectionType="works" />
-      <PreviewSection sectionType="projects" />
-      <PreviewSection sectionType="certificates" />
+      {/* <PreviewSection sectionType="projects" /> */}
+      {/* <PreviewSection sectionType="certificates" /> */}
       <ShorcutCardsContainer>
         <AnimatedWrapper style={{ width: "100%" }}>
           <ShortcutCard cardType="services" />
@@ -52,9 +52,7 @@ function Home() {
           <ShortcutCard cardType="about" />
         </AnimatedWrapper>
       </ShorcutCardsContainer>
-      <AnimatedWrapper style={{ width: "100%" }}>
-        <StackCard />
-      </AnimatedWrapper>
+      <StackCard />
     </PageWrapper>
   );
 }

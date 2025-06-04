@@ -56,7 +56,7 @@ function About() {
         </TextWrapper>
 
         <Timeline />
-        <TimelineCardContainer>
+        {/* <TimelineCardContainer>
           {timelineData.map((tech, i) => (
             <AnimatedWrapper
               y={0}
@@ -67,11 +67,11 @@ function About() {
               <TimelineCard key={tech.id} {...tech} />
             </AnimatedWrapper>
           ))}
-        </TimelineCardContainer>
+        </TimelineCardContainer> */}
       </TimelineContainer>
       <PreviewSection sectionType="works" />
-      <PreviewSection sectionType="projects" />
-      <PreviewSection sectionType="certificates" />
+      {/* <PreviewSection sectionType="projects" />
+      <PreviewSection sectionType="certificates" /> */}
       <StackCard />
     </PageWrapper>
   );
