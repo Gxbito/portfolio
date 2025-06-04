@@ -9,7 +9,7 @@
       "React Expertise",
       "API Integration"
     ],
-    "image": "/src/assets/icons/web/Mouse.svg"
+    "image": "/icons/web/Mouse.svg"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
       "Mobile-friendly layouts",
       "Collaboration with developers"
     ],
-    "image": "/src/assets/icons/web/Pen.svg"
+    "image": "/icons/web/Pen.svg"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
       "Tailored plugins and features",
       "Basic SEO optimization"
     ],
-    "image": "/src/assets/icons/web/User.svg"
+    "image": "/icons/web/User.svg"
   },
   {
     "id": 4,
@@ -45,6 +45,6 @@
       "Combined design and development",
       "Ongoing support"
     ],
-    "image": "/src/assets/icons/web/Settings.svg"
+    "image": "/icons/web/Settings.svg"
   }
 ]
