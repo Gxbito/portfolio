@@ -1,27 +1,27 @@
 [
   {
-    "icon": "src/assets/icons/web/Bulb.svg",
+    "icon": "/icons/web/Bulb.svg",
     "category": "EARLY LEARNING",
     "title": "Foundations in Frontend Development",
     "text": "My journey into web development began with self-taught exploration, building basic projects like blogs and portfolios using HTML, CSS, and JavaScript. Seeking to deepen my knowledge, I enrolled in the NUCBA bootcamp, where I gained a solid understanding of frontend technologies and programming fundamentals. During this time, I built a fully functional e-commerce platform on my own and tackled complex projects that challenged me to apply what I’d learned in real-world scenarios.",
     "year": "'21"
   },
   {
-    "icon": "src/assets/icons/web/User.svg",
+    "icon": "/icons/web/User.svg",
     "category": "COLLABORATIVE WORK",
     "title": "Freelance Beginnings",
     "text": "In 2022, I began offering my services as a frontend developer by reaching out directly to businesses and promoting myself on platforms like Fiverr and Upwork. That’s how I launched my freelance career, collaborating with clients from various industries. Some projects were developed alongside backend developers, while others involved working with UX/UI and product designers — experiences that strengthened my adaptability and teamwork skills.",
     "year": "'22"
   },
   {
-    "icon": "src/assets/icons/web/Flash.svg",
+    "icon": "/icons/web/Flash.svg",
     "category": "ADDITIONAL EDUCATION",
     "title": "Expanding My Skillset",
     "text": "To broaden my opportunities, I taught myself how to work with CMS platforms — especially WordPress — after noticing a growing demand for developers in that area. At the same time, I began a technical degree in programming at university, where I successfully completed and passed all first-year subjects. I also took a UX/UI design course offered by the university, which helped me better understand design principles and user experience.",
     "year": "'23"
   },
   {
-    "icon": "src/assets/icons/web/Crown.svg",
+    "icon": "/icons/web/Crown.svg",
     "category": "INDEPENDENT WORK",
     "title": "Freelance Work and Ongoing Projects",
     "text": "Today, I continue working as a frontend developer, building and maintaining websites for a variety of clients. Some of them are long-term collaborators who regularly request updates, improvements, or maintenance for their sites. At the same time, I’m constantly taking on new clients and projects, which allows me to keep growing, applying everything I’ve learned, and staying up-to-date with the latest tools and trends in web development.",

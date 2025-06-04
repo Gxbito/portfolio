@@ -12,7 +12,6 @@ import Stack from "./pages/Stack/Stack";
 import Documentation from "./pages/Documentation/Documentation";
 import ScrollToTop from "./utils/scrollToTop";
 import { LenisProvider } from "./context/LenisContext";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
@@ -34,7 +33,6 @@ function App() {
           </Routes>
         </MainWrapper>
       </Router>
-      <SpeedInsights />
     </LenisProvider>
   );
 }
