@@ -17,11 +17,11 @@ import {
   FiBriefcase,
   FiPenTool,
 } from "react-icons/fi";
-import ProfileIcon from "@/assets/icons/web/Profile.svg";
+import ProfileIcon from "../../../public/icons/web/Profile.svg";
 import { Link } from "react-router-dom";
 import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
 import IconButton from "@/components/UI/Buttons/IconButton/IconButton";
-import MenuIcon from "@/assets/icons/web/menu-icon.svg";
+import MenuIcon from "../../../public/icons/web/menu-icon.svg";
 import HiddenWrapper from "@/components/Layout/HiddenWrapper/HiddenWrapper";
 
 const navItems = [
@@ -70,7 +70,10 @@ function Menu() {
               y={0}
               style={{ width: "100%" }}
             >
-              <NavItem active={location.pathname === item.to} onClick={handleMenuActive}>
+              <NavItem
+                active={location.pathname === item.to}
+                onClick={handleMenuActive}
+              >
                 <Link to={item.to}>
                   {item.icon}
                   {item.label}
@@ -87,7 +90,7 @@ function Menu() {
         </IconButton>
       </HiddenWrapper>
 
-      <Overlay active={isActive}/>
+      <Overlay active={isActive} />
     </MenuContainer>
   );
 }
