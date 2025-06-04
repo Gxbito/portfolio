@@ -17,11 +17,11 @@ import {
   FiBriefcase,
   FiPenTool,
 } from "react-icons/fi";
-import ProfileIcon from "../../../public/icons/web/Profile.svg";
+import ProfileIcon from "@/assets/icons/web/Profile.svg";
 import { Link } from "react-router-dom";
 import AnimatedWrapper from "@/components/Layout/AnimatedWrapper/AnimatedWrapper";
 import IconButton from "@/components/UI/Buttons/IconButton/IconButton";
-import MenuIcon from "../../../public/icons/web/menu-icon.svg";
+import MenuIcon from "@/assets/icons/web/menu-icon.svg";
 import HiddenWrapper from "@/components/Layout/HiddenWrapper/HiddenWrapper";
 
 const navItems = [

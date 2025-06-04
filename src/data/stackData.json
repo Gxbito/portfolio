@@ -1,126 +1,126 @@
 [
   {
     "id": 1,
-    "icon": "/icons/stack/html.svg",
+    "icon": "src/assets/icons/stack/html.svg",
     "title": "HTML",
     "description": "Markup Language",
     "category": "Web Development"
   },
   {
     "id": 2,
-    "icon": "/icons/stack/css.svg",
+    "icon": "src/assets/icons/stack/css.svg",
     "title": "CSS",
     "description": "Style Sheet Language",
     "category": "Web Development"
   },
   {
     "id": 3,
-    "icon": "/icons/stack/js.svg",
+    "icon": "src/assets/icons/stack/js.svg",
     "title": "JavaScript",
     "description": "Programming Language",
     "category": "Web Development"
   },
   {
     "id": 4,
-    "icon": "/icons/stack/reactjs.svg",
+    "icon": "src/assets/icons/stack/reactjs.svg",
     "title": "React",
     "description": "UI Library",
     "category": "Frameworks"
   },
   {
     "id": 5,
-    "icon": "/icons/stack/materialui.svg",
+    "icon": "src/assets/icons/stack/materialui.svg",
     "title": "Material UI",
     "description": "UI Framework",
     "category": "Frameworks"
   },
   {
     "id": 6,
-    "icon": "/icons/stack/sass.svg",
+    "icon": "src/assets/icons/stack/sass.svg",
     "title": "SASS",
     "description": "CSS Preprocessor",
     "category": "Frameworks"
   },
   {
     "id": 7,
-    "icon": "/icons/stack/tailwindcss.svg",
+    "icon": "src/assets/icons/stack/tailwindcss.svg",
     "title": "Tailwind CSS",
     "description": "Utility Framework",
     "category": "Frameworks"
   },
   {
     "id": 8,
-    "icon": "/icons/stack/figma.svg",
+    "icon": "src/assets/icons/stack/figma.svg",
     "title": "Figma",
     "description": "Design Tool",
     "category": "Design Tools"
   },
   {
     "id": 9,
-    "icon": "/icons/stack/ps.svg",
+    "icon": "src/assets/icons/stack/ps.svg",
     "title": "Photoshop",
     "description": "Design Software",
     "category": "Design Tools"
   },
   {
     "id": 10,
-    "icon": "/icons/stack/npm.svg",
+    "icon": "src/assets/icons/stack/npm.svg",
     "title": "NPM",
     "description": "Package Manager",
     "category": "Package Management"
   },
   {
     "id": 11,
-    "icon": "/icons/stack/github.svg",
+    "icon": "src/assets/icons/stack/github.svg",
     "title": "GitHub",
     "description": "Code Hosting",
     "category": "Package Management"
   },
   {
     "id": 12,
-    "icon": "/icons/stack/git.svg",
+    "icon": "src/assets/icons/stack/git.svg",
     "title": "Git",
     "description": "Version Control",
     "category": "Package Management"
   },
   {
     "id": 13,
-    "icon": "/icons/stack/wordpress.svg",
+    "icon": "src/assets/icons/stack/wordpress.svg",
     "title": "WordPress",
     "description": "CMS",
     "category": "Content Management System"
   },
   {
     "id": 14,
-    "icon": "/icons/stack/xd.svg",
+    "icon": "src/assets/icons/stack/xd.svg",
     "title": "Adobe XD",
     "description": "Design Tool",
     "category": "Design Tools"
   },
   {
     "id": 15,
-    "icon": "/icons/stack/elementor.svg",
+    "icon": "src/assets/icons/stack/elementor.svg",
     "title": "Elementor",
     "description": "Page Builder",
     "category": "Content Management System"
   },
   {
     "id": 16,
-    "icon": "/icons/stack/shopify.svg",
+    "icon": "src/assets/icons/stack/shopify.svg",
     "title": "Shopify",
     "description": "E-commerce CMS",
     "category": "Content Management System"
   },
   {
     "id": 17,
-    "icon": "/icons/stack/webpack.svg",
+    "icon": "src/assets/icons/stack/webpack.svg",
     "title": "Webpack",
     "description": "Module Bundler",
     "category": "Building and Optimizing"
   },
   {
     "id": 18,
-    "icon": "/icons/stack/vitejs.svg",
+    "icon": "src/assets/icons/stack/vitejs.svg",
     "title": "Vite",
     "description": "Build Tool",
     "category": "Building and Optimizing"
