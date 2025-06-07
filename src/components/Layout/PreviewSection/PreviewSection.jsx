@@ -76,7 +76,7 @@ function PreviewSection({ sectionType }) {
             <AnimatedWrapper y={0} x={20} delay={0.1}>
               <p>
                 {sectionType === "works"
-                  ? "Explore some of my featured work"
+                  ? "Take a look at some recent projects I’ve built for clients"
                   : sectionType === "projects"
                   ? "A selection of my most notable projects"
                   : "Take a look at my certifications"}

@@ -36,7 +36,7 @@ export const TextWrapperStyled = styled.div`
     line-height: 140%;
 
     @media (max-width: ${breakpoints.mobile}) {
-      font-size: var(--font-size-small-paragraph);
+      font-size: var(--font-size-medium-paragraph);
     }
   }
 

@@ -90,12 +90,11 @@ export const NavLinksContainer = styled.ul`
 
   @media (max-width: ${breakpoints.mobile}) {
     max-width: 100vw;
-    height: ${({ active }) => (active ? "423px" : "0px")};
+    height: ${({ active }) => (active ? "360px" : "0px")};
     overflow: hidden;
     flex-direction: column;
     border-bottom: ${({ active }) =>
       active ? "1px solid var(--color-border)" : "0px"};
-
     position: absolute;
     left: 0;
     top: 71px;

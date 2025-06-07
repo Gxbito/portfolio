@@ -70,12 +70,15 @@ const slideDownFadeIn = keyframes`
 
 export const SuccessMessageContainer = styled.div`
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0px 24px;
   z-index: 3;
 
   h2,

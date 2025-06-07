@@ -14,9 +14,9 @@ function Works() {
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
-            A selection of my work showcasing my skills in frontend development
-            and my focus on building clean, efficient, and user-centered digital
-            experiences.
+            These are some of the latest projects I built for clients,
+            highlighting my frontend development skills and my commitment to
+            clean, efficient, and user-centered design.
           </p>
         </AnimatedWrapper>
       </TextWrapper>
