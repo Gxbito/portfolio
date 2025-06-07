@@ -3,15 +3,17 @@
     "id": "trendsetter-threads",
     "name": "Trendsetter Threads",
     "title": "E-Commerce de Moda Optimizado",
+    "logo": "",
     "images": {
-      "mainCard": "images/projects/placeholder-image.jpg",
-      "showcaseCard": "images/projects/TrendsetterThreads/showcaseImage.jpg",
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/Geomax/showcaseImage.jpg",
+      "desktopHome": "/images/works/Geomax/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/Geomax/mobileHomeImage.jpg",
       "documentation": [
-        "images/placeholder-image-gallery1.jpg",
-        "images/placeholder-image-gallery2.jpg",
-        "images/placeholder-image-gallery3.jpg",
-        "images/placeholder-image-gallery4.jpg",
-        "images/placeholder-image-gallery5.jpg"
+        "/images/works/Geomax/wide-image.jpg",
+        "/images/works/Geomax/square-image.jpg",
+        "/images/works/Geomax/square-image-2.jpg",
+        "/images/works/Geomax/wide-image-2.jpg"
       ]
     },
     "year": "2024",

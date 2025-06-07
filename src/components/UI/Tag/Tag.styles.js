@@ -9,6 +9,7 @@ export const TagStyled = styled.div`
   padding: 6px 12px;
   background-color: var(--color-card-button);
   border-radius: 100px;
+  box-shadow: var(--shadow-button);
 
   font-family: var(--font-primary);
   font-weight: 500;

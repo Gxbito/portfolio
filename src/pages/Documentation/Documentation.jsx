@@ -83,7 +83,8 @@ function Documentation() {
                 <img src={project.images.desktopHome} alt="project" />
                 <img src={project.images.mobileHome} alt="project" />
                 <h4>
-                  View project <FiExternalLink />
+                  {project.demo ? "Visit site" : "Site Offline"}
+                  {project.demo && <FiExternalLink />}
                 </h4>
               </Link>
             </MainImageContainer>

@@ -23,9 +23,16 @@ function Header({ name, demo }) {
       <VerticalLine />
       <h4>{name}</h4>
       <VerticalLine />
-      <PrimaryButton to={demo} target="_blank">
-        View site
-        <FiExternalLink />
+      <PrimaryButton
+        to={demo}
+        target="_blank"
+        style={{
+          filter: demo ? "" : "grayscale(100%)",
+          cursor: demo ? "" : "not-allowed",
+        }}
+      >
+        {demo ? "Visit site " : "Site Offline"}
+        {demo && <FiExternalLink />}
       </PrimaryButton>
       {/* <IconButton>
         <img src={githubIcon} alt="github" />

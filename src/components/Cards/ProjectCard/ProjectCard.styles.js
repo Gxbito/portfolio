@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { breakpoints } from "@/styles/theme";
 
 export const ProjectCardStyled = styled(Link)`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
   padding: 8px 8px 16px 8px;
+  overflow: hidden;
 
   background-color: var(--color-bg-card);
   box-shadow: var(--shadow-card);
@@ -29,6 +31,22 @@ export const ProjectCardStyled = styled(Link)`
     box-shadow: var(--shadow-card-active, 0 0 0 2px rgba(255, 255, 255, 0.1));
     background-color: var(--color-bg-card-active);
     border: 1px solid var(--color-border-active);
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.26);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 `;
 
