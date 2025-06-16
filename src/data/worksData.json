@@ -515,179 +515,6 @@
     ]
   },
   {
-    "id": "advant",
-    "name": "ADVANT",
-    "title": "Marketing Agency Website on WordPress",
-    "logo": "images/works/Advant/logo.svg",
-    "images": {
-      "mainCard": "/images/works/placeholder-image.jpg",
-      "showcaseCard": "/images/works/Advant/showcaseImage.jpg",
-      "desktopHome": "/images/works/Advant/desktopHomeImage.jpg",
-      "mobileHome": "/images/works/Advant/mobileHomeImage.jpg",
-      "documentation": [
-        "/images/works/Advant/wide-image.jpg",
-        "/images/works/Advant/square-image.jpg",
-        "/images/works/Advant/square-image-2.jpg",
-        "/images/works/Advant/wide-image-2.jpg"
-      ]
-    },
-    "year": "2024",
-    "description": "Corporate website for a U.S.-based digital marketing agency, focused on attracting new clients.",
-    "stack": ["WordPress", "WPForms", "Yoast", "Jetpack", "CSS3", "Figma"],
-    "github": "https://github.com/Gxbito/e-commerce",
-    "demo": "https://advant.biz/",
-    "colors": {
-      "text": "#FFC9D8",
-      "shadow": "#A93E5E",
-      "gradientStart": "#38111C",
-      "gradientEnd": "#DA5980"
-    },
-    "sections": [
-      {
-        "title": "Overview",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "An Argentinian entrepreneur living in the United States contacted me through Fiverr to develop the website for his marketing agency: ADVANT. He already had SEO experience and intermediate technical knowledge, so he was looking for someone to execute his vision in WordPress, following the structure of a reference site he provided."
-          },
-          {
-            "type": "paragraph",
-            "text": "My role was to design and build a professional site from scratch, with 7 internal pages, carefully balancing performance, aesthetics, and SEO to meet the agency's goals."
-          }
-        ]
-      },
-      {
-        "title": "Technologies",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "Although the site was built on WordPress, I aimed to take the development to the next level by using complementary tools to ensure a professional-grade experience:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "<strong>WordPress + Elementor:</strong> for precise visual layout aligned with the intended design.",
-              "<strong>Custom CSS:</strong> to fine-tune styles and overcome CMS visual limitations.",
-              "<strong>Code snippets:</strong> for specific features without bloating the site with unnecessary plugins.",
-              "<strong>Essential plugins:</strong> WPForms, Jetpack, Yoast SEO, Creativ.eMail, among others."
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Challenges",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "The main challenge was working within WordPress’s limitations. Although I don’t usually rely on CMS tools, I made the most out of its capabilities by combining it with custom code to avoid depending solely on restrictive plugins or themes."
-          },
-          {
-            "type": "paragraph",
-            "text": "Additionally, the client wanted to replicate the layout of the reference site while applying completely different branding. This meant redesigning every visual element—color palette, typography, iconography, and images—without altering the base structure."
-          }
-        ]
-      },
-      {
-        "title": "Process",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "From day one, the client granted me full access to the wp-admin. He already had the domain and hosting set up, so I was able to start right away. I asked him to confirm the number of pages needed, and we began building each one based on the original layout, customized with his branding."
-          },
-          {
-            "type": "paragraph",
-            "text": "We followed an iterative workflow: I shared updates daily, screen by screen, and received immediate feedback. This allowed us to move quickly and stay organized. We even collaborated on SEO from the start, leveraging the client’s previous experience in the field."
-          }
-        ]
-      },
-      {
-        "title": "Lessons Learned",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "This project helped strengthen my CMS skills, especially with WordPress, and gave me a clearer understanding of plugin compatibility. I also learned how to integrate external forms like Hubspot without compromising the site’s design."
-          },
-          {
-            "type": "paragraph",
-            "text": "It also improved my ability to work remotely with clients who have strong business vision and technical expertise."
-          }
-        ]
-      },
-      {
-        "title": "Future Growth",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "While the website was built to meet the agency’s current needs, it’s ready to scale. I also proposed several ideas for future development:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Add a private client area with access to personalized reports.",
-              "Implement a lightweight CRM directly within WP to manage leads.",
-              "Include a live chat for instant customer support.",
-              "Expand the blog with multimedia content optimized for SEO.",
-              "Build a visual dashboard with visit, conversion, and form submission stats."
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Key Features",
-        "content": [
-          {
-            "type": "list",
-            "items": [
-              "<strong>Integrated contact forms (Hubspot and WPForms)</strong>, with auto-forwarding to the client’s inbox.",
-              "<strong>Custom blog and article section</strong> designed to consistently boost organic SEO.",
-              "<strong>Booking system</strong> to easily schedule meetings with potential clients.",
-              "<strong>Responsive design aligned with ADVANT's branding</strong>, including custom icons, colors, and typography.",
-              "<strong>Essential plugins integrated</strong> for security, backups, and fast loading performance."
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Integrations",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "The site was enhanced with key integrations that not only improved the user experience but also optimized the agency’s internal workflows:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "<strong>WPForms + Hubspot:</strong> to capture leads with automated email notifications.",
-              "<strong>Yoast SEO:</strong> with advanced setup, dynamic titles, and custom meta tags for each page.",
-              "<strong>Jetpack:</strong> for site stats, basic security, and automatic backups.",
-              "<strong>Google Tag Manager:</strong> to track events and manage marketing campaigns.",
-              "<strong>Creativ.eMail:</strong> for newsletter management and welcome email automation."
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Documentation",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "I prepared a basic admin guide and documented everything within WordPress itself:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Explanatory comments in each editable Elementor section.",
-              "PDF guide on how to publish new articles and configure SEO with Yoast.",
-              "Step-by-step tutorial on how to change images, text, and links via the visual editor.",
-              "Backup manual for restoring the site using Jetpack in case of errors.",
-              "Monthly maintenance recommendations and safe update practices."
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "alpha-cycles",
     "name": "Alpha Cycles",
     "title": "Business Optimization with Smart Scheduling",
@@ -868,6 +695,179 @@
               "Explanatory comments in each editable Elementor section.",
               "PDF guide on how to create new articles and configure SEO with Yoast.",
               "Step-by-step explanation to update images, texts, and links via the visual editor.",
+              "Backup manual for restoring the site using Jetpack in case of errors.",
+              "Monthly maintenance recommendations and safe update practices."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advant",
+    "name": "ADVANT",
+    "title": "Marketing Agency Website on WordPress",
+    "logo": "images/works/Advant/logo.svg",
+    "images": {
+      "mainCard": "/images/works/placeholder-image.jpg",
+      "showcaseCard": "/images/works/Advant/showcaseImage.jpg",
+      "desktopHome": "/images/works/Advant/desktopHomeImage.jpg",
+      "mobileHome": "/images/works/Advant/mobileHomeImage.jpg",
+      "documentation": [
+        "/images/works/Advant/wide-image.jpg",
+        "/images/works/Advant/square-image.jpg",
+        "/images/works/Advant/square-image-2.jpg",
+        "/images/works/Advant/wide-image-2.jpg"
+      ]
+    },
+    "year": "2024",
+    "description": "Corporate website for a U.S.-based digital marketing agency, focused on attracting new clients.",
+    "stack": ["WordPress", "WPForms", "Yoast", "Jetpack", "CSS3", "Figma"],
+    "github": "https://github.com/Gxbito/e-commerce",
+    "demo": "https://advant.biz/",
+    "colors": {
+      "text": "#FFC9D8",
+      "shadow": "#A93E5E",
+      "gradientStart": "#38111C",
+      "gradientEnd": "#DA5980"
+    },
+    "sections": [
+      {
+        "title": "Overview",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An Argentinian entrepreneur living in the United States contacted me through Fiverr to develop the website for his marketing agency: ADVANT. He already had SEO experience and intermediate technical knowledge, so he was looking for someone to execute his vision in WordPress, following the structure of a reference site he provided."
+          },
+          {
+            "type": "paragraph",
+            "text": "My role was to design and build a professional site from scratch, with 7 internal pages, carefully balancing performance, aesthetics, and SEO to meet the agency's goals."
+          }
+        ]
+      },
+      {
+        "title": "Technologies",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Although the site was built on WordPress, I aimed to take the development to the next level by using complementary tools to ensure a professional-grade experience:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>WordPress + Elementor:</strong> for precise visual layout aligned with the intended design.",
+              "<strong>Custom CSS:</strong> to fine-tune styles and overcome CMS visual limitations.",
+              "<strong>Code snippets:</strong> for specific features without bloating the site with unnecessary plugins.",
+              "<strong>Essential plugins:</strong> WPForms, Jetpack, Yoast SEO, Creativ.eMail, among others."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Challenges",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The main challenge was working within WordPress’s limitations. Although I don’t usually rely on CMS tools, I made the most out of its capabilities by combining it with custom code to avoid depending solely on restrictive plugins or themes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Additionally, the client wanted to replicate the layout of the reference site while applying completely different branding. This meant redesigning every visual element—color palette, typography, iconography, and images—without altering the base structure."
+          }
+        ]
+      },
+      {
+        "title": "Process",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "From day one, the client granted me full access to the wp-admin. He already had the domain and hosting set up, so I was able to start right away. I asked him to confirm the number of pages needed, and we began building each one based on the original layout, customized with his branding."
+          },
+          {
+            "type": "paragraph",
+            "text": "We followed an iterative workflow: I shared updates daily, screen by screen, and received immediate feedback. This allowed us to move quickly and stay organized. We even collaborated on SEO from the start, leveraging the client’s previous experience in the field."
+          }
+        ]
+      },
+      {
+        "title": "Lessons Learned",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "This project helped strengthen my CMS skills, especially with WordPress, and gave me a clearer understanding of plugin compatibility. I also learned how to integrate external forms like Hubspot without compromising the site’s design."
+          },
+          {
+            "type": "paragraph",
+            "text": "It also improved my ability to work remotely with clients who have strong business vision and technical expertise."
+          }
+        ]
+      },
+      {
+        "title": "Future Growth",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "While the website was built to meet the agency’s current needs, it’s ready to scale. I also proposed several ideas for future development:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Add a private client area with access to personalized reports.",
+              "Implement a lightweight CRM directly within WP to manage leads.",
+              "Include a live chat for instant customer support.",
+              "Expand the blog with multimedia content optimized for SEO.",
+              "Build a visual dashboard with visit, conversion, and form submission stats."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Key Features",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "<strong>Integrated contact forms (Hubspot and WPForms)</strong>, with auto-forwarding to the client’s inbox.",
+              "<strong>Custom blog and article section</strong> designed to consistently boost organic SEO.",
+              "<strong>Booking system</strong> to easily schedule meetings with potential clients.",
+              "<strong>Responsive design aligned with ADVANT's branding</strong>, including custom icons, colors, and typography.",
+              "<strong>Essential plugins integrated</strong> for security, backups, and fast loading performance."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Integrations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The site was enhanced with key integrations that not only improved the user experience but also optimized the agency’s internal workflows:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>WPForms + Hubspot:</strong> to capture leads with automated email notifications.",
+              "<strong>Yoast SEO:</strong> with advanced setup, dynamic titles, and custom meta tags for each page.",
+              "<strong>Jetpack:</strong> for site stats, basic security, and automatic backups.",
+              "<strong>Google Tag Manager:</strong> to track events and manage marketing campaigns.",
+              "<strong>Creativ.eMail:</strong> for newsletter management and welcome email automation."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Documentation",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "I prepared a basic admin guide and documented everything within WordPress itself:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Explanatory comments in each editable Elementor section.",
+              "PDF guide on how to publish new articles and configure SEO with Yoast.",
+              "Step-by-step tutorial on how to change images, text, and links via the visual editor.",
               "Backup manual for restoring the site using Jetpack in case of errors.",
               "Monthly maintenance recommendations and safe update practices."
             ]
@@ -1101,7 +1101,7 @@
       "Figma"
     ],
     "github": "https://github.com/Gxbito/e-commerce",
-    "demo": "https://www.edvance.cl/",
+    "demo": "",
     "colors": {
       "text": "#D5CDFF",
       "shadow": "#4B38A3",
