@@ -1,16 +1,13 @@
 import {
   AboutHeroContainer,
   TimelineContainer,
-  TimelineCardContainer,
 } from "./About.styles";
 import PageWrapper from "../../components/Layout/PageWrapper/PageWrapper";
 import PreviewSection from "../../components/Layout/PreviewSection/PreviewSection";
 import TextWrapper from "../../components/Layout/TextWrapper/TextWrapper";
-import TimelineCard from "../../components/Cards/TimelineCard/TimelineCard";
 import StackCard from "../../components/Cards/StackCard/StackCard";
 import Timeline from "../../components/UI/Timeline/Timeline";
 import HeroImage from "../../assets/images/Argentina-flag.jpg";
-import timelineData from "../../data/timelineData.json";
 import AnimatedWrapper from "../../components/Layout/AnimatedWrapper/AnimatedWrapper";
 
 function About() {
@@ -18,12 +15,19 @@ function About() {
     <PageWrapper page="about">
       <AboutHeroContainer>
         <AnimatedWrapper>
-          <img src={HeroImage} alt="argentina" />
+          <img
+            src={HeroImage}
+            alt="Argentina flag"
+            width="696"
+            height="465"
+            loading="lazy"
+            decoding="async"
+          />
         </AnimatedWrapper>
 
         <TextWrapper>
           <AnimatedWrapper y={0} x={40}>
-            <h2>Meeting the creator</h2>
+            <h1>Meeting the creator</h1>
           </AnimatedWrapper>
           <AnimatedWrapper y={0} x={40} delay={0.1}>
             <p>
@@ -43,7 +47,7 @@ function About() {
       <TimelineContainer>
         <TextWrapper>
           <AnimatedWrapper y={0} x={40}>
-            <h3>My Professional Journey</h3>
+            <h2>My Professional Journey</h2>
           </AnimatedWrapper>
           <AnimatedWrapper y={0} x={40} delay={0.1}>
             <p>

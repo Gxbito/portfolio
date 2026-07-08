@@ -59,12 +59,12 @@ function Documentation() {
           <TitleContainer>
             <HiddenWrapper hideOn="mobile">
               <AnimatedWrapper>
-                <h5>Frontend Developer – {project.year}</h5>
+                <span>Frontend Developer – {project.year}</span>
               </AnimatedWrapper>
             </HiddenWrapper>
 
             <AnimatedWrapper delay={0.1}>
-              <h2>{project.title}</h2>
+              <h1>{project.title}</h1>
             </AnimatedWrapper>
 
             <AnimatedWrapper delay={0.2}>
@@ -80,12 +80,26 @@ function Documentation() {
             >
               <Link
                 to={project.demo}>
-                <img src={project.images.desktopHome} alt="project" />
-                <img src={project.images.mobileHome} alt="project" />
-                <h4>
+                <img
+                  src={project.images.desktopHome}
+                  alt={`${project.title} desktop preview`}
+                  width="543"
+                  height="754"
+                  loading="eager"
+                  decoding="async"
+                />
+                <img
+                  src={project.images.mobileHome}
+                  alt={`${project.title} mobile preview`}
+                  width="220"
+                  height="476"
+                  loading="eager"
+                  decoding="async"
+                />
+                <span>
                   {project.demo ? "Visit site" : "Site Offline"}
                   {project.demo && <FiExternalLink />}
-                </h4>
+                </span>
               </Link>
             </MainImageContainer>
           </AnimatedWrapper>
@@ -98,7 +112,7 @@ function Documentation() {
                 style={{ width: "100%", maxWidth: "741px" }}
               >
                 <TextContainer>
-                  <h4 id={`section-${globalIndex}`}>{item.title}</h4>
+                  <h2 id={`section-${globalIndex}`}>{item.title}</h2>
 
                   <div>
                     {item.content.map((block, index) => {
@@ -139,17 +153,38 @@ function Documentation() {
           >
             <AnimatedWrapper style={{ gridColumn: "span 2" }}>
               <div>
-                <img src={project.images.documentation[0]} alt="project" />
+                <img
+                  src={project.images.documentation[0]}
+                  alt={`${project.title} documentation screenshot`}
+                  width="1120"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </AnimatedWrapper>
             <AnimatedWrapper delay={0.1}>
               <div>
-                <img src={project.images.documentation[1]} alt="project" />
+                <img
+                  src={project.images.documentation[1]}
+                  alt={`${project.title} documentation screenshot`}
+                  width="540"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </AnimatedWrapper>
             <AnimatedWrapper delay={0.2}>
               <div>
-                <img src={project.images.documentation[2]} alt="project" />
+                <img
+                  src={project.images.documentation[2]}
+                  alt={`${project.title} documentation screenshot`}
+                  width="540"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </AnimatedWrapper>
           </GalleryContainer>
@@ -162,7 +197,7 @@ function Documentation() {
                 style={{ width: "100%", maxWidth: "741px" }}
               >
                 <TextContainer>
-                  <h4 id={`section-${globalIndex}`}>{item.title}</h4>
+                  <h2 id={`section-${globalIndex}`}>{item.title}</h2>
                   <div>
                     {item.content.map((block, index) => {
                       if (block.type === "paragraph") {
@@ -202,7 +237,7 @@ function Documentation() {
                 style={{ width: "100%", maxWidth: "741px" }}
               >
                 <TextContainer>
-                  <h4 id={`section-${globalIndex}`}>{item.title}</h4>
+                  <h2 id={`section-${globalIndex}`}>{item.title}</h2>
 
                   <div>
                     {item.content.map((block, index) => {
@@ -240,7 +275,14 @@ function Documentation() {
               gradientEnd={project.colors.gradientEnd}
             >
               <div>
-                <img src={project.images.documentation[3]} alt="project" />
+                <img
+                  src={project.images.documentation[3]}
+                  alt={`${project.title} documentation screenshot`}
+                  width="1120"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </LastImageContainer>
           </AnimatedWrapper>
@@ -254,7 +296,7 @@ function Documentation() {
                 style={{ width: "100%", maxWidth: "741px" }}
               >
                 <TextContainer>
-                  <h4 id={`section-${globalIndex}`}>{item.title}</h4>
+                  <h2 id={`section-${globalIndex}`}>{item.title}</h2>
                   <div>
                     {item.content.map((block, index) => {
                       if (block.type === "paragraph") {
@@ -286,21 +328,21 @@ function Documentation() {
           })}
         </DocumentationDataContainer>
         <div>
-          <DocumentationContentsContainer>
-            <h6>CONTENTS</h6>
+          <DocumentationContentsContainer aria-label="Project contents">
+            <span>CONTENTS</span>
             {documentationItems.map((item, i) => (
-              <AnimatedWrapper key={i} delay={i * 0.1} x={40} y={0}>
-                <DocumentationTitle
-                  isActive={activeSection === i}
-                  onClick={() => handleSectionClick(i)}
-                >
-                  {item.title}
-                </DocumentationTitle>
-              </AnimatedWrapper>
+              <DocumentationTitle
+                key={i}
+                type="button"
+                isActive={activeSection === i}
+                onClick={() => handleSectionClick(i)}
+              >
+                {item.title}
+              </DocumentationTitle>
             ))}
           </DocumentationContentsContainer>
           <DocumentationTagsContainer>
-            <h6>STACK</h6>
+            <span>STACK</span>
             {project.stack.map((tag, i) => (
               <Tag data={tag} key={i} />
             ))}

@@ -29,7 +29,7 @@ export const TechnologyDataContainer = styled.div`
   align-items: flex-start;
   gap: 8px;
 
-  h5 {
+  h3 {
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-5);

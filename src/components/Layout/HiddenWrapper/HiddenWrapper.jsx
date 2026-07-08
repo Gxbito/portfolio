@@ -1,4 +1,3 @@
-import React from "react";
 import { HiddenWrapperStyled } from "./HiddenWrapper.styles";
 
 function HiddenWrapper({ children, hideOn }) {

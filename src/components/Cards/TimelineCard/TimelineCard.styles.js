@@ -47,7 +47,7 @@ export const TextContainer = styled.div`
     color: var(--color-text-paragraph);
   }
 
-  h4 {
+  h3 {
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-4);

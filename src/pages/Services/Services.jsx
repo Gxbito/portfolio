@@ -10,7 +10,7 @@ function Services() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Let's Turn Your Ideas into Reality</h2>
+          <h1>Let's Turn Your Ideas into Reality</h1>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
@@ -24,8 +24,8 @@ function Services() {
       </TextWrapper>
       <ServicesContainer>
         {servicesData.map((service) => (
-          <AnimatedWrapper style={{ width: "100%" }}>
-            <ServiceCard key={service.id} {...service} />
+          <AnimatedWrapper key={service.id} style={{ width: "100%" }}>
+            <ServiceCard {...service} />
           </AnimatedWrapper>
         ))}
       </ServicesContainer>

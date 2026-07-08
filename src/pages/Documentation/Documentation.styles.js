@@ -48,15 +48,14 @@ export const DocumentationDataContainer = styled.div`
   }
 `;
 
-export const DocumentationContentsContainer = styled.ul`
+export const DocumentationContentsContainer = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  list-style: none;
   gap: 24px;
 
-  h6 {
+  & > span {
     font-family: var(--font-secondary);
     font-weight: 700;
     font-size: var(--font-size-header-6);
@@ -64,11 +63,15 @@ export const DocumentationContentsContainer = styled.ul`
   }
 `;
 
-export const DocumentationTitle = styled.li`
+export const DocumentationTitle = styled.button`
   font-family: var(--font-secondary);
   font-weight: 500;
   font-size: var(--font-size-button);
   cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
 
   color: ${({ isActive }) =>
     isActive ? "var(--color-text-title)" : "var(--color-text-paragraph)"};
@@ -83,6 +86,11 @@ export const DocumentationTitle = styled.li`
     color: var(--color-text-title);
     transform: translateY(2px);
   }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -93,7 +101,7 @@ export const TitleContainer = styled.div`
   text-align: center;
   gap: 16px;
 
-  h2 {
+  h1 {
     font-family: var(--font-primary);
     font-weight: 900;
     font-size: var(--font-size-header-2);
@@ -103,7 +111,7 @@ export const TitleContainer = styled.div`
     -webkit-text-fill-color: transparent;
   }
 
-  h5 {
+  & > div span {
     font-family: var(--font-secondary);
     font-weight: 400;
     font-size: var(--font-size-header-5);
@@ -164,7 +172,7 @@ export const MainImageContainer = styled.div`
       transition: opacity 0.3s ease;
     }
 
-    h4 {
+    span {
       opacity: 0;
       display: flex;
       justify-content: center;
@@ -187,12 +195,12 @@ export const MainImageContainer = styled.div`
       opacity: 1;
     }
 
-    &:hover h4 {
+    &:hover span {
       transform: translateY(0);
       opacity: 1;
     }
 
-    &:active h4 {
+    &:active span {
       scale: 0.85;
     }
 
@@ -336,7 +344,7 @@ export const TextContainer = styled.div`
   align-items: flex-start;
   gap: 32px;
 
-  h4 {
+  h2 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: var(--font-size-header-4);
@@ -399,7 +407,7 @@ export const DocumentationTagsContainer = styled.div`
   align-items: center;
   gap: 12px;
 
-  h6 {
+  & > span {
     width: 100%;
     font-family: var(--font-secondary);
     font-weight: 700;
@@ -407,6 +415,7 @@ export const DocumentationTagsContainer = styled.div`
     color: var(--color-text-title);
     margin-bottom: 12px;
   }
+
 `;
 
 export const Separator = styled.span`

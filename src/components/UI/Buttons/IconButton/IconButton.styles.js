@@ -31,4 +31,9 @@ export const IconButtonStyled = styled.button`
       height: 18px;
     }
   }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
 `;

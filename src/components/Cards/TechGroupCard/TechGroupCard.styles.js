@@ -21,7 +21,7 @@ export const TechGroupCardStyled = styled.div`
     gap: 32px;
   }
 
-  h4 {
+  h2 {
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-4);

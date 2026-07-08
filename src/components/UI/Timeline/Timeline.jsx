@@ -1,10 +1,9 @@
-import React from "react";
+import { Fragment } from "react";
 import {
   TimelineContainer,
   VerticalLine,
   Dot,
   LineContainer,
-  Card,
 } from "./Timeline.styles";
 import timelineData from "../../../data/timelineData.json";
 import TimelineCard from "../../Cards/TimelineCard/TimelineCard";
@@ -14,7 +13,7 @@ function Timeline() {
   return (
     <TimelineContainer>
       {timelineData.map((tech, i) => (
-        <React.Fragment key={tech.id}>
+        <Fragment key={tech.id}>
           <LineContainer>
             <AnimatedWrapper
               y={40}
@@ -40,7 +39,7 @@ function Timeline() {
           >
             <TimelineCard {...tech} />
           </AnimatedWrapper>
-        </React.Fragment>
+        </Fragment>
       ))}
     </TimelineContainer>
   );

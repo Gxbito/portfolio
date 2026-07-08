@@ -30,7 +30,7 @@ export const FormStyled = styled.form`
     z-index: 2;
   }
 
-  h4 {
+  h2 {
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-4);
@@ -81,14 +81,14 @@ export const SuccessMessageContainer = styled.div`
   padding: 0px 24px;
   z-index: 3;
 
-  h2,
+  h3,
   p {
     animation: ${slideDownFadeIn} 0.6s ease-in-out forwards;
     text-align: center;
     cursor: default;
   }
 
-  h2 {
+  h3 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: var(--font-size-header-2);

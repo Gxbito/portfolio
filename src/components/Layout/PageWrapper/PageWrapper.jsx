@@ -3,8 +3,14 @@ import BackgroundVerticalLight from "@/assets/vectors/background-vertical-light.
 import BackgroundHeaderLight from "@/assets/vectors/header-light.svg";
 import BackgroundHomePattern from "@/assets/vectors/home-background-pattern.svg";
 import BackgroundPattern from "@/assets/vectors/background-pattern.svg";
-import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+
+const backgroundImageProps = {
+  "aria-hidden": "true",
+  decoding: "async",
+  draggable: "false",
+  alt: "",
+};
 
 function PageWrapper({ children, page }) {
   return (
@@ -14,34 +20,79 @@ function PageWrapper({ children, page }) {
           {page === "documentation" ? (
             <>
               <img
+                {...backgroundImageProps}
                 src={BackgroundHeaderLight}
-                alt="bg-light"
                 id="bg-light-header"
+                width="1561"
+                height="371"
+                loading="eager"
               />
-              <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern-2" />
+              <img
+                {...backgroundImageProps}
+                src={BackgroundPattern}
+                id="bg-pattern-2"
+                width="1620"
+                height="554"
+                loading="lazy"
+              />
             </>
           ) : page === "about" ? (
             <>
               <img
+                {...backgroundImageProps}
                 src={BackgroundVerticalLight}
-                alt="bg-light"
                 id="bg-light-2"
+                width="1857"
+                height="1465"
+                loading="lazy"
               />
-              <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern" />
+              <img
+                {...backgroundImageProps}
+                src={BackgroundPattern}
+                id="bg-pattern"
+                width="1620"
+                height="554"
+                loading="lazy"
+              />
             </>
           ) : page === "home" ? (
             <>
-              <img src={BackgroundVerticalLight} alt="bg-light" id="bg-light" />
-              <img src={BackgroundHomePattern} alt="bg-home" id="bg-home" />
+              <img
+                {...backgroundImageProps}
+                src={BackgroundVerticalLight}
+                id="bg-light"
+                width="1857"
+                height="1465"
+                loading="eager"
+              />
+              <img
+                {...backgroundImageProps}
+                src={BackgroundHomePattern}
+                id="bg-home"
+                width="1560"
+                height="977"
+                loading="eager"
+                fetchPriority="high"
+              />
             </>
           ) : (
             <>
               <img
+                {...backgroundImageProps}
                 src={BackgroundVerticalLight}
-                alt="bg-light-2"
                 id="bg-light-2-filter"
+                width="1857"
+                height="1465"
+                loading="lazy"
               />
-              <img src={BackgroundPattern} alt="bg-pattern" id="bg-pattern" />
+              <img
+                {...backgroundImageProps}
+                src={BackgroundPattern}
+                id="bg-pattern"
+                width="1620"
+                height="554"
+                loading="lazy"
+              />
             </>
           )}
         </div>

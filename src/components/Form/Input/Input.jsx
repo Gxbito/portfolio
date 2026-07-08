@@ -2,6 +2,7 @@ import { useFormContext } from "react-hook-form";
 import { InputContainer, InputStyled, FloatingLabel } from "./Input.styles";
 
 function Input({ placeholder, name, type = "text" }) {
+  const inputId = `field-${name}`;
   const {
     register,
     formState: { errors, touchedFields },
@@ -16,12 +17,15 @@ function Input({ placeholder, name, type = "text" }) {
     <InputContainer>
       <InputStyled
         {...register(name)}
+        id={inputId}
         name={name}
         type={type}
         value={value || ""}
         error={showError ? errors[name].message : ""}
       />
-      <FloatingLabel isFocused={!!value}>{placeholder}</FloatingLabel>
+      <FloatingLabel htmlFor={inputId} isFocused={!!value}>
+        {placeholder}
+      </FloatingLabel>
     </InputContainer>
   );
 }

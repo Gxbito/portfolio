@@ -23,7 +23,7 @@ export const StackTextContainer = styled.div`
   border-bottom: 1px solid var(--color-border);
   background-color: var(--color-bg-card);
 
-  h4 {
+  h2 {
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-4);

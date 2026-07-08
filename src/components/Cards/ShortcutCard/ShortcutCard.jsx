@@ -15,9 +15,17 @@ function ShortcutCard({ cardType }) {
   return (
     <ShortcutCardStyled>
       <div>
-        <img src={SelectedIcon} alt="bg-icon" />
+        <img
+          src={SelectedIcon}
+          alt=""
+          width="100"
+          height="100"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
         <TextContainer>
-          <h4>{cardType === "services" ? "Services" : "About me"}</h4>
+          <h2>{cardType === "services" ? "Services" : "About me"}</h2>
           <p>
             {cardType === "services"
               ? "Explore the services I provide as a frontend developer"

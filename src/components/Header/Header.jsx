@@ -1,8 +1,6 @@
 import { HeaderContainer, VerticalLine } from "./Header.styles";
 import SecondaryButton from "../UI/Buttons/SecondaryButton/SecondaryButton";
 import PrimaryButton from "../UI/Buttons/PrimaryButton/PrimaryButton";
-// import githubIcon from "@/assets/icons/web/GitHub.svg";
-// import IconButton from "@/components/UI/Buttons/IconButton/IconButton";
 import HiddenWrapper from "../Layout/HiddenWrapper/HiddenWrapper";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +19,7 @@ function Header({ name, demo }) {
       </HiddenWrapper>
 
       <VerticalLine />
-      <h4>{name}</h4>
+      <span>{name}</span>
       <VerticalLine />
       <PrimaryButton
         to={demo}
@@ -34,9 +32,6 @@ function Header({ name, demo }) {
         {demo ? "Visit site " : "Site Offline"}
         {demo && <FiExternalLink />}
       </PrimaryButton>
-      {/* <IconButton>
-        <img src={githubIcon} alt="github" />
-      </IconButton> */}
     </HeaderContainer>
   );
 }

@@ -5,7 +5,8 @@ import {
   FloatingLabel,
 } from "./TextArea.styles";
 
-function TextArea({ placeholder, name, type = "text", error, ...props }) {
+function TextArea({ placeholder, name }) {
+  const textAreaId = `field-${name}`;
   const {
     register,
     formState: { errors, touchedFields },
@@ -20,11 +21,14 @@ function TextArea({ placeholder, name, type = "text", error, ...props }) {
     <TextAreaContainer>
       <TextAreaStyled
         {...register(name)}
+        id={textAreaId}
         name={name}
         value={value || ""}
         error={showError ? errors[name].message : ""}
       />
-      <FloatingLabel isFocused={!!value}>{placeholder}</FloatingLabel>
+      <FloatingLabel htmlFor={textAreaId} isFocused={!!value}>
+        {placeholder}
+      </FloatingLabel>
     </TextAreaContainer>
   );
 }

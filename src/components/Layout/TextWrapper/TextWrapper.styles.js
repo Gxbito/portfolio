@@ -11,7 +11,7 @@ export const TextWrapperStyled = styled.div`
   gap: 24px;
   margin: 0 auto 0 0;
 
-  h2 {
+  h1 {
     font-family: var(--font-primary);
     font-weight: 900;
     font-size: var(--font-size-header-2);
@@ -21,7 +21,7 @@ export const TextWrapperStyled = styled.div`
     -webkit-text-fill-color: transparent;
   }
 
-  h3 {
+  h2 {
     font-family: var(--font-primary);
     font-weight: 900;
     font-size: var(--font-size-header-3);

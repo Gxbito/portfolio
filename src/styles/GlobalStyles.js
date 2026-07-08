@@ -1,9 +1,33 @@
 import { createGlobalStyle } from "styled-components";
-import "@fontsource/albert-sans";
-import "@fontsource/barlow";
-import "@fontsource/anton";
+import albertSansLatin from "@fontsource/albert-sans/files/albert-sans-latin-400-normal.woff2";
+import barlowLatin from "@fontsource/barlow/files/barlow-latin-400-normal.woff2";
+import antonLatin from "@fontsource/anton/files/anton-latin-400-normal.woff2";
 
 const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: "Albert Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(${albertSansLatin}) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(${barlowLatin}) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Anton";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(${antonLatin}) format("woff2");
+  }
+
   * {
     margin: 0;
     padding: 0;

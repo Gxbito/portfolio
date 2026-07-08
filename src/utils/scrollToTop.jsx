@@ -12,7 +12,7 @@ const ScrollToTop = () => {
     } else {
       window.scrollTo(0, 0);
     }
-  }, [pathname]);
+  }, [lenisRef, pathname]);
 
   return null;
 };

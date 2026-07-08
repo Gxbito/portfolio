@@ -58,7 +58,7 @@ export const OwnerDataTextContainer = styled.div`
   align-items: flex-start;
   gap: 8px;
 
-  h6 {
+  strong {
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-6);
@@ -103,7 +103,7 @@ export const NavLinksContainer = styled.ul`
     z-index: 10;
     transition: height 0.3s ease, padding 0.1s ease;
 
-    & > div {
+    & > li {
       padding: 0px 16px;
     }
 
@@ -111,6 +111,7 @@ export const NavLinksContainer = styled.ul`
       white-space: nowrap;
       transition: all 0.3s ease;
 
+      span,
       svg {
         display: block;
         min-width: 14.08px;
@@ -149,6 +150,11 @@ export const NavItem = styled.li`
   a:hover {
     background-color: var(--color-card-button);
     color: var(--color-text-title);
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
   }
 
   a:active {

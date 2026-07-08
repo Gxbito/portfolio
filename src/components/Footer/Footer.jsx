@@ -1,4 +1,3 @@
-import React from "react";
 import { FooterContainer, VerticalBar, IconsContainer } from "./Footer.styles";
 
 import { BsTwitterX } from "react-icons/bs";
@@ -10,12 +9,12 @@ function Footer() {
   return (
     <FooterContainer>
       <span>Update on 29 November 2024</span>
-      <VerticalBar />
+      <VerticalBar aria-hidden="true" />
       <span>Designed in Figma</span>
-      <VerticalBar />
+      <VerticalBar aria-hidden="true" />
       <span>Made with React</span>
-      <VerticalBar />
-      <IconsContainer>
+      <VerticalBar aria-hidden="true" />
+      <IconsContainer aria-hidden="true">
         <BsTwitterX />
         <FaFacebook />
         <FaInstagram />

@@ -64,7 +64,7 @@ function Form() {
     <AnimatedWrapper style={{ width: "100%" }}>
       <FormProvider {...methods}>
         <FormStyled onSubmit={handleSubmit(onSubmit)} submitted={submitted}>
-          <h4>Send me a message!</h4>
+          <h2>Send me a message!</h2>
 
           <AnimatePresence>
             {submitted && (
@@ -75,7 +75,7 @@ function Form() {
                   exit={{ y: 100, opacity: 0 }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
-                  <h2>Mensaje Enviado!</h2>
+                  <h3>Mensaje Enviado!</h3>
                   <p>
                     ¡Tu mensaje fue recibido con éxito! En breve te contactaré
                     para hablar sobre tu proyecto.

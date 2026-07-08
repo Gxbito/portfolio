@@ -12,11 +12,11 @@ function ProjectCard({ id, title, name, images, stack, year }) {
   return (
     <ProjectCardStyled to={`/documentation/${id}`} id={id}>
       <ImageCardContainer image={mainCard}>
-        <Tag>{year}</Tag>
+        <Tag data={year} />
       </ImageCardContainer>
       <TextCardContainer>
         <span>{name}</span>
-        <h4>{title}</h4>
+        <h2>{title}</h2>
       </TextCardContainer>
 
       <TagCardContainer>

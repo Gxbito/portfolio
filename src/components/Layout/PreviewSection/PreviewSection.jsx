@@ -66,12 +66,20 @@ function PreviewSection({ sectionType }) {
       <PreviewSectionData>
         <DataContainer>
           <AnimatedWrapper y={0} x={20}>
-            <img src={SelectedIcon} alt={sectionType} />
+            <img
+              src={SelectedIcon}
+              alt=""
+              width="64"
+              height="64"
+              loading="lazy"
+              decoding="async"
+              aria-hidden="true"
+            />
           </AnimatedWrapper>
 
           <DataTextContainer>
             <AnimatedWrapper y={0} x={20}>
-              <h5>{sectionType === "works" ? "Works" : sectionType === "projects" ? "Projects" : "Certificates"}</h5>
+              <h2>{sectionType === "works" ? "Works" : sectionType === "projects" ? "Projects" : "Certificates"}</h2>
             </AnimatedWrapper>
             <AnimatedWrapper y={0} x={20} delay={0.1}>
               <p>

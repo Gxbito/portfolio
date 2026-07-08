@@ -6,7 +6,7 @@ function TechGroupCard({ cat }) {
   return (
     <>
       <TechGroupCardStyled>
-        <h4>{cat}</h4>
+        <h2>{cat}</h2>
         <div>
           {stackData
             .filter((tech) => tech.category === cat)

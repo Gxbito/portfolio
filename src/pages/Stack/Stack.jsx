@@ -14,7 +14,7 @@ function Stack() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Technologies I Master</h2>
+          <h1>Technologies I Master</h1>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>
@@ -26,7 +26,7 @@ function Stack() {
       </TextWrapper>
       <StackContainer>
         {filteredCategories.map((cat) => (
-          <AnimatedWrapper style={{ width: "100%" }}>
+          <AnimatedWrapper key={cat} style={{ width: "100%" }}>
             <TechGroupCard key={cat} cat={cat} />
           </AnimatedWrapper>
         ))}

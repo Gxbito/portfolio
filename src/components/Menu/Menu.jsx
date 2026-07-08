@@ -10,7 +10,6 @@ import {
 } from "./Menu.styles";
 import {
   FiHome,
-  FiFolder,
   FiLayers,
   FiUser,
   FiMail,
@@ -46,12 +45,18 @@ function Menu() {
     <MenuContainer>
       <OwnerDataContainer to="/">
         <AnimatedWrapper y={0} x={20}>
-          <img src={ProfileIcon} alt="Gabriel" />
+          <img
+            src={ProfileIcon}
+            alt="Gabriel Martinez"
+            width="56"
+            height="56"
+            decoding="async"
+          />
         </AnimatedWrapper>
 
         <OwnerDataTextContainer>
           <AnimatedWrapper y={0} x={40}>
-            <h6>Gabriel Martinez</h6>
+            <strong>Gabriel Martinez</strong>
           </AnimatedWrapper>
           <AnimatedWrapper y={0} x={40} delay={0.1}>
             <span>Frontend Developer</span>
@@ -60,37 +65,38 @@ function Menu() {
       </OwnerDataContainer>
 
       <NavLinksContainer active={isActive}>
-        {navItems.map((item, i) => {
-          console.log(location.pathname === item.to);
-          return (
-            <AnimatedWrapper
-              key={item.to}
-              delay={i * 0.1}
-              x={40}
-              y={0}
-              style={{ width: "100%" }}
-            >
-              <NavItem
-                active={location.pathname === item.to}
-                onClick={handleMenuActive}
-              >
-                <Link to={item.to}>
-                  {item.icon}
-                  {item.label}
-                </Link>
-              </NavItem>
-            </AnimatedWrapper>
-          );
-        })}
+        {navItems.map((item) => (
+          <NavItem
+            key={item.to}
+            active={location.pathname === item.to}
+            onClick={handleMenuActive}
+          >
+            <Link to={item.to} aria-current={location.pathname === item.to ? "page" : undefined}>
+              <span aria-hidden="true">{item.icon}</span>
+              {item.label}
+            </Link>
+          </NavItem>
+        ))}
       </NavLinksContainer>
 
       <HiddenWrapper hideOn="desktop">
-        <IconButton onClick={handleMenuActive}>
-          <img src={MenuIcon} alt="menu-icon" />
+        <IconButton
+          onClick={handleMenuActive}
+          ariaLabel={isActive ? "Close navigation menu" : "Open navigation menu"}
+          ariaExpanded={isActive}
+        >
+          <img
+            src={MenuIcon}
+            alt=""
+            width="20"
+            height="18"
+            decoding="async"
+            aria-hidden="true"
+          />
         </IconButton>
       </HiddenWrapper>
 
-      <Overlay active={isActive} />
+      <Overlay active={isActive} aria-hidden="true" />
     </MenuContainer>
   );
 }

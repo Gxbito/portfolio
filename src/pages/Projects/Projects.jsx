@@ -10,7 +10,7 @@ function Projects() {
     <PageWrapper>
       <TextWrapper>
         <AnimatedWrapper y={0} x={40}>
-          <h2>Career Highlights</h2>
+          <h1>Career Highlights</h1>
         </AnimatedWrapper>
         <AnimatedWrapper y={0} x={40} delay={0.1}>
           <p>

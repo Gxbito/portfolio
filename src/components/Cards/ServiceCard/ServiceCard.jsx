@@ -27,14 +27,22 @@ function ServiceCard({ title, description, image, features }) {
 
   return (
     <ServiceCardStyled>
-      <img src={image} alt={title} />
+      <img
+        src={image}
+        alt=""
+        width="64"
+        height="64"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
       <TextContainer>
-        <h4>{title}</h4>
+        <h2>{title}</h2>
         <p>{description}</p>
       </TextContainer>
       <ListContainer>
         {features.map((feature) => (
-          <li>{feature}</li>
+          <li key={feature}>{feature}</li>
         ))}
       </ListContainer>
       <ButtonsContainer>

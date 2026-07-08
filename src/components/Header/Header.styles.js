@@ -14,7 +14,7 @@ export const HeaderContainer = styled.div`
   position: relative;
   z-index: 2;
 
-  h4 {
+  span {
     font-weight: 500;
     font-size: var(--font-size-header-4);
     color: var(--color-text-title);

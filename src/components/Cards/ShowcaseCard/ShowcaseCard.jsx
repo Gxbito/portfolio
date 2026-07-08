@@ -5,7 +5,7 @@ import {
 } from "./ShowcaseCard.styles";
 
 function ShowcaseCard({ id, title, description, images, colors }) {
-  const { text, shadow, gradientStart, gradientEnd } = colors;
+  const { text, gradientStart, gradientEnd } = colors;
   const { showcaseCard } = images;
 
   return (
@@ -20,7 +20,14 @@ function ShowcaseCard({ id, title, description, images, colors }) {
           <p>{description}</p>
         </DataTextContainer>
 
-        <img src={showcaseCard} alt={id} />
+        <img
+          src={showcaseCard}
+          alt={`${title} preview`}
+          width="1076"
+          height="520"
+          loading="lazy"
+          decoding="async"
+        />
       </ShowcaseDataContainer>
     </ShowcaseCardStyled>
   );

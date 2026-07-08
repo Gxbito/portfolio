@@ -1,11 +1,17 @@
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 function AnimatedWrapper({ children, delay = 0, style, y = 40, x = 0, triggerOnce = true }) {
+  const shouldReduceMotion = useReducedMotion();
   const { ref, inView } = useInView({
     triggerOnce: triggerOnce,
     threshold: 0.2,
+    skip: shouldReduceMotion,
   });
+
+  if (shouldReduceMotion) {
+    return <div style={style}>{children}</div>;
+  }
 
   return (
     <motion.div

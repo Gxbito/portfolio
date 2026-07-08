@@ -54,7 +54,7 @@ export const DataTextContainer = styled.div`
   align-items: flex-start;
   gap: 8px;
 
-  h5 {
+  h2 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: var(--font-size-header-5);

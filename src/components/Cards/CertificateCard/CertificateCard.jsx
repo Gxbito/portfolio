@@ -12,7 +12,7 @@ function CertificateCard() {
         <Tag data="2024"></Tag>
         <TextCardContainer>
           <span>TRENDSETTER THREADS</span>
-          <h4>E-Commerce Pro</h4>
+          <h3>E-Commerce Pro</h3>
         </TextCardContainer>
       </ImageCardContainer>
     </CertificateCardStyled>

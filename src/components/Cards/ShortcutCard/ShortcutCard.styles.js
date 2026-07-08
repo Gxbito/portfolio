@@ -51,7 +51,7 @@ export const TextContainer = styled.div`
   align-items: flex-start;
   gap: 8px;
 
-  h4 {
+  h2 {
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: var(--font-size-header-4);
